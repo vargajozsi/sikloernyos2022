@@ -1,0 +1,1111 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;0,700;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--linkelement);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--linkelement-dark);
+}
+html {
+  width: 100vw;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  --linkelement-atlatszo: #f7bc3c69;
+  --linkelement: #f7bb3c;
+  --linkelement-dark: #a37b24;
+  --black-elements:  #000;
+  --white-elements: #fff;
+  --hashtag-elements: #b9b9b9;
+  --attetszo-sotet: rgba(0, 0, 0, 0.5);
+
+}
+
+body {
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: var(--linkelement);
+}
+
+ p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: normal;
+  color: var(--black-elements);
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+header nav h2 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-size: calc(0.5rem + 1vw);
+}
+
+header {
+  z-index: 5;
+  background: var(--black-elements);
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+}
+.sikloernyosklub-logo {
+  color: var(--white-elements);
+  font-size: calc(0.5rem + 1vw);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.sikloernyosklub-logo img {
+  padding-top: 0.5em;
+  padding-bottom: 00.5em;
+  width: auto;
+  height: calc(5rem + 3vw);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10rem;
+}
+
+.menuhider {
+  display: none;
+  width: 13.5em;
+  height: 2em;
+  background: var(--linkelement);
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.menuhider > .menuhiderarrow {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  width: 1rem;
+  height: 1rem;
+  border-top: 1px solid var(--white-elements);
+  border-right: 1px solid var(--white-elements);
+  color: var(--white-elements);
+  transform: rotate(135deg);
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  display: block;
+  text-decoration: none;
+  color: var(--white-elements);
+  align-items: baseline;
+  padding: 0.5em 1em;
+  font-size: calc(0.7rem + 1vw);
+}
+
+/*styling submenu*/
+.has-dropdown {
+  position: relative;
+}
+
+.submenu {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  background-color: var(--black-elements);
+  white-space: nowrap;
+  padding: 1.5em 0;
+  border-radius: 5px;
+  box-shadow: 20px 20px 20px rgb(0, 0, 0);
+
+  /* hide submenu */
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top center;
+}
+
+.submenu > li > a {
+  padding: 0.5em 1.5em;
+}
+
+.menu > li:hover > a,
+.submenu > li:hover > a {
+  background-color: hsla(0, 0%, 100%, 0.07);
+  color: var(--linkelement);
+}
+
+menu > li:hover > a {
+  background-color: hsla(0, 0%, 100%, 0.2);
+}
+/* Arrow for submenu */
+.arrow {
+  font-size: 0.8em;
+  color: var(--linkelement);
+  padding-left: 0.7rem;
+  vertical-align: text-bottom;
+  font-weight: 700;
+  transition: font-size 100ms ease-in-out;
+}
+/* Arrow animating*/
+.menu > li:hover > a > .arrow {
+  font-size: 0.4em;
+}
+
+/* unhide submenus */
+.menu > li:hover > a + .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+  transition: transform 0.5s;
+}
+
+/* beginn of main */
+
+.wrapper {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./media/background.jpg.jpg");
+}
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 100;
+  font-size: 2.5rem;
+  color: var(--white-elements);
+  font-stretch: semi-expanded;
+  background-color: var(--attetszo-sotet) ;
+  text-align: center;
+  padding-top: 00.5rem;
+  letter-spacing: 0.2em;
+  text-shadow: -2px -2px 19px rgb(255, 255, 255), black 3px 3px;
+  
+}
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 100;
+  font-size: 1.8rem;
+  color: var(--white-elements);
+  font-stretch: expanded;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 0.5em;
+}
+
+h1::first-letter {
+  font-size: 2em;
+}
+
+i[forditas] {
+  position: relative;
+}
+i[forditas]::after {
+  content: attr(forditas);
+  display: block;
+  position: absolute;
+  bottom: 200%;
+  right: 20%;
+  background-color: var(--black-elements);
+  color: var(--white-elements);
+  font-weight: 500;
+  padding: 1em;
+  border-radius: 0.45em;
+  font-size: 1.5em;
+  transform: scale(0);
+}
+i[forditas]:hover::after {
+  transform: scale(1);
+  transition: 0.5s;
+}
+.bevezető {
+  background-color: var(--attetszo-sotet);
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+  padding: 2em;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: left;
+}
+.bevezető::first-letter {
+  font-size: 2em;
+}
+.cimszoveg {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+  margin-top: 10em;
+  padding: 2em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.tartalom {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+  font-weight: 100;
+  padding: 2em;
+  font-family: "Source Sans Pro", sans-serif;
+  transition: background-color 1s;
+  line-height: 1.6em;
+}
+.tartalom::first-letter {
+  font-size: 2em;
+}
+.tartalom:hover {
+  background-color: black;
+}
+span {
+  font-size: 0.6em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+address {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0 2em 0 2em;
+}
+
+q {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-family: "Source Sans Pro", sans-serif;
+  width: 100%;
+  display: inline-block;
+  padding: 0 2em 0 2em;
+  text-align: center;
+}
+
+footer {
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(185, 185, 185, 0.5);
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  padding: 0 2em 2em 2em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+footer div {
+  font-size: 1em;
+}
+
+/*the beginn of starthelyek specifed style elements*/
+div.google-starthely > a,
+div.tabla-starthely > a {
+  font-size: 5rem;
+}
+#holfuyiframe {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.wrapper-starthely {
+  margin: 0 auto;
+  height: calc(100vh - 35rem);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  justify-content: center;
+}
+
+.google-starthely,
+.tabla-starthely {
+  background-color: var(--attetszo-sotet);
+  justify-self: stretch;
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0 1rem;
+}
+
+.google-starthely:hover::after {
+  position: absolute;
+  top: 10rem;
+  left: 0;
+  content: "";
+  background: url(./media/bg2.jpg.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  width: 100vw;
+  height: calc(100vh - 13rem);
+}
+
+.tabla-starthely:hover::after {
+  position: absolute;
+  top: 10rem;
+  left: 0;
+  content: "";
+  background: url(./media/bg3.jpg.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  width: 100vw;
+  height: calc(100vh - 13rem);
+}
+
+.google-starthely:hover,
+.tabla-starthely:hover {
+  background-color: var(--black-elements);
+}
+
+.wrapper-starthely:only-child a {
+  color: var(--linkelement);
+  text-decoration: none;
+  font-size: 3rem;
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.wrapper-starthely:only-child a:hover {
+  color: var(--linkelement);
+}
+/*the end of starthelyek specifed style elements*/
+
+/* __________________________________________________________________________ */
+
+/*the begin of klubok specifed style elements*/
+.wrapper-klubs {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-auto-flow: dense;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+/*-------the begin of clubcard specifed style elements*/
+.clubcard {
+  margin: 2rem;
+  text-align: center;
+  background-color: var(--attetszo-sotet);
+  color: var(--white-elements);
+  border: 1px dotted var(--linkelement);
+}
+
+.pic-header {
+  min-width: 100%;
+  min-height: 15rem;
+}
+
+#pic-header-airborne {
+  background: url(./media/airborneBg.jpg);
+  background-size: contain;
+  background-position: center;
+}
+#pic-header-aeroclub {
+  background: url(./media/aeroclub-logo-web.jpg);
+  background-size: contain;
+  background-position: center;
+}
+
+#pic-header-amator {
+  background: url(./media/amatorBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pic-header-blueSky {
+  background: url(./media/blueskyLogo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pic-header-flyaway {
+  background: url(./media/flyawayBg.png);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#pic-header-sirius {
+  background: url(./media/siriusBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pic-header-griff {
+  background: url(./media/griffBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pic-header-kemrse {
+  background: url(./media/kemrseLogo.png);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#pic-header-egedEagles {
+  background: url(./media/egedeaglesLogo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pic-header-enairgy {
+  background: url(./media/enairgyLogo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pic-header-fairplay {
+  background: url(./media/fairplajLogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pic-header-cludebase {
+  background: url(./media/cloudbaseLogo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#pic-header-felhout {
+  background: url(./media/felhoutLogo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pic-header-freeair {
+  background: url(./media/freeAirLogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#pic-header-2se {
+  background: url(./media/2seLogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pic-header-matraextremse {
+  background: url(./media/matraextremLogo.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#pic-header-csabafly {
+  background: url(./media/csabaFlyLogo.png);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#pic-header-muegyetemi {
+  background: url(./media/muegyetemiLogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#pic-header-mpc {
+  background: url(./media/mpcLogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.clubcard .tevekenysegek,
+.clubcard .ertekelesek {
+  display: none;
+}
+
+.clubcard a {
+  font-size: 2rem;
+}
+
+address {
+  padding: 2rem;
+  cursor: default;
+}
+/*-------the end of clubcard specifed style elements*/
+
+/*the end of klubok specifed style elements*/
+
+/*the begin of sikloernyozes specifed style elements*/
+.normal-ul {
+  background-color: var(--attetszo-sotet);
+}
+.normal-ul li {
+  padding: 0 4rem;
+  font-size: 2rem;
+  color: var(--white-elements);
+  list-style-type: circle;
+}
+/*the end of sikloernyozes specifed style elements*/
+
+/*the begin of starthelyek specifed style elements*/
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.starthely-table {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: var(--black-elements);
+  background-color: var(--attetszo-sotet);
+  border-collapse: collapse;
+  width: 90%;
+  text-align: center;
+  height: auto;
+}
+th {
+  padding: 1rem;
+  text-transform: uppercase;
+}
+.starthely-table a {
+  text-decoration: none;
+  color: var(--black-elements);
+}
+
+.starthely-table thead {
+  color: var(--white-elements);
+  background: var(--attetszo-sotet);
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  height: 5rem;
+}
+
+.nincs-adat td {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #dee2e1 50%,
+    #d6d6d1 51%,
+    #d6d6d1 100%
+  );
+}
+
+.free td {
+  background: linear-gradient(
+    to bottom,
+    #28ec63 0%,
+    #28ec63 50%,
+    #029221 51%,
+    #029221 100%
+  );
+}
+
+.tiltott td {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #dee2e1 50%,
+    #d6d6d1 51%,
+    #d6d6d1 100%
+  );
+}
+.starthely-table tfoot {
+  color: var(--white-elements);
+  background: var(--attetszo-sotet);
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  height: 5rem;
+}
+/*the end of starthelyek specifed style elements*/
+/* The begin of hirek specificed elements */
+.hirek-kontener {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+article {
+  /* max-width: max-content; */
+  background-color: var(--attetszo-sotet);
+  margin: 2rem;
+  overflow: hidden;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(
+    to bottom,
+    var(--linkelement-dark),
+    rgba(252, 252, 252, 0.1)
+  );
+  border-radius: 0.5rem;
+}
+
+.hir-cime {
+  display: flex;
+  background-color: var(--white-elements);
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  box-shadow: var(--linkelement) 0rem 1rem;
+}
+.hir-cime h2 {
+  max-width: 70%;
+  background-color: var(--white-elements);
+  color: var(--black-elements);
+  font-weight: 700;
+  /* font-family: "Great Vibes", cursive; */
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: clamp(1.5rem, 2.5vw, 5rem);
+  font-style: italic;
+}
+
+.hir-cime img {
+  max-width: 30%;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.hir-tartalom {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: flex-start;
+  margin: 1rem;
+  background-color: var(--black-elements);
+  border-radius: 0 0 0.5rem 0.5rem;
+  color: var(--white-elements);
+}
+.szovegeles {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem;
+  text-align: left;
+}
+.szovegeles ol {
+  margin-left: 5rem;
+  list-style-type: decimal;
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
+}
+
+.szovegeles p, {
+  color: var(--white-elements);
+}
+
+.hir-tartalom p {
+color: var(--white-elements);
+  max-width: 60%;
+  margin: 1em;
+  font-size: clamp(1.5vw, 4vw, 2rem);
+}
+
+.hir-hashtag {
+  color: var(--hashtag-elements);
+}
+
+.norbi-galeria {
+  border: var(--white-elements) solid 1px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-gap: 1px;
+  align-items: start;
+  justify-items: center;
+  margin: 2rem;
+  max-width: 40%;
+}
+.norbi-galeria img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.norbi-galeria img:active {
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 90vh;
+  right: 0;
+  transition: filter, -webkit-filter 1s ease-in;
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  z-index: 100;
+}
+.norbi-galeria img:hover {
+  transition: filter, -webkit-filter 3s ease-in;
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+.norbi-galeria img:nth-child(2) {
+  grid-column: span 3;
+  grid-row: span 3;
+  border: var(--black-elements) solid 2rem;
+}
+/* The end of hirek specificed elements */
+/*-------the begin of meterologi specifed style elements*/
+.meteo-wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.starthely-korkep, .meteo-linkek, .iframek {
+  width: 100vw;
+  padding: 0 2rem;
+  background: var(--attetszo-sotet);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  gap: 1rem ; 
+  align-items: baseline;
+  justify-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.meteo-egyed, .meteo-linkek, .iframek, article {
+  width: 100%;
+  background: var(--attetszo-sotet);
+}
+
+.meteo-egyed p{
+  color: var(--white-elements);
+  padding: 0rem 2rem;
+}
+
+article p span {
+  background: rgb(0, 0, 0);
+  border: solid #f7bb3c;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  margin-left: 2rem;
+  padding: 0.8rem;
+  /*transform: rotate(-135deg);*/
+}
+.link-egyed ul {
+  padding: 2rem;
+  list-style: none;
+}
+
+.link-egyed li {
+  padding: 1rem 0rem;
+
+}
+.link-egyed a {
+  line-height: 2rem;
+  font-size: calc(1rem + 1vw);
+}
+
+.link-egyed a:hover {
+  font-size: calc(1.2rem + 1vw);
+  color: var(--linkelement-dark);
+  text-decoration: underline;
+}
+
+/*-------the end of meterologi specifed style elements*/
+
+
+
+/* end of main */
+/* Responsives for smaller devices*/
+
+@media only screen and (max-width: 1150px) {
+  .wrapper-klubs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .starthely-table thead {
+    top: 0;
+  }
+  header {
+    position: relative;
+  }
+  .submenu {
+    left: -100%;
+  }
+  .menu {
+    visibility: hidden;
+    flex-flow: column;
+    position: absolute;
+    background: var(--black-elements);
+    left: 0;
+    top: -15em;
+    height: auto;
+    width: 100%;
+  }
+  .submenu {
+    border: var(--linkelement) solid 1px;
+    left: 0;
+    top: 0;
+    padding-left: 1.5em;
+    width: 50%;
+    margin-left: 15rem;
+  }
+  header > nav > div:nth-child(2) > ul > div {
+    visibility: visible;
+  }
+
+  .menu:active,
+  .menu:hover {
+    top: calc(7rem + 3vw);
+    visibility: visible;
+  }
+
+  .menu > li > a,
+  .arrow {
+    font-size: 1.5rem;
+  }
+
+  .submenu > li > a {
+    font-size: 1.5rem;
+  }
+  .menuhider {
+    display: block;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .menu {
+    visibility: visible;
+    display: block;
+    height: 100vh;
+    right: 0;
+    top: calc(7.5rem + 3vw);
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: 200ms transform cubic-bezier(0.36, 0.4, 0.42, 1.48) 100ms,
+      100ms opacity ease-in-out;
+  }
+  .submenu {
+    top: 0;
+    padding-left: 1.5em;
+    border-left: 0.12em dotted var(--linkelement);
+
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    left: initial;
+    top: 0;
+    padding-left: 1.5em;
+    width: initial;
+    margin-left: 1rem;
+  }
+  .submenu > li {
+    padding-top: 0.8em;
+  }
+  .menu > li > a {
+    font-size: 2rem;
+  }
+  .submenu > li > a {
+    font-size: 2rem;
+  }
+
+  .menu > li:hover > a + .submenu {
+    position: relative;
+  }
+  .hamburger {
+    width: 2em;
+    height: 0.25em;
+    display: block;
+    background: var(--linkelement);
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s transform ease-in-out;
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    left: 0;
+    background: inherit;
+    transition: 0.2s transform ease-in-out;
+  }
+  .hamburger::before {
+    bottom: 0.65em;
+  }
+  .hamburger::after {
+    top: 0.65em;
+  }
+  .close::before,
+  .close::after {
+    top: 0;
+    transition: 0.2s transform ease-in-out;
+  }
+  .close {
+    transform: rotate(45deg);
+  }
+  .close::before {
+    display: none;
+  }
+  .close::after {
+    transform: rotate(-90deg);
+  }
+  /*unhide hamburgermenu*/
+  input[type="checkbox"]:checked + .menu {
+    z-index: 500;
+    visibility: visible;
+    position: absolute;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  /*the beginn of starthelyek specifed style elements for under 600px*/
+  #holfuyiframe {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wrapper-starthely {
+    grid-template-columns: 1fr;
+    align-content: center;
+  }
+
+  .google-starthely,
+  .tabla-starthely {
+    margin: 1rem;
+    padding: 1rem 0;
+  }
+
+  .wrapper-starthely:only-child a {
+    font-size: 2rem;
+  }
+
+  .box {
+    z-index: 100;
+  }
+  body > main > div > div:nth-child(1) > div.content > div {
+    left: 22vw;
+  }
+  body > main > div > div:nth-child(2) > div.content > div {
+    left: -11vw;
+  }
+
+  body > main > div > div:nth-child(3) > div.content > div {
+    left: -46vw;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .container {
+    height: 85vh;
+  }
+
+  .container .colums:hover .content .box p {
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    line-height: 1em;
+  }
+
+  /*the end of starthelyek specifed style elements for und er 600px*/
+  /*the begin of klubok specifed style elements for und er 600px*/
+  .wrapper-klubs {
+    grid-template-columns: 1fr;
+  }
+
+  /*-------the begin of clubcard specifed style elements*/
+  .clubcard {
+    border: none;
+    max-width: 30rem;
+  }
+
+  .clubcard:active {
+    position: relative;
+    top: 0;
+  }
+  /*-------the end of clubcard specifed style elements*/
+
+  /*the end of klubok specifed style elements*/
+
+  /*the begin of hirek specifed style elements for under600*/
+
+  .hir-tartalom {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .hir-tartalom p {
+    max-width: 100%;
+    justify-self: center;
+  }
+  .norbi-galeria {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .norbi-galeria img {
+    grid-column: 1/2;
+  }
+  .norbi-galeria img:active {
+    position: initial;
+    width: 100%;
+    height: auto;
+  }
+
+  /*the end of hirek specifed style elements for under600*/
+
+
+/*-------the begin of meterologi specifed style elements for under600**/
+.starthely-korkep {
+  grid-template-columns: 100vw;
+  align-items: baseline;
+  min-width: 100vw;
+}
+
+
+/*-------the end of meterologi specifed style elements for under600**/
+
+
+
+
+}
