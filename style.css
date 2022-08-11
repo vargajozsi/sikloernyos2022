@@ -39,11 +39,10 @@ html {
   --linkelement-atlatszo: #f7bc3c69;
   --linkelement: #f7bb3c;
   --linkelement-dark: #a37b24;
-  --black-elements:  #000;
+  --black-elements: #000;
   --white-elements: #fff;
   --hashtag-elements: #b9b9b9;
   --attetszo-sotet: rgba(0, 0, 0, 0.5);
-
 }
 
 body {
@@ -56,12 +55,12 @@ a {
   color: var(--linkelement);
 }
 
- p {
+p {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: normal;
   color: var(--black-elements);
-  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 header nav h2 {
   text-align: left;
@@ -205,12 +204,11 @@ h1 {
   font-size: 2.5rem;
   color: var(--white-elements);
   font-stretch: semi-expanded;
-  background-color: var(--attetszo-sotet) ;
+  background-color: var(--attetszo-sotet);
   text-align: center;
   padding-top: 00.5rem;
   letter-spacing: 0.2em;
   text-shadow: -2px -2px 19px rgb(255, 255, 255), black 3px 3px;
-  
 }
 h2 {
   font-family: "Source Sans Pro", sans-serif;
@@ -298,13 +296,14 @@ address {
 }
 
 q {
+  margin-top: 2rem;
   background-color: rgba(0, 0, 0, 0.6);
   color: rgb(255, 255, 255);
   font-size: 3rem;
   font-family: "Source Sans Pro", sans-serif;
   width: 100%;
   display: inline-block;
-  padding: 0 2em 0 2em;
+  padding: 2em;
   text-align: center;
 }
 
@@ -572,15 +571,48 @@ address {
 /*the end of klubok specifed style elements*/
 
 /*the begin of sikloernyozes specifed style elements*/
-.normal-ul {
+.articlesiklo {
+  width: auto;
   background-color: var(--attetszo-sotet);
+  margin: 2rem;
+  overflow: hidden;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(
+    to bottom,
+    var(--linkelement-dark),
+    rgba(252, 252, 252, 0.1)
+  );
+  border-radius: 0.5rem;
 }
-.normal-ul li {
-  padding: 0 4rem;
-  font-size: 2rem;
+
+.articlesiklo h2 {
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 1rem 3rem;
+  font-size: clamp(2rem, 2.5vw, 3rem);
+}
+
+.articlesiklo h2::before {
+  content: ">";
+  color: var(--linkelement);
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.articlesiklo p {
+  display: none;
+  font-size: clamp(1rem, 2vw, 2rem);
+  padding: 5rem;
+  background-color: var(--black-elements);
   color: var(--white-elements);
-  list-style-type: circle;
+  line-height: 1.6;
 }
+
 /*the end of sikloernyozes specifed style elements*/
 
 /*the begin of starthelyek specifed style elements*/
@@ -728,12 +760,12 @@ article {
   font-size: clamp(1.5rem, 1.5vw, 2rem);
 }
 
-.szovegeles p, {
+.szovegeles p {
   color: var(--white-elements);
 }
 
 .hir-tartalom p {
-color: var(--white-elements);
+  color: var(--white-elements);
   max-width: 60%;
   margin: 1em;
   font-size: clamp(1.5vw, 4vw, 2rem);
@@ -796,26 +828,31 @@ color: var(--white-elements);
   gap: 3rem;
 }
 
-.starthely-korkep, .meteo-linkek, .iframek {
+.starthely-korkep,
+.meteo-linkek,
+.iframek {
   width: 100vw;
   padding: 0 2rem;
   background: var(--attetszo-sotet);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: auto;
-  gap: 1rem ; 
+  gap: 1rem;
   align-items: baseline;
   justify-items: center;
   align-content: center;
   justify-content: space-around;
 }
 
-.meteo-egyed, .meteo-linkek, .iframek, article {
+.meteo-egyed,
+.meteo-linkek,
+.iframek,
+article {
   width: 100%;
   background: var(--attetszo-sotet);
 }
 
-.meteo-egyed p{
+.meteo-egyed p {
   color: var(--white-elements);
   padding: 0rem 2rem;
 }
@@ -836,7 +873,6 @@ article p span {
 
 .link-egyed li {
   padding: 1rem 0rem;
-
 }
 .link-egyed a {
   line-height: 2rem;
@@ -850,8 +886,6 @@ article p span {
 }
 
 /*-------the end of meterologi specifed style elements*/
-
-
 
 /* end of main */
 /* Responsives for smaller devices*/
@@ -1094,18 +1128,12 @@ article p span {
 
   /*the end of hirek specifed style elements for under600*/
 
+  /*-------the begin of meterologi specifed style elements for under600**/
+  .starthely-korkep {
+    grid-template-columns: 100vw;
+    align-items: baseline;
+    min-width: 100vw;
+  }
 
-/*-------the begin of meterologi specifed style elements for under600**/
-.starthely-korkep {
-  grid-template-columns: 100vw;
-  align-items: baseline;
-  min-width: 100vw;
-}
-
-
-/*-------the end of meterologi specifed style elements for under600**/
-
-
-
-
+  /*-------the end of meterologi specifed style elements for under600**/
 }

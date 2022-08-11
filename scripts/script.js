@@ -9,6 +9,19 @@ hamburger.addEventListener("click", function () {
 //main hamburger menu hide end//
 // Meteo article content generator start
 
-
-
 // Meteo article content generator end
+//sikloernyozes menu content start
+function sikloArticleToggle(melyik) {
+
+  let a = melyik.nextSibling.nextElementSibling.style;
+
+  if (a.display === "block") {
+    melyik.nextSibling.nextElementSibling.style = "display: none;";
+  } else {
+    melyik.nextSibling.nextElementSibling.style = "display: block;";
+
+  }
+
+}
+
+//sikloernyozes menu content end
