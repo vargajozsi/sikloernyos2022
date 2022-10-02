@@ -816,6 +816,37 @@ article {
   border: var(--black-elements) solid 2rem;
 }
 /* The end of hirek specificed elements */
+
+
+
+/*-------the begin of Legterek specifed style elements*/
+
+.legterkep {
+  display: flex;
+  border: var(--linkelement-dark) 2px solid;
+  align-content: center;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: var(--attetszo-sotet);
+  color: var(--linkelement)
+}
+
+.legterkep:hover {
+  background-color: var(--linkelement-dark);
+  border: var(--linkelement);
+}
+.ogniframe {
+  width: 100%;
+  height: 768px;
+}
+
+
+/* The end of Legterek specificed elements */
+
+
+
 /*-------the begin of meterologi specifed style elements*/
 .meteo-wrapper {
   display: grid;
