@@ -835,7 +835,8 @@ article {
 
 .legterkep:hover {
   background-color: var(--linkelement-dark);
-  border: var(--linkelement);
+  border: var(--linkelement) solid 2px ;
+  color: var(--white-elements );
 }
 .ogniframe {
   width: 100%;
