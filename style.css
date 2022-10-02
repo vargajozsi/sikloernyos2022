@@ -704,7 +704,7 @@ th {
 article {
   /* max-width: max-content; */
   background-color: var(--attetszo-sotet);
-  margin: 2rem;
+  /* margin: 2rem; */
   overflow: hidden;
   border: 3px solid;
   border-image-slice: 1;
@@ -863,7 +863,6 @@ article {
   color: rgb(255, 255, 255);
   font-size: 3em;
   font-weight: 100;
-  padding: 2em;
   font-family: "Source Sans Pro", sans-serif;
   transition: background-color 1s;
   line-height: 1.6em;
