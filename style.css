@@ -31,6 +31,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--linkelement-dark);
 }
+
 html {
   width: 100vw;
   box-sizing: border-box;
@@ -66,9 +67,11 @@ p {
 .none {
   all: unset;
 }
+
 .noliststyle {
   list-style: none;
 }
+
 header nav h2 {
   text-align: left;
   margin: 0;
@@ -83,12 +86,14 @@ header {
   position: sticky;
   top: 0;
 }
+
 .sikloernyosklub-logo {
   color: var(--white-elements);
   font-size: calc(0.5rem + 1vw);
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .sikloernyosklub-logo img {
   padding-top: 0.5em;
   padding-bottom: 00.5em;
@@ -112,7 +117,8 @@ header {
   top: 100%;
   left: 0;
 }
-.menuhider > .menuhiderarrow {
+
+.menuhider>.menuhiderarrow {
   position: absolute;
   bottom: 50%;
   right: 50%;
@@ -123,10 +129,12 @@ header {
   color: var(--white-elements);
   transform: rotate(135deg);
 }
+
 .menu {
   display: flex;
   flex-direction: row;
 }
+
 .menu li {
   list-style: none;
 }
@@ -161,19 +169,20 @@ header {
   transform-origin: top center;
 }
 
-.submenu > li > a {
+.submenu>li>a {
   padding: 0.5em 1.5em;
 }
 
-.menu > li:hover > a,
-.submenu > li:hover > a {
+.menu>li:hover>a,
+.submenu>li:hover>a {
   background-color: hsla(0, 0%, 100%, 0.07);
   color: var(--linkelement);
 }
 
-menu > li:hover > a {
+menu>li:hover>a {
   background-color: hsla(0, 0%, 100%, 0.2);
 }
+
 /* Arrow for submenu */
 .arrow {
   font-size: 0.8em;
@@ -183,13 +192,14 @@ menu > li:hover > a {
   font-weight: 700;
   transition: font-size 100ms ease-in-out;
 }
+
 /* Arrow animating*/
-.menu > li:hover > a > .arrow {
+.menu>li:hover>a>.arrow {
   font-size: 0.4em;
 }
 
 /* unhide submenus */
-.menu > li:hover > a + .submenu {
+.menu>li:hover>a+.submenu {
   opacity: 1;
   transform: scaleY(1);
   transition: transform 0.5s;
@@ -205,6 +215,7 @@ menu > li:hover > a {
   background-size: cover;
   background-image: url("./media/background.jpg.jpg");
 }
+
 h1 {
   font-family: "Great Vibes", cursive;
   font-weight: 100;
@@ -217,6 +228,7 @@ h1 {
   letter-spacing: 0.2em;
   text-shadow: -2px -2px 19px rgb(255, 255, 255), black 3px 3px;
 }
+
 h2 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 100;
@@ -235,6 +247,7 @@ h1::first-letter {
 i[forditas] {
   position: relative;
 }
+
 i[forditas]::after {
   content: attr(forditas);
   display: block;
@@ -249,10 +262,12 @@ i[forditas]::after {
   font-size: 1.5em;
   transform: scale(0);
 }
+
 i[forditas]:hover::after {
   transform: scale(1);
   transition: 0.5s;
 }
+
 .bevezető {
   background-color: var(--attetszo-sotet);
   color: rgb(255, 255, 255);
@@ -261,9 +276,11 @@ i[forditas]:hover::after {
   font-family: "Source Sans Pro", sans-serif;
   text-align: left;
 }
+
 .bevezető::first-letter {
   font-size: 2em;
 }
+
 .cimszoveg {
   background-color: rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
@@ -272,6 +289,7 @@ i[forditas]:hover::after {
   padding: 2em;
   font-family: "Source Sans Pro", sans-serif;
 }
+
 .tartalom {
   background-color: rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
@@ -281,17 +299,22 @@ i[forditas]:hover::after {
   font-family: "Source Sans Pro", sans-serif;
   transition: background-color 1s;
   line-height: 1.6em;
+
 }
+
 .tartalom::first-letter {
   font-size: 2em;
 }
+
 .tartalom:hover {
   background-color: black;
 }
+
 span {
   font-size: 0.6em;
   font-family: "Source Sans Pro", sans-serif;
 }
+
 address {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.5);
@@ -325,21 +348,24 @@ footer {
   padding: 0 2em 2em 2em;
   font-family: "Source Sans Pro", sans-serif;
 }
+
 footer div {
   font-size: 1em;
 }
 
 /*the beginn of starthelyek specifed style elements*/
-div.google-starthely > a,
-div.tabla-starthely > a {
+div.google-starthely>a,
+div.tabla-starthely>a {
   font-size: 5rem;
 }
+
 #holfuyiframe {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-items: center;
   align-items: center;
 }
+
 .wrapper-starthely {
   margin: 0 auto;
   height: calc(100vh - 35rem);
@@ -401,6 +427,7 @@ div.tabla-starthely > a {
 .wrapper-starthely:only-child a:hover {
   color: var(--linkelement);
 }
+
 /*the end of starthelyek specifed style elements*/
 
 /* __________________________________________________________________________ */
@@ -437,6 +464,7 @@ div.tabla-starthely > a {
   background-size: contain;
   background-position: center;
 }
+
 #pic-header-aeroclub {
   background: url(./media/aeroclub-logo-web.jpg);
   background-size: contain;
@@ -526,6 +554,7 @@ div.tabla-starthely > a {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 #pic-header-2se {
   background: url(./media/2seLogo.png);
   background-size: contain;
@@ -553,6 +582,7 @@ div.tabla-starthely > a {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 #pic-header-mpc {
   background: url(./media/mpcLogo.png);
   background-size: contain;
@@ -573,6 +603,7 @@ address {
   padding: 2rem;
   cursor: default;
 }
+
 /*-------the end of clubcard specifed style elements*/
 
 /*the end of klubok specifed style elements*/
@@ -586,11 +617,9 @@ address {
   border: 3px solid;
   border-image-slice: 1;
   border-width: 2px;
-  border-image-source: linear-gradient(
-    to bottom,
-    var(--linkelement-dark),
-    rgba(252, 252, 252, 0.1)
-  );
+  border-image-source: linear-gradient(to bottom,
+      var(--linkelement-dark),
+      rgba(252, 252, 252, 0.1));
   border-radius: 0.5rem;
 }
 
@@ -640,10 +669,12 @@ address {
   text-align: center;
   height: auto;
 }
+
 th {
   padding: 1rem;
   text-transform: uppercase;
 }
+
 .starthely-table a {
   text-decoration: none;
   color: var(--black-elements);
@@ -657,40 +688,36 @@ th {
 }
 
 .nincs-adat td {
-  background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #dee2e1 50%,
-    #d6d6d1 51%,
-    #d6d6d1 100%
-  );
+  background: linear-gradient(to bottom,
+      #ffffff 0%,
+      #dee2e1 50%,
+      #d6d6d1 51%,
+      #d6d6d1 100%);
 }
 
 .free td {
-  background: linear-gradient(
-    to bottom,
-    #28ec63 0%,
-    #28ec63 50%,
-    #029221 51%,
-    #029221 100%
-  );
+  background: linear-gradient(to bottom,
+      #28ec63 0%,
+      #28ec63 50%,
+      #029221 51%,
+      #029221 100%);
 }
 
 .tiltott td {
-  background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #dee2e1 50%,
-    #d6d6d1 51%,
-    #d6d6d1 100%
-  );
+  background: linear-gradient(to bottom,
+      #ffffff 0%,
+      #dee2e1 50%,
+      #d6d6d1 51%,
+      #d6d6d1 100%);
 }
+
 .starthely-table tfoot {
   color: var(--white-elements);
   background: var(--attetszo-sotet);
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
   height: 5rem;
 }
+
 /*the end of starthelyek specifed style elements*/
 /* The begin of hirek specificed elements */
 .hirek-kontener {
@@ -709,11 +736,9 @@ article {
   border: 3px solid;
   border-image-slice: 1;
   border-width: 2px;
-  border-image-source: linear-gradient(
-    to bottom,
-    var(--linkelement-dark),
-    rgba(252, 252, 252, 0.1)
-  );
+  border-image-source: linear-gradient(to bottom,
+      var(--linkelement-dark),
+      rgba(252, 252, 252, 0.1));
   border-radius: 0.5rem;
 }
 
@@ -726,6 +751,7 @@ article {
   justify-content: space-between;
   box-shadow: var(--linkelement) 0rem 1rem;
 }
+
 .hir-cime h2 {
   max-width: 70%;
   background-color: var(--white-elements);
@@ -753,6 +779,7 @@ article {
   border-radius: 0 0 0.5rem 0.5rem;
   color: var(--white-elements);
 }
+
 .szovegeles {
   display: flex;
   flex-direction: column;
@@ -761,6 +788,7 @@ article {
   margin: 1rem;
   text-align: left;
 }
+
 .szovegeles ol {
   margin-left: 5rem;
   list-style-type: decimal;
@@ -793,11 +821,13 @@ article {
   margin: 2rem;
   max-width: 40%;
 }
+
 .norbi-galeria img {
   display: block;
   width: 100%;
   height: auto;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
 
@@ -808,20 +838,25 @@ article {
   height: 90vh;
   right: 0;
   transition: filter, -webkit-filter 1s ease-in;
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
   z-index: 100;
 }
+
 .norbi-galeria img:hover {
   transition: filter, -webkit-filter 3s ease-in;
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
 }
+
 .norbi-galeria img:nth-child(2) {
   grid-column: span 3;
   grid-row: span 3;
   border: var(--black-elements) solid 2rem;
 }
+
 /* The end of hirek specificed elements */
 
 
@@ -842,9 +877,10 @@ article {
 
 .legterkep:hover {
   background-color: var(--linkelement-dark);
-  border: var(--linkelement) solid 2px ;
-  color: var(--white-elements );
+  border: var(--linkelement) solid 2px;
+  color: var(--white-elements);
 }
+
 .ogniframe {
   width: 100%;
   height: 768px;
@@ -879,6 +915,54 @@ article {
 
 
 /* The end of Reporvosi specificed elements */
+
+/*-------the begin of Sikloernyo gyarto cegek specifed style elements*/
+
+.sikloernyosGyartok {
+  margin: auto;
+  margin-top: 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3em;
+  background-color: var(--attetszo-sotet);
+  border: var(--linkelement-dark) 2px solid;
+}
+
+
+.markak {
+  min-height: 200px;
+  height: fit-content;
+  background-color: var(--white-elements);
+  font-size: 2em;
+  display: block;
+  margin: 2em;
+  width: 200px;
+  border: var(--linkelement-dark) 2px solid;
+
+}
+
+.gyartoSzoveg {
+  padding: 1rem;
+background-color: var(--attetszo-sotet);
+color: var(--white-elements);
+}
+
+.gyartoLi {
+  background-color: var(--attetszo-sotet);
+  margin: 0.2rem;
+  padding: 1rem;
+}
+.gyartoLi ul li{
+  list-style: none;
+
+}
+
+
+/*-------the end of Sikloernyo gyarto cegek specifed style elements*/
 
 /*-------the begin of meterologi specifed style elements*/
 .meteo-wrapper {
@@ -930,6 +1014,7 @@ article p span {
   padding: 0.8rem;
   /*transform: rotate(-135deg);*/
 }
+
 .link-egyed ul {
   padding: 2rem;
   list-style: none;
@@ -938,6 +1023,7 @@ article p span {
 .link-egyed li {
   padding: 1rem 0rem;
 }
+
 .link-egyed a {
   line-height: 2rem;
   font-size: calc(1rem + 1vw);
@@ -964,12 +1050,15 @@ article p span {
   .starthely-table thead {
     top: 0;
   }
+
   header {
     position: relative;
   }
+
   .submenu {
     left: -100%;
   }
+
   .menu {
     visibility: hidden;
     flex-flow: column;
@@ -980,6 +1069,7 @@ article p span {
     height: auto;
     width: 100%;
   }
+
   .submenu {
     border: var(--linkelement) solid 1px;
     left: 0;
@@ -988,7 +1078,8 @@ article p span {
     width: 50%;
     margin-left: 15rem;
   }
-  header > nav > div:nth-child(2) > ul > div {
+
+  header>nav>div:nth-child(2)>ul>div {
     visibility: visible;
   }
 
@@ -998,19 +1089,21 @@ article p span {
     visibility: visible;
   }
 
-  .menu > li > a,
+  .menu>li>a,
   .arrow {
     font-size: 1.5rem;
   }
 
-  .submenu > li > a {
+  .submenu>li>a {
     font-size: 1.5rem;
   }
+
   .menuhider {
     display: block;
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .menu {
     visibility: visible;
@@ -1024,6 +1117,7 @@ article p span {
     transition: 200ms transform cubic-bezier(0.36, 0.4, 0.42, 1.48) 100ms,
       100ms opacity ease-in-out;
   }
+
   .submenu {
     top: 0;
     padding-left: 1.5em;
@@ -1038,19 +1132,23 @@ article p span {
     width: initial;
     margin-left: 1rem;
   }
-  .submenu > li {
+
+  .submenu>li {
     padding-top: 0.8em;
   }
-  .menu > li > a {
-    font-size: 2rem;
-  }
-  .submenu > li > a {
+
+  .menu>li>a {
     font-size: 2rem;
   }
 
-  .menu > li:hover > a + .submenu {
+  .submenu>li>a {
+    font-size: 2rem;
+  }
+
+  .menu>li:hover>a+.submenu {
     position: relative;
   }
+
   .hamburger {
     width: 2em;
     height: 0.25em;
@@ -1060,6 +1158,7 @@ article p span {
     cursor: pointer;
     transition: 0.2s transform ease-in-out;
   }
+
   .hamburger::after,
   .hamburger::before {
     content: "";
@@ -1070,28 +1169,35 @@ article p span {
     background: inherit;
     transition: 0.2s transform ease-in-out;
   }
+
   .hamburger::before {
     bottom: 0.65em;
   }
+
   .hamburger::after {
     top: 0.65em;
   }
+
   .close::before,
   .close::after {
     top: 0;
     transition: 0.2s transform ease-in-out;
   }
+
   .close {
     transform: rotate(45deg);
   }
+
   .close::before {
     display: none;
   }
+
   .close::after {
     transform: rotate(-90deg);
   }
+
   /*unhide hamburgermenu*/
-  input[type="checkbox"]:checked + .menu {
+  input[type="checkbox"]:checked+.menu {
     z-index: 500;
     visibility: visible;
     position: absolute;
@@ -1122,18 +1228,21 @@ article p span {
   .box {
     z-index: 100;
   }
-  body > main > div > div:nth-child(1) > div.content > div {
+
+  body>main>div>div:nth-child(1)>div.content>div {
     left: 22vw;
   }
-  body > main > div > div:nth-child(2) > div.content > div {
+
+  body>main>div>div:nth-child(2)>div.content>div {
     left: -11vw;
   }
 
-  body > main > div > div:nth-child(3) > div.content > div {
+  body>main>div>div:nth-child(3)>div.content>div {
     left: -46vw;
     width: -moz-fit-content;
     width: fit-content;
   }
+
   .container {
     height: 85vh;
   }
@@ -1159,6 +1268,7 @@ article p span {
     position: relative;
     top: 0;
   }
+
   /*-------the end of clubcard specifed style elements*/
 
   /*the end of klubok specifed style elements*/
@@ -1172,10 +1282,12 @@ article p span {
     align-items: center;
     justify-items: center;
   }
+
   .hir-tartalom p {
     max-width: 100%;
     justify-self: center;
   }
+
   .norbi-galeria {
     max-width: 100%;
     grid-template-columns: 1fr;
@@ -1184,6 +1296,7 @@ article p span {
   .norbi-galeria img {
     grid-column: 1/2;
   }
+
   .norbi-galeria img:active {
     position: initial;
     width: 100%;
