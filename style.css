@@ -229,7 +229,7 @@ h1 {
   text-shadow: -2px -2px 19px rgb(255, 255, 255), black 3px 3px;
 }
 
-h2 {
+h2, .abc {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 100;
   font-size: 1.8rem;
@@ -269,10 +269,10 @@ i[forditas]:hover::after {
 }
 
 .bevezető {
-  background-color: var(--attetszo-sotet);
+  padding: 3rem;
+  background-color: var(--black-elements);
   color: rgb(255, 255, 255);
-  font-size: 3em;
-  padding: 2em;
+  font-size: calc(1rem + 1vw);
   font-family: "Source Sans Pro", sans-serif;
   text-align: left;
 }
@@ -291,11 +291,11 @@ i[forditas]:hover::after {
 }
 
 .tartalom {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.822);
   color: rgb(255, 255, 255);
-  font-size: 3em;
+  font-size: calc(1.5rem + 1vw);
   font-weight: 100;
-  padding: 2em;
+  padding: 3em;
   font-family: "Source Sans Pro", sans-serif;
   transition: background-color 1s;
   line-height: 1.6em;
@@ -455,14 +455,17 @@ div.tabla-starthely>a {
 }
 
 .pic-header {
-  min-width: 100%;
+  margin: 20px;
+  min-width: 80%;
   min-height: 15rem;
+  border: var(--linkelement-dark) 1px solid;
 }
 
 #pic-header-airborne {
   background: url(./media/airborneBg.jpg);
-  background-size: contain;
-  background-position: center;
+  background-position:center;
+  background-size: cover ;
+
 }
 
 #pic-header-aeroclub {
@@ -609,21 +612,37 @@ address {
 /*the end of klubok specifed style elements*/
 
 /*the begin of sikloernyozes specifed style elements*/
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .articlesiklo {
-  width: auto;
+  margin: 3rem;
+  font-size: calc(1rem + 1vw);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 30%;
   background-color: var(--attetszo-sotet);
-  margin: 2rem;
   overflow: hidden;
   border: 3px solid;
   border-image-slice: 1;
-  border-width: 2px;
+  border-width: 1px;
   border-image-source: linear-gradient(to bottom,
       var(--linkelement-dark),
       rgba(252, 252, 252, 0.1));
   border-radius: 0.5rem;
 }
 
+.articlesiklo img, .articlesiklo video {
+width: 100%;
+height: auto;    
+}
+
+
 .articlesiklo h2 {
+  min-width: 100%;
   position: relative;
   font-family: "Source Sans Pro", sans-serif;
   padding: 1rem 3rem;
@@ -1313,4 +1332,20 @@ article p span {
   }
 
   /*-------the end of meterologi specifed style elements for under600**/
+
+ /*-------the begin of sikloernyozesről specifed style elements for under600**/
+ 
+ .flex{
+  display: block;
+ }
+ .articlesiklo {
+  width: auto;
+}
+.articlesiklo p{
+font-size: calc(1.5rem + 1vw); 
+}
+
+/*-------the end of siklóernyőzésről specifed style elements for under600**/
+
+
 }
