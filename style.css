@@ -618,12 +618,12 @@ address {
   justify-content: center;
 }
 .articlesiklo {
-  margin: 3rem;
+  margin: 2rem;
   font-size: calc(1rem + 1vw);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 30%;
+  width: 28%;
   background-color: var(--attetszo-sotet);
   overflow: hidden;
   border: 3px solid;
@@ -962,6 +962,10 @@ article {
   width: 200px;
   border: var(--linkelement-dark) 2px solid;
 
+}
+
+.markak>img {
+ width: 100%;
 }
 
 .gyartoSzoveg {
