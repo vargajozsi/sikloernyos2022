@@ -966,6 +966,7 @@ article {
 
 .markak>img {
  width: 100%;
+ height: auto;
 }
 
 .gyartoSzoveg {
@@ -1351,5 +1352,26 @@ font-size: calc(1.5rem + 1vw);
 
 /*-------the end of siklóernyőzésről specifed style elements for under600**/
 
+
+ /*-------the begin of sikloernyo gyartók specifed style elements for under600**/
+ .sikloernyosGyartok {
+  max-width: 100%;
+  padding: 0%;
+ }
+
+ .markak {
+  font-size: calc(1.5rem + 1vw); 
+  margin: 0;
+  width: 100vw;
+    margin: 1rem 0 1rem 0;
+}
+
+
+
+ /*-------the end of sikloernyo gyartók specifed style elements for under600**/
+
+
+
+/*_____________________ende az után már csak záró kapcsoszárójel_________*/
 
 }
