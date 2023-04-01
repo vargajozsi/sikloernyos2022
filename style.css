@@ -618,12 +618,12 @@ address {
   justify-content: center;
 }
 .articlesiklo {
-  margin: 3rem;
+  margin: 2rem;
   font-size: calc(1rem + 1vw);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 30%;
+  width: 28%;
   background-color: var(--attetszo-sotet);
   overflow: hidden;
   border: 3px solid;
@@ -741,16 +741,12 @@ th {
 /* The begin of hirek specificed elements */
 .hirek-kontener {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
 }
 
 article {
-  /* max-width: max-content; */
+  margin: 3rem auto 3rem ;
+  max-width: 80%;
   background-color: var(--attetszo-sotet);
-  /* margin: 2rem; */
   overflow: hidden;
   border: 3px solid;
   border-image-slice: 1;
@@ -962,6 +958,11 @@ article {
   width: 200px;
   border: var(--linkelement-dark) 2px solid;
 
+}
+
+.markak>img {
+ width: 100%;
+ height: auto;
 }
 
 .gyartoSzoveg {
@@ -1347,5 +1348,26 @@ font-size: calc(1.5rem + 1vw);
 
 /*-------the end of siklóernyőzésről specifed style elements for under600**/
 
+
+ /*-------the begin of sikloernyo gyartók specifed style elements for under600**/
+ .sikloernyosGyartok {
+  max-width: 100%;
+  padding: 0%;
+ }
+
+ .markak {
+  font-size: calc(1.5rem + 1vw); 
+  margin: 0;
+  width: 90%;
+    margin: 2rem 0 2rem 0;
+}
+
+
+
+ /*-------the end of sikloernyo gyartók specifed style elements for under600**/
+
+
+
+/*_____________________ende az után már csak záró kapcsoszárójel_________*/
 
 }
