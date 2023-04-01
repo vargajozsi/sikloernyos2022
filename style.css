@@ -743,6 +743,23 @@ th {
   width: 100%;
 }
 
+table {
+  margin-left: 2rem;
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
+  font-size: calc(0.5rem + 1vw);
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
 article {
   margin: 3rem auto 3rem ;
   max-width: 80%;
