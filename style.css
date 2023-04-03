@@ -1001,6 +1001,26 @@ color: var(--white-elements);
 
 /*-------the end of Sikloernyo gyarto cegek specifed style elements*/
 
+
+/*-------the begin of szövetségek specifed style elements*/
+.szovetsegek {
+  min-height: 20px;
+  height: fit-content;
+  background-color: var(--black-elements);
+  font-size: 1em;
+  display: block;
+  margin: 2em;
+  width: 220px;
+  border: var(--linkelement-dark) 2px solid;
+
+}
+
+
+/*-------the end of szövetségek specifed style elements*/
+
+
+
+
 /*-------the begin of meterologi specifed style elements*/
 .meteo-wrapper {
   display: grid;
