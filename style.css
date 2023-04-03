@@ -895,11 +895,14 @@ article {
 
 /*-------the begin of Legterek specifed style elements*/
 
+.legtereksection{
+text-align: center;
+}
+
 .legterkep {
-  display: flex;
+  display: block;
+  text-align: center;
   border: var(--linkelement-dark) 2px solid;
-  align-content: center;
-  justify-content: center;
   padding: 2rem;
   font-size: 2rem;
   font-weight: bold;
@@ -913,8 +916,9 @@ article {
   color: var(--white-elements);
 }
 
+
 .ogniframe {
-  width: 100%;
+  width: 95%;
   height: 768px;
 }
 
@@ -1015,6 +1019,11 @@ color: var(--white-elements);
 
 }
 
+
+.szovetsegek img, .szovetsegek video {
+  width: 100%;
+  height: auto;    
+  }
 
 /*-------the end of szövetségek specifed style elements*/
 
