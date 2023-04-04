@@ -897,12 +897,12 @@ article {
   display: none;
   position: fixed;
   bottom: 90px;
-  right: 15px;
-  z-index: 1000;
+  right: 5px;
+  z-index: 99;
   font-size: 24px;
   border: none;
   outline: none;
-  background-color: var(--linkelement);
+  background-color: #003C71;
   color: white;
   cursor: pointer;
   padding: 6px;
@@ -1429,6 +1429,13 @@ font-size: calc(1.5rem + 1vw);
 
 
  /*-------the end of sikloernyo gyartók specifed style elements for under600**/
+
+
+/*-------the begin of the top to bottom specifed style elements*/
+
+
+
+/*-------the end of the top to bottom specifed style elements*/
 
 
 
