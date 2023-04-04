@@ -891,7 +891,25 @@ article {
 
 /* The end of hirek specificed elements */
 
+/*-------the begin of the top to bottom specifed style elements*/
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  z-index: 1000;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  background-color: var(--linkelement);
+  color: white;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+/*-------the end of the top to bottom specifed style elements*/
 
 /*-------the begin of Legterek specifed style elements*/
 

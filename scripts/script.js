@@ -25,3 +25,4 @@ function sikloArticleToggle(melyik) {
 }
 
 //sikloernyozes menu content end
+
