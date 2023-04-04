@@ -1,8 +1,8 @@
 
-//Get the button
+//button kikeresése
 let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// Ha a felhasználo legörget 25px a dokumentum tetejétől, akkor, mutassa a  buttont
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
@@ -13,14 +13,14 @@ function scrollFunction() {
   }
 }
 
-//scroll to the top script 
+//scrollozz felfele script 
 // Ha az user scrolloz lefele jelenjen meg a scrolltop elem
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
-// mobile view menu icon
+// Mobil menü nézet
 function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -29,13 +29,13 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunctionMyTopNav() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+/* váltás hozzáadás elvétel responziv nézetek között, ha az user rákattint a top buttonra */
+// function myFunctionMyTopNav() {
+//   var x = document.getElementById("myTopnav");
+//   if (x.className === "topnav") {
+//     x.className += " responsive";
+//   } else {
+//     x.className = "topnav";
+//   }
+// }
 

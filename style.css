@@ -896,18 +896,19 @@ article {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 90px;
-  right: 5px;
+  bottom: 35px;
+  right: 35px;
   z-index: 99;
   font-size: 24px;
   border: none;
   outline: none;
-  background-color: #003C71;
+  background-color: var(--linkelement);
   color: white;
   cursor: pointer;
   padding: 6px;
   border-radius: 3px;
 }
+
 
 /*-------the end of the top to bottom specifed style elements*/
 
@@ -1117,6 +1118,23 @@ article p span {
   font-size: calc(1.2rem + 1vw);
   color: var(--linkelement-dark);
   text-decoration: underline;
+}
+
+iframe {
+  overflow-clip-margin: 0 !important;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+  overflow: clip !important;
+}
+.ogniframeanglia {
+  scrollbar-width: 0px;
+  display: block;
+  margin: 0 auto;
+  width: 101vw;
+  height: 850px;
+  border: none;
 }
 
 /*-------the end of meterologi specifed style elements*/
