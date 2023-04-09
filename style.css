@@ -56,6 +56,7 @@ a {
   color: var(--linkelement);
 }
 
+
 p {
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -992,7 +993,7 @@ text-align: center;
   min-height: 200px;
   height: fit-content;
   background-color: var(--white-elements);
-  font-size: 1em;
+  font-size: calc(1rem + 1vw);
   display: block;
   margin: 2em;
   width: 200px;
@@ -1071,7 +1072,7 @@ color: var(--white-elements);
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: auto;
   gap: 1rem;
-  align-items: baseline;
+  
   justify-items: center;
   align-content: center;
   justify-content: space-around;
@@ -1083,6 +1084,7 @@ color: var(--white-elements);
 article {
   width: 100%;
   background: var(--attetszo-sotet);
+  height: fit-content;
 }
 
 .meteo-egyed p {
@@ -1114,10 +1116,23 @@ article p span {
   font-size: calc(1rem + 1vw);
 }
 
+
+
 .link-egyed a:hover {
   font-size: calc(1.2rem + 1vw);
   color: var(--linkelement-dark);
-  text-decoration: underline;
+}
+
+.link-egyed a img {
+  max-width: 100%;
+  margin-bottom: 2rem;
+  
+}
+
+#windy {
+  display: block;
+  width: 60px;
+  height: auto;
 }
 
 iframe {
