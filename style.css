@@ -620,7 +620,7 @@ address {
   justify-content: center;
 }
 .articlesiklo {
-  margin: 2rem;
+  /* margin: 2rem; */
   font-size: calc(1rem + 1vw);
   display: flex;
   justify-content: center;
@@ -668,6 +668,105 @@ height: auto;
   background-color: var(--black-elements);
   color: var(--white-elements);
   line-height: 1.6;
+}
+
+
+.rekordokbox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+}
+
+.range {
+  display: flex;
+  width: 100%;
+  justify-content:flex-start;
+}
+
+
+@keyframes rekordRange {
+  from {width: 0; }
+  to {width: 30,35%;}
+}
+
+#A1990 {
+  color: var(--white-elements);
+  margin: calc(0.2rem + 0.5vw) 1rem;
+  min-height: 1rem;
+  width: 0.74%;
+  background-color: #029221;
+  animation-name: rekordRange;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+#A1993 {
+  color: var(--white-elements);
+  margin: calc(0.2rem + 0.5vw) 1rem;
+  min-height: 1rem;
+  width: 2.632%;
+  background-color: #029221;
+  animation-name: rekordRange;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+#A1999 {
+  color: var(--white-elements);
+  margin: calc(0.2rem + 0.5vw) 1rem;
+  min-height: 1rem;
+  width: 28.96%;
+  background-color: #029221;
+  animation-name: rekordRange;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+#A2001 {
+  color: var(--white-elements);
+  margin: calc(0.2rem + 0.5vw) 1rem;
+  min-height: 1rem;
+  width: 30.35%;
+  background-color: #029221;
+  animation-name: rekordRange;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+#A2005 {
+  color: var(--white-elements);
+  margin: calc(0.2rem + 0.5vw) 1rem;
+  min-height: 1rem;
+  width: 42.34%;
+  background-color: #029221;
+  animation-name: rekordRange;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+
+#A2012 {
+  color: var(--white-elements);
+  margin: calc(0.2rem + 0.5vw) 1rem;
+  min-height: 1rem;
+  width: 50.2%;
+  background-color: #029221;
+  animation-name: rekordRange;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+#A2022 {
+  color: var(--white-elements);
+  margin: calc(0.2rem + 0.5vw) 1rem;
+  min-height: 1rem;
+  width: 60.99%;
+  background-color: #029221;
+  animation-name: rekordRange;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 
 /*the end of sikloernyozes specifed style elements*/
