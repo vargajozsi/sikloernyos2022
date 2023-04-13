@@ -54,6 +54,7 @@ body {
 a {
   text-decoration: none;
   color: var(--linkelement);
+  font-size: calc(1rem + 0.5vw);
 }
 
 p {
@@ -1000,7 +1001,7 @@ text-align: center;
 
 }
 
-.markak>img {
+.markak img {
  width: 100%;
  height: auto;
 }
@@ -1414,6 +1415,10 @@ iframe {
     min-width: 100vw;
   }
 
+  .ogniframeanglia {
+    display: none;
+  }
+  
   /*-------the end of meterologi specifed style elements for under600**/
 
  /*-------the begin of sikloernyozesről specifed style elements for under600**/
