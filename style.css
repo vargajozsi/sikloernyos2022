@@ -391,7 +391,7 @@ div.tabla-starthely>a {
   top: 10rem;
   left: 0;
   content: "";
-  background: url(./media/bg2.jpg.jpg);
+  background: url(./media/bg2.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -1070,6 +1070,16 @@ text-align: center;
 }
 
 
+.LAPL_minta:hover  {
+position: absolute;
+width: 70%;
+height: auto;
+margin-left: 0;
+
+}
+
+
+
 /* The end of Reporvosi specificed elements */
 
 /*-------the begin of Sikloernyo gyarto cegek specifed style elements*/
@@ -1567,6 +1577,19 @@ font-size: calc(1.5rem + 1vw);
 
  /*-------the end of sikloernyo gyartók specifed style elements for under600**/
 
+ /*-------the begin of reporvosi gyartók specifed style elements for under600**/
+
+
+
+ .LAPL_minta:hover  {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  
+  }
+
+ /*-------the end of reporvosi gyartók specifed style elements for under600**/
 
 /*-------the begin of the top to bottom specifed style elements*/
 
