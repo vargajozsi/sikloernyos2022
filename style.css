@@ -614,6 +614,25 @@ address {
 /*the end of klubok specifed style elements*/
 
 /*the begin of sikloernyozes specifed style elements*/
+.searchbar {
+  padding: calc(1rem + 1vw);
+  text-align: center;
+  font-size: calc(1rem + 1vw);
+  color: var(--white-elements);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  background-color: var(--black-elements);
+  width: 100%;
+}
+
+
+.formdiv {
+border: var(--linkelement-dark) 1px solid;
+}
+
 .flex{
   display: flex;
   flex-wrap: wrap;
@@ -767,6 +786,21 @@ height: auto;
   animation-name: rekordRange;
   animation-duration: 4s;
   animation-fill-mode: forwards;
+}
+
+
+
+.rejtes {
+  display: none;
+}
+
+
+.formdiv label {
+  padding: calc(1rem + 1vw);
+}
+.formdiv input {
+  margin: calc(1rem + 1vw);
+  font-size: calc(1rem + 1vw);
 }
 
 /*the end of sikloernyozes specifed style elements*/
