@@ -810,6 +810,16 @@ height: auto;
 .formClass:hover {
   background-color: var(--black-elements);
 }
+
+input::after {
+  content: "";
+  position: absolute;
+ 
+  width: 20px;
+  height: 20px;
+  background-color: #029221;
+  z-index: 99;
+}
 /*the end of sikloernyozes specifed style elements*/
 
 /*the begin of starthelyek specifed style elements*/
