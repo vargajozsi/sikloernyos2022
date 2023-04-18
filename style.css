@@ -800,11 +800,11 @@ height: auto;
 }
 
 .formdiv label span {
-font-size: larger;
+  font-size: calc(1.2rem + 1vw);
 }
 .formdiv input {
   margin: calc(0.5rem + 1vw);
-  font-size: calc(0.6rem + 1vw);
+  font-size: calc(0.8rem + 1vw);
 }
 
 .formClass:hover {
@@ -1598,6 +1598,9 @@ iframe {
 font-size: calc(1.5rem + 1vw); 
 }
 
+.formdiv input {
+  font-size: calc(1.2rem + 1vw);
+}
 /*-------the end of siklóernyőzésről specifed style elements for under600**/
 
 
