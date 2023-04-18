@@ -796,6 +796,7 @@ height: auto;
 
 .formdiv label {
   font-size: calc(0.7rem + 1vw);
+  margin: 0 calc(3rem + 1vw);
 }
 
 .formdiv label span {
