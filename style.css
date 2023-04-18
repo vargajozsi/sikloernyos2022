@@ -624,7 +624,7 @@ address {
   justify-items: center;
   align-content: center;
   align-items: center;
-  background-color: var(--black-elements);
+  background-color: var(--attetszo-sotet);
   width: 100%;
 }
 
@@ -794,15 +794,21 @@ height: auto;
   display: none;
 }
 
-
 .formdiv label {
-  padding: calc(1rem + 1vw);
+  font-size: calc(0.7rem + 1vw);
+}
+
+.formdiv label span {
+font-size: larger;
 }
 .formdiv input {
-  margin: calc(1rem + 1vw);
-  font-size: calc(1rem + 1vw);
+  margin: calc(0.5rem + 1vw);
+  font-size: calc(0.6rem + 1vw);
 }
 
+.formClass:hover {
+  background-color: var(--black-elements);
+}
 /*the end of sikloernyozes specifed style elements*/
 
 /*the begin of starthelyek specifed style elements*/
