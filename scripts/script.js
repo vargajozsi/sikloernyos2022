@@ -14,6 +14,9 @@ hamburger.addEventListener("click", function () {
 function sikloArticleToggle(melyik) {
 
   let a = melyik.nextSibling.nextElementSibling.style;
+  console.log(melyik.nextSibling.nextElementSibling);
+  console.log(melyik.nextElementSibling);
+
 
   if (a.display === "block") {
     melyik.nextSibling.nextElementSibling.style = "display: none;";

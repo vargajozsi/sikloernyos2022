@@ -666,19 +666,23 @@ height: auto;
   min-width: 100%;
   position: relative;
   font-family: "Source Sans Pro", sans-serif;
-  padding: 1rem 3rem;
+  padding: 5rem 3rem;
   font-size: clamp(2rem, 2.5vw, 3rem);
 }
 
 .articlesiklo h2::before {
-  content: ">";
+  font-family: monospace;
+  font-size: calc(1rem + 1vw);
+  content: "\2193 mutasd";
   color: var(--linkelement);
   position: absolute;
-  top: 0;
+  bottom: 1rem;
   left: 2rem;
-  transform: rotate(90deg);
   cursor: pointer;
+  border: var(--linkelement) 2px solid;
+  padding: 0.2rem;
 }
+
 
 .articlesiklo p {
   display: none;
@@ -688,6 +692,7 @@ height: auto;
   color: var(--white-elements);
   line-height: 1.6;
 }
+
 
 
 .rekordokbox {
@@ -811,15 +816,7 @@ height: auto;
   background-color: var(--black-elements);
 }
 
-input::after {
-  content: "";
-  position: absolute;
- 
-  width: 20px;
-  height: 20px;
-  background-color: #029221;
-  z-index: 99;
-}
+
 /*the end of sikloernyozes specifed style elements*/
 
 /*the begin of starthelyek specifed style elements*/
