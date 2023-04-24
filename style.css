@@ -1067,6 +1067,11 @@ article {
 text-align: center;
 }
 
+.legterArticle {
+width: 95%;
+overflow: hidden;
+}
+
 .legterkep {
   display: block;
   text-align: center;
@@ -1592,6 +1597,15 @@ iframe {
   }
   
   /*-------the end of meterologi specifed style elements for under600**/
+
+
+  /*-------the begin of legterek specifed style elements for under600**/
+
+  .legterArticle {
+    width:100%;
+    }
+
+  /*-------the end of legterek specifed style elements for under600**/
 
  /*-------the begin of sikloernyozesről specifed style elements for under600**/
  
