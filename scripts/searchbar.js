@@ -1,5 +1,7 @@
 
 const searchbar = document.querySelector(".inputClass");
+const mutasd = document.querySelector(".articlesiklo");
+console.log(mutasd);
 
 searchbar.addEventListener("input", search);
 
