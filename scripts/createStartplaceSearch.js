@@ -25,6 +25,7 @@ const startHelyCsolnokMasik = {
 
 }
 
+
 const starthelyTombFull = [startHelyCsolnok, startHelyCsolnokMasik];
 
 function addSearchResoult(starthelyParam){
@@ -40,3 +41,8 @@ for (let i = 0; i < starthelyTombFull.length; i++) {
 
 };
 
+document.getElementById("osszes").addEventListener("click", melyikFuggveny, false);
+function melyikFuggveny() {
+let melyikStatus = "osszes";
+    console.log(melyikStatus);
+}
