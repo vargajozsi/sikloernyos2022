@@ -232,10 +232,11 @@ h1 {
 }
 
 h2, .abc {
+  
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   font-size: calc(1.5rem + 1vw);
-  color: var(--white-elements);
+  color: var(--linkelement);
   font-stretch: expanded;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -378,14 +379,13 @@ div.tabla-starthely>a {
 }
 
 .google-starthely,
-.tabla-starthely {
-  background-color: var(--attetszo-sotet);
-  justify-self: stretch;
+.tabla-starthely, #starthelyKereses {
+  background-color: var(--white-elements);
   text-align: center;
   padding: 5rem 0;
   margin: 0 1rem;
 }
-
+/* 
 .google-starthely:hover::after {
   position: absolute;
   top: 10rem;
@@ -410,7 +410,7 @@ div.tabla-starthely>a {
   z-index: -1;
   width: 100vw;
   height: calc(100vh - 13rem);
-}
+} */
 
 .google-starthely:hover,
 .tabla-starthely:hover {
@@ -821,19 +821,17 @@ height: auto;
 
 /*the begin of starthelyek specifed style elements*/
 .table-wrapper {
-  width: 100%;
-  overflow-x: auto;
+  width: 100vh;
   scroll-behavior: smooth;
 }
 
 .starthely-table {
-  width: 100%;
+  width: 100vh;
   margin: 0 auto;
   font-size: 2rem;
   color: var(--black-elements);
   background-color: var(--attetszo-sotet);
   border-collapse: collapse;
-  width: 90%;
   text-align: center;
   height: auto;
 }
@@ -868,11 +866,7 @@ th {
 }
 
 .tiltott td {
-  background: linear-gradient(to bottom,
-      #ffffff 0%,
-      #dee2e1 50%,
-      #d6d6d1 51%,
-      #d6d6d1 100%);
+  background-color:  #e4372b;
 }
 
 .starthely-table tfoot {
