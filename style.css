@@ -864,11 +864,7 @@ th {
 }
 
 .free td {
-  background: linear-gradient(to bottom,
-      #28ec63 0%,
-      #28ec63 50%,
-      #029221 51%,
-      #029221 100%);
+    background-color:  #2be453;
 }
 
 .tiltott td {
