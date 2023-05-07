@@ -74,7 +74,6 @@ const starthelyTombFull = [
 
 // starthely táblázat létrehozása starthelyelemek kiíratása
 function addSearchResoult(starthelyParam, statusParam) {
-    console.log(starthelyParam.indicator);
     if (statusParam === starthelyParam.indicator || statusParam === 'osszes') {
         pozEredmeny.innerHTML += `<tr class="${starthelyParam.indicator}"><td>${starthelyParam.nev}</td><td>${starthelyParam.szintKulombseg}</td><td>${starthelyParam.startIrany}</td><td>${starthelyParam.gpsKoordinatak}</td><td>${starthelyParam.legter}</td><td>${starthelyParam.megJegyzes}</td><td>${starthelyParam.video}</td><td>${starthelyParam.starthelyKep}</td>`;
     } 
@@ -94,6 +93,7 @@ function loadTableContent(ev) {
         const element = starthelyTombFull[i];
         addSearchResoult(element, kilettValasztvaStatus);
     }
+    window.scrollTo(0,document.body.scrollHeight);
 }
 
 //először kiiratja a teljes táblát argumentum nélkül

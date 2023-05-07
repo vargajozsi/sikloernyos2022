@@ -373,9 +373,9 @@ div.tabla-starthely>a {
   margin: 0 auto;
   height: calc(100vh - 35rem);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  place-items: center;
+  grid-template-columns: 2;
   justify-content: center;
+  align-items: center;
 }
 
 .google-starthely,
