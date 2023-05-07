@@ -9,7 +9,6 @@ function search() {
   const names = document.querySelectorAll(".sikloernyozesTitle");
   const posts = document.querySelectorAll(".sikloernyozesContent");
   const val = searchbar.value.toLowerCase();
-  console.log(names[0].firstChild);
   
   for (let i = 0; i < names.length; i++){
     if(!names[i].textContent.toLowerCase().includes(val) && !posts[i].textContent.toLowerCase().includes(val)) {
