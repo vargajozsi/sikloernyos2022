@@ -403,12 +403,12 @@ div.tabla-starthely>a {
   color: var(--linkelement);
 }
 
-.startHelyValasztoForm {
+.startHelyValasztoForm, .startHelyStatusForm {
   background-color: var(--white-elements);
   max-width: fit-content;
   margin: auto;
 }
-.startHelyValasztoForm fieldset {
+.startHelyValasztoForm fieldset, .startHelyStatusForm fieldset {
   max-width: fit-content;
 
   padding: 1.4rem;
@@ -838,7 +838,7 @@ th {
   height: 5rem;
 }
 
-.nincs-adat td {
+.tisztazatlan td {
   background: linear-gradient(to bottom,
       #ffffff 0%,
       #dee2e1 50%,
@@ -846,7 +846,7 @@ th {
       #d6d6d1 100%);
 }
 
-.free td {
+.engedelyezett td {
     background-color:  #2be453;
 }
 
