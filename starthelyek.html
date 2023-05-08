@@ -21,17 +21,6 @@
   <link rel="stylesheet" href="style.css" />
   <title>Siklóernyős starthelyek adatai, megközelítésük</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-BFB11JF5N7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-BFB11JF5N7");
-  </script>  -->
 </head>
 
 <body>
@@ -153,78 +142,68 @@
     </div>
     <!--Linkek kezdete-->
     <div class="wrapper-starthely">
-      <div class="google-starthely"><a href="#starthelyekGoogleMaps">Google térkép starthelyek</a></div>
-
       <div class="tabla-starthely"><a href="#starthelyKereso">Starthely keresés szélirány szerint</a></div>
+      <div class="google-starthely"><a href="#starthelyekGoogleMaps">Google térkép starthelyek</a></div>
 
     </div>
     <!--Linkek Vége-->
-
-
-    <!--Google starthelyek kezdete-->
-    <h2 class="bevezető tartalom" id="starthelyekGoogleMaps">Magyar Starthelyek Google Maps</h2>
-
-    <iframe src="https://www.google.com/maps/d/embed?mid=1AP2TbiVYt4Sxde1oQPODilAXGaA"
-      style="position:relative; top:0; left:0; bottom:0; right:0; width: 100%; height: 100vh; border:none; margin:0; padding:0; overflow:hidden; "
-      width="1280" height="960"></iframe>
-
-    <!--Google starthelyek vége-->
 
     <!--Starthelykereső kezdet-->
 
     <h2 id="starthelyKereso">Starthelykereső</h2>
     <br>
+    <div class="starthelyKeresoWrapper">
     <form class="startHelyValasztoForm">
       <fieldset>
         <legend>Válassz a keresendők közül</legend>
         <div>
           <label>
-            <input type="checkbox" id="eszak" name="startirany" value="E" />
+            <input type="checkbox" id="eszak" name="startirany" value="E" checked/>
             Észak
           </label>
 
         </div>
         <div>
           <label>
-            <input type="checkbox" id="eszakKelet" name="startirany" value="EK" />
+            <input type="checkbox" id="eszakKelet" name="startirany" value="EK" checked/>
             Északkelet
           </label>
 
         </div>
         <div>
           <label>
-            <input type="checkbox" id="kelet" name="startirany" value="K" />
+            <input type="checkbox" id="kelet" name="startirany" value="K" checked />
             Kelet
           </label>
 
         </div>
         <div>
           <label>
-            <input type="checkbox" id="delKelet" name="startirany" value="DK" />
+            <input type="checkbox" id="delKelet" name="startirany" value="DK" checked/>
             Délkelet
           </label>
         </div>
         <div>
           <label>
-            <input type="checkbox" id="del" name="startirany" value="D" />
+            <input type="checkbox" id="del" name="startirany" value="D" checked/>
             Dél
           </label>
         </div>
         <div>
           <label>
-            <input type="checkbox" id="delNyugat" name="startirany" value="DNY" />
+            <input type="checkbox" id="delNyugat" name="startirany" value="DNY" checked/>
             Délnyugat
           </label>
         </div>
         <div>
           <label>
-            <input type="checkbox" id="nyugat" name="startirany" value="NY" />
+            <input type="checkbox" id="nyugat" name="startirany" value="NY" checked/>
             Nyugat
           </label>
         </div>
         <div>
           <label>
-            <input type="checkbox" id="eszakNyugat" name="startirany" value="ENY" />
+            <input type="checkbox" id="eszakNyugat" name="startirany" value="ENY" checked/>
             Északnyugat
           </label>
         </div>
@@ -244,7 +223,7 @@
       </fieldset>
     </form>
     <br>
-
+</div>
 <!-- ide jönnek a starthelyek sorai -->
     <table id="starthelyKereses" class="table-wrapper starthely-table">
       
@@ -253,6 +232,16 @@
 
 
     <!--Starthelykereső vége-->
+
+    
+    <!--Google starthelyek kezdete-->
+    <h2 class="bevezető tartalom" id="starthelyekGoogleMaps">Magyar Starthelyek Google Maps</h2>
+
+    <iframe src="https://www.google.com/maps/d/embed?mid=1AP2TbiVYt4Sxde1oQPODilAXGaA"
+      style="position:relative; top:0; left:0; bottom:0; right:0; width: 100%; height: 100vh; border:none; margin:0; padding:0; overflow:hidden; "
+      width="1280" height="960"></iframe>
+
+    <!--Google starthelyek vége-->
   </main>
   <footer>
     <div>&copy; Copyright 2021 sikloernyosklub.hu</div>

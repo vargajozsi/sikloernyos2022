@@ -359,7 +359,7 @@ footer div {
 /*the beginn of starthelyek specifed style elements*/
 div.google-starthely>a,
 div.tabla-starthely>a {
-  font-size: 5rem;
+  font-size: calc(1.5rem + 1vw);
 }
 
 #holfuyiframe {
@@ -383,6 +383,7 @@ div.tabla-starthely>a {
   background-color: var(--white-elements);
   text-align: center;
   padding: 5rem 0;
+  max-width: 100vw;
 }
 
 .google-starthely:hover,
@@ -403,6 +404,13 @@ div.tabla-starthely>a {
   color: var(--linkelement);
 }
 
+.starthelyKeresoWrapper {
+display: flex;
+margin: 2rem 0 2rem 0;
+justify-content: flex-end;
+}
+
+
 .startHelyValasztoForm, .startHelyStatusForm {
   background-color: var(--white-elements);
   max-width: fit-content;
@@ -418,6 +426,14 @@ div.tabla-starthely>a {
   color: #000;
   background-color: #fff;
 }
+
+.hideElement {
+  display: none;
+}
+.showElement {
+  display: block;
+}
+
 /*the end of starthelyek specifed style elements*/
 
 /* __________________________________________________________________________ */
