@@ -1,90 +1,848 @@
 /*amenyik status ki lett választva azt tárolja a változóban, hogy össze tudja hasonlítani a starthelyek státuszával */
 let kilettValasztvaStatus = "osszes";
 //osszes statusz input elemek kiválasztása
-const melyikInput = document.getElementById("statusLegendId").querySelectorAll("input"); 
+const melyikInput = document
+  .getElementById("statusLegendId")
+  .querySelectorAll("input");
 //starthelytablazat helye
 const pozEredmeny = document.getElementById("starthelyKereses");
 //startirany valaszto inputok E,D,K,Ny stb.
-const szelIranyInputok = document.querySelectorAll('form.startHelyValasztoForm fieldset div input');
+const szelIranyInputok = document.querySelectorAll(
+  "form.startHelyValasztoForm fieldset div input"
+);
 let szelIranyValasztott = [];
 
-
 // starthelyegyedek
-const startHelyCsolnok = {
-  nev: "Csolnok, Mókus hegy",
-  szintKulombseg: "110",
-  startIrany: ["DK", "D", "DNY"],
-  gpsKoordinatak: "47.68868, 18.70899",
-  legter: "G10, 1350m",
-  megJegyzes:
-    "Natura 2000, harombol ket starthely TV engedelyezett 2023.12.31-ig, magasstart",
-  video: "valami.mov",
-  starthelyKep: "valami.jpg",
-  statusA: "tiltott",
-  indicator: "tiltott",
-};
-
-const startHelyCsolnokMasik = {
-  nev: "masodik engedélyezett",
-  szintKulombseg: "110",
-  startIrany: ["E", "EK", "K"],
-  aktualisSzeliranyIndikator: "",
-  gpsKoordinatak: "47.68868, 18.70899",
-  legter: "G10, 1350m",
-  megJegyzes:
-    "Natura 2000, harombol ket starthely TV engedelyezett 2023.12.31-ig, magasstart",
-  video: "valami.mov",
-  starthelyKep: "valami.jpg",
-  statusA: "engedélyezett",
-  indicator: "engedelyezett",
-};
-
-const startHelyCsolnokHarmadik = {
-  nev: "Harmadik engedélyezett",
-  szintKulombseg: "110",
-  startIrany: ["K", "DNY", "NY"],
-  aktualisSzeliranyIndikator: "",
-  gpsKoordinatak: "47.68868, 18.70899",
-  legter: "G10, 1350m",
-  megJegyzes:
-    "Natura 2000, harombol ket starthely TV engedelyezett 2023.12.31-ig, magasstart",
-  video: "valami.mov",
-  starthelyKep: "valami.jpg",
-  statusA: "engedélyezett",
-  indicator: "engedelyezett",
-};
-
-const startHelyCsolnokNegyedik = {
-  nev: "Negyedik tisztázatlan",
-  szintKulombseg: "110",
-  startIrany: ["NY", "ENY", "E"],
-  aktualisSzeliranyIndikator: "",
-  gpsKoordinatak: "47.68868, 18.70899",
-  legter: "G10, 1350m",
-  megJegyzes:
-    "Natura 2000, harombol ket starthely TV engedelyezett 2023.12.31-ig, magasstart",
-  video: "valami.mov",
-  starthelyKep: "valami.jpg",
-  statusA: "tisztázatlan",
-  indicator: "tisztazatlan",
-};
-
-//Starthely objektumok arrayba
 const starthelyTombFull = [
-  startHelyCsolnok,
-  startHelyCsolnokMasik,
-  startHelyCsolnokHarmadik,
-  startHelyCsolnokNegyedik,
+  {
+    id: 1,
+    nev: "Csolnok, Mókus hegy",
+    szintKulombseg: "110",
+    startIrany: ["DK", "D", "DNY"],
+    gpsKoordinatak: "47.68868, 18.70899",
+    legter: "G10, 1350m",
+    megJegyzes:
+      "Natura 2000, harombol ket starthely TV engedelyezett 2023.12.31-ig, magasstart",
+    meteo: "",
+    video: "Csolnok.mov",
+    starthelyKep: "Csolnok.jpg",
+    statusA: "engedályezett",
+    indicator: "engedelyezett",
+    nehezseg: "++",
+    tipusa: "magasstart",
+  },
+  {
+    id: 2,
+    nev: "Csákberény, Kopasz domb",
+    szintKulombseg: "110",
+    startIrany: ["D", "DNY", "DK"],
+    gpsKoordinatak: "47.34942, 18.29998",
+    legter: "TMA1, 2300m",
+    megJegyzes:
+      "Status: term. ved. engedelyezett magasstart, Asztalos Zoltan Peternel bejelentkezes facebookon (vagy +36 303854875) repules elott (a leszallo magantulajdon, ennek hasznalata miatt) rádió: 5.13",
+    meteo: "",
+    video: "csakbereny.mov",
+    starthelyKep: "csakbereny.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "",
+    tipusa: "magasstart",
+  },
+  {
+    id: 3,
+    nev: "Csobánc",
+    szintKulombseg: "350",
+    startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
+    gpsKoordinatak: "46.87145, 17.50362",
+    legter: "nincs, max 2900m",
+    megJegyzes:
+      "Status: BFNP, fokozottan védett terület, 2011-tol engedellyel, de 03.01-05.31 kozott tiltva, egyebkent a bejelentkezes kotelezo bejelentkezes: http://csobanc.bfnp.hu/",
+    meteo: "",
+    video: "Csobanc.mov",
+    starthelyKep: "Csobanc.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "",
+    tipusa: "magasstart",
+  },
+  {
+    id: 4,
+    nev: "Csóka hegy, Mór",
+    szintKulombseg: "180",
+    startIrany: ["D", "DNY"],
+    gpsKoordinatak: "47.37065, 18.25199",
+    legter: "TMA1, 2300m határán",
+    megJegyzes: "Engyedély pdf: http://bit.ly/2U7tagY rádió: 5.13",
+    meteo: "",
+    video: "csokahegy.mov",
+    starthelyKep: "csokahegy.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "",
+    tipusa: "magasstart",
+  },
+  {
+    id: 5,
+    nev: "HHH Mária NY",
+    szintKulombseg: "65",
+    startIrany: ["DNY", "NY", "ENY"],
+    gpsKoordinatak: "47.55554, 18.98858",
+    legter: "TMA4, 750m",
+    megJegyzes:
+      "Kezelő klub a BSE. starthelyrend, behajtási tudnivalok: http://www.bse.hupont.hu/33/hhh-infok facebook postok: https://goo.gl/CUL0Lb es https://goo.gl/m86lb9",
+    meteo: "",
+    video: "Maria.mov",
+    starthelyKep: "Maria.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+++",
+    tipusa: "magasstart",
+  },
+  {
+    id: 6,
+    nev: "HHH Óbuda",
+    szintKulombseg: "280",
+    startIrany: ["EK", "K"],
+    gpsKoordinatak: "47.55581, 19.00279",
+    legter: " TMA4, 750m, erdemes a teljes BP TMA-t atnezni tav elott: http://goo.gl/ONXIhm",
+    megJegyzes:
+      "Kezelo klub a BSE, 2017.03.31-2021.03.31 kozott. starthelyrend, behajtasi tudnivalok: http://www.bse.hupont.hu/33/hhh-infok facebook postok: https://goo.gl/CUL0Lb es https://goo.gl/m86lb9",
+    meteo: "",
+    video: "obuda.mov",
+    starthelyKep: "obuda.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "++",
+    tipusa: "magasstart",
+  },
+  {
+    id: 7,
+    nev: "HHH Újlaki",
+    szintKulombseg: "95",
+    startIrany: ["DNY", "NY", "ENY"],
+    gpsKoordinatak: "47.55215, 18.98929",
+    legter: "TMA4, 750m",
+    megJegyzes:
+      "Kezelo klub a BSE. Starthelyrend, behajtasi tudnivalok: http://www.bse.hupont.hu/33/hhh-infok facebook postok: https://goo.gl/CUL0Lb es https://goo.gl/m86lb9",
+    meteo: "",
+    video: "ujlaki.mov",
+    starthelyKep: "ujlaki.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "++",
+    tipusa: "magasstart",
+  },
+  {
+    id: 8,
+    nev: "Jakabhegy, Kővágószőlős",
+    szintKulombseg: "190",
+    startIrany: ["DNY"],
+    gpsKoordinatak: "46.0973, 18.12716",
+    legter: "Legter: Pecs-Pogany TIZ-ben fekszik a starthely, max 2900m. repules elott bejelentkezes: 36/72/450-619 Mobil: 36/30/560-9325 - eleg valakinek a tarsosagbol napi 1x szolni, hogy tudjanak rolunk es akkor be lehet repulni. bovebben: http://www.airportpecs.hu/?ShowPage=41",
+    megJegyzes:
+      "2001 óta van megállapodás szerinti engedély. 2008-ra ugyan még folyamatban van a kérelem, de remélhetőleg nem lesz gond... A Jakabhegy a környék egyik legtöbbet látogatott starthelye. A Kővágószőlős északi végében lévő Jakabhegyen még valamikor a nyolcvanas években alakítottak ki starthelyet az akkor virágkorát élő Pécsi Sárkányrepülő Klub pilótái, az uránbánya hozzájárulásával. A starthely egy kiszögellésen kialakított tisztás. Elegendő hely van akár két ernyő kiterítéséhez is, de egyszerre csak egy tud elstartolni. Körben fák övezik, de dél, délnyugat felé kellően nyitott. A kezdőket néha megrettenti a starthely végén lévő 20 méteres szakadék. 2001-ben a starthelyalapból a Pécsi SRK és a BlueSky közösen rendbehozta a starthelyet. Azóta geoháló van lefektetve az erózió ellen, de jövő tavasszal újból rendbe kell hozni a területet. A hegyen déli, délnyugati szélben lehet repülni. Időnként enyhe délkeleti szélben is lehet repülni. A starthely a lejtő közepén helyezkedik el, a lejtő kb. 1 - 1,5 kilométer hosszú. Lejtőzésre kiválóan alkalmas. A starthelytől északra kb. 5 kilométerre található Orfű, ide akár +500 méterről át lehet repülni és élvezni a tó és a völgy látványát. 2005-ben Papp László 105 kilométer repült Jakabhegyről Balatonra, ez az eddigi legnagyobb táv Jakabhegyről. Gratulálunk Laci! A hivatalos leszálló a starthelytől nyugatra van, egy elég nagy rét. Ide a szintkülönbség csak 190 méter, tehát érdemes figyelni mert alacsonyról vagy erős nyugatias szélben már nem biztos hogy kiér a pilóta. A starthely alatt van még egy leszálló, a nyárfás. Ez kicsi és bent van egy domb takarásában, tehát kicsit turbulens lehet, de könyebben elérhető. A starthelyet a hegy mögül lehet megközelíteni, a felfelé vezető út nagyon szar minőségü, de magasabb autóval járható!",
+    meteo: "",
+    video: "jakabhegy.mov",
+    starthelyKep: "jakabhegy.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "++",
+    tipusa: "magasstart",
+  },
+  {
+    id: 9,
+    nev: "Kékestető, sípálya",
+    szintKulombseg: "350",
+    startIrany: ["E", "EK"],
+    gpsKoordinatak: "47.87447, 20.00811",
+    legter: "LH-SG30, max 2900m. D-re LHGY",
+    megJegyzes:
+      "Gyöngyösi Siklóernyős Sport Klub 2001, Fritz Gábor (30/9630-308) http://gyssk2001.tar.hu/a.htm Két helyről is lehet indulni, egyik a sípálya, másik a starthely: A térképen jelölt leszálló hely nagyon becsapós, lejtős L alakú mező, magas fákkal körülvéve. De azért könnyen le lehet szállni, ha előre átgondoljuk. A helyiek szerint a start után balra meg lehet kerülni a Som hegyet, és mögötte több, kényelmesebb leszálló van. De általában akik ott ernyővel elindulnak azok vagy visszaszállnak, vagy átrepülik a Mátrát. a túrista út a kékestető csúcsáról indul, a vendéglők mögött kanyarog lásd a térképet autóval is megközelíthető egy másik erdei úton ami nem a hegycsúcsról indul, hanem hosszú egyenes utáni S kanyarból ágazik le, lásd a térképet Rekord erről a helyről: Simonics Peter/Sector L/? -120km/1997.apr.? Szász Péter: Legkiralyabb hely, csak a leszallo (Karamos) eleg messze van es eleg kicsi (sarkanynak). Ez rendszerint megsem jelent problemat, hiszen az eltekeres a jellemzo. Utobbi evek komolyabb tavjai: Kekes-Kecskemet, Kekes -Labatlan (Ujhelyi Balika), Kekes-Matranovak-Paszto-Kekes (Balko Imi) --- Kékestető-északi sípálya közlekedési és start rendje. A starthely a pálya két oldalán elhelyezkedő fák miatt oldalszélben és egyes esetekben turbulens áramlási viszonyokat produkál. A starthely az északi sípálya felső végénél helyezkedik el, az adótorony lábától északi irányban 50 méterre elhelyezkedő természetes padkán. Megközelítése a közúti parkolóból gyalogosan, vagy sárkányrepülő szállító járművel a rakodás idejére. Téli havas időszakban a sípálya üzemelése alatt a területre gépkocsival behajtani Tilos. A startot a 24-es útról Mátraháza felé közforgalmi úton érhető el. A starthelyre vezető közforgalmi út télen Mátraházától Kékestetőig csak autóbusszal vagy sí buszokkal járható. A starthelyen a pálya két oldalán elhelyezkedő fák oldalszélben és egyes esetekben turbulens áramlási viszonyokat produkálnak. Vészleszállásra kijelölt területek: Siklóernyővel a Som hegyi erdészlak előtt található a térképmásolaton zölddel jelzett réten. Megközelíthető a 24-es útról a Vörösmarty turistaháztól földúton, és Parádfürdőről Sándor rét felé. Sárkányrepülővel a Som hegy lábánál Parádóhuta felőli részén található zölddel jelzett mezőn lehet sikertelen repülési feladat esetén leszállni. Megközelíthető a 24-es útról Parádóhuta felől. A leszállásokat a repülési szabályzatokban meghatározott feltételekkel azok betartásával kell megtenni. A leszállás abban az esetben amennyiben ez a pilóta testi épségét veszélyezteti bárhol a pilóta választása szerint az arra alkalmas területen végrehajtható.",
+    meteo: "",
+    video: "kekesteto.mov",
+    starthelyKep: "kekesteto.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "",
+    tipusa: "magasstart",
+  },
+  {
+    id: 10,
+    nev: "Sárhegy DK K",
+    szintKulombseg: "470",
+    startIrany: ["K","DK"],
+    gpsKoordinatak: "47.79273, 19.96936",
+    legter: "LH-SG30, LHGY, 2900m",
+    megJegyzes:
+      "Összesen 4 starthely van a hármas hegyvonulaton. Egy a valóban térkép szerint Sárhegynek nevezett hegyen majdnem az adótorony alatt, déli irányra. Kettő a Csepjetetőn (középső púp): egy DK-K irányra (Abasár felé) és egy NY-DNY irányra (Gyöngyös város felé). A negyedik pedig a Visonta hegyen D-DNY irányra - ez utóbbi a mogyorós start. Gyöngyösi Siklóernyős Sport Klub 2001, Fritz Gábor (30/9630-308) Parkolni a vegyszerraktár előtt lehet. A starthelyre vezető földút (inkább csak terepjárónak való) nem a leszállóból indul, hanem vissza kell menni kb 500m-t Gyöngyös felé. Egy másik lehetőség Gyöngyösről a Mátra felé menve, a vitorlázóreptéren keresztül sima szgk-val is fel lehet menni a starthelyre. Leszállásra a műút starthely felöli oldalán, a starthelyről nézve balra, a permetező helikopter leszállójának (betonkör) környéke alkalmas, vagy a bozótos hegyoldal, vagy az út másik oldalán a szőlők közötti földutak. A vegyszerrektártól a starthelyig gyalog 20 percen belül fel lehet érni. http://gyssk2001.tar.hu/sarhegy.htm Sárhegy-Csepjetető-Visonta hegy starthelyek közlekedési, start rendje: A starthelyeket a 24-es útról a Pipishegy repülőtér felé az INTERBIP üzem felé vezető útról lehet megközelíteni. A térkép másolaton piros vonallal megjelölt erdészeti úton lehet megközelíteni a starthely közelében megtalálható és kék keretben sárga jelzéssel ellátott 1-es parkolót. A parkoló a WESTEL-PANNON adó torony közvetlen lábánál a szervizkocsiknak kialakított parkoló. A 2-es parkoló az Abasári útról a Visonta hegy gerincén végigvezető földúton közelíthető meg. A parkoló a Csepjetető és a Visonta hegy közötti nyergen található a földút végén. A földút innen nem vezet tovább. A 2-es számú parkolóban csak rakodás céljából maximum 3 gépkocsi tartózkodhat. A rakodás befejeztével el kell hagyniuk a hegyet. Siklóernyővel sikertelen repülési feladat esetén az abasári út mellett elhelyezkedő a térkép másolaton zölddel jelzett területeken lehet leszállni. Sárhegy D-DNY-NY (Mandulás) start, Visonta hegy: A hegyre induló termikek nagyobb része erről az előterepről szakad el. Ezért a termikelésre inkább alkalmas. Domborzatára jellemző, hogy a start vonala egy kettős törés mentén húzódik. Déli irányban meredekebb törést találunk, ami a lejtőzést is lehetővé teszi. Tengerszint feletti start magassága 350 méter. Leszállója egy jelenleg használaton kívüli legelő a város felé enyhén lejt, mérete két focipálya nagyságának felel meg.",
+    meteo: "",
+    video: "Sarhegy.mov",
+    starthelyKep: "Sarhegy.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "magasstart",
+  },
+  {
+    id: 11,
+    nev: "Sárhegy Dél",
+    szintKulombseg: "470",
+    startIrany: ["D"],
+    gpsKoordinatak: "47.79513, 19.97316",
+    legter: "LH-SG30, LHGY, 2900m",
+    megJegyzes:
+      "ld. Sárhegy DK K",
+    meteo: "",
+    video: "Sarhegy2.mov",
+    starthelyKep: "Sarhegy2.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "magasstart",
+  },
+  {
+    id: 12,
+    nev: "Sárhegy NY DNY",
+    szintKulombseg: "468",
+    startIrany: ["DNY","NY"],
+    gpsKoordinatak: "47.79258, 19.968",
+    legter: "LH-SG30, LHGY, 2900m",
+    megJegyzes:
+      "Összesen 4 starthely van a hármas hegyvonulaton. Egy a valóban térkép szerint Sárhegynek nevezett hegyen majdnem az adótorony alatt, déli irányra. Kettő a Csepjetetőn (középső púp): egy DK-K irányra (Abasár felé) és egy NY-DNY irányra (Gyöngyös város felé). A negyedik pedig a Visonta hegyen D-DNY irányra - ez utóbbi a mogyorós start. Gyöngyösi Siklóernyős Sport Klub 2001, Fritz Gábor (30/9630-308) Parkolni a vegyszerraktár előtt lehet. A starthelyre vezető földút (inkább csak terepjárónak való) nem a leszállóból indul, hanem vissza kell menni kb 500m-t Gyöngyös felé. Egy másik lehetőség Gyöngyösről a Mátra felé menve, a vitorlázóreptéren keresztül sima szgk-val is fel lehet menni a starthelyre. Leszállásra a műút starthely felöli oldalán, a starthelyről nézve balra, a permetező helikopter leszállójának (betonkör) környéke alkalmas, vagy a bozótos hegyoldal, vagy az út másik oldalán a szőlők közötti földutak. A vegyszerrektártól a starthelyig gyalog 20 percen belül fel lehet érni. http://gyssk2001.tar.hu/sarhegy.htm Sárhegy-Csepjetető-Visonta hegy starthelyek közlekedési, start rendje: A starthelyeket a 24-es útról a Pipishegy repülőtér felé az INTERBIP üzem felé vezető útról lehet megközelíteni. A térkép másolaton piros vonallal megjelölt erdészeti úton lehet megközelíteni a starthely közelében megtalálható és kék keretben sárga jelzéssel ellátott 1-es parkolót. A parkoló a WESTEL-PANNON adó torony közvetlen lábánál a szervizkocsiknak kialakított parkoló. A 2-es parkoló az Abasári útról a Visonta hegy gerincén végigvezető földúton közelíthető meg. A parkoló a Csepjetető és a Visonta hegy közötti nyergen található a földút végén. A földút innen nem vezet tovább. A 2-es számú parkolóban csak rakodás céljából maximum 3 gépkocsi tartózkodhat. A rakodás befejeztével el kell hagyniuk a hegyet. Siklóernyővel sikertelen repülési feladat esetén az abasári út mellett elhelyezkedő a térkép másolaton zölddel jelzett területeken lehet leszállni. Sárhegy D-DNY-NY (Mandulás) start, Visonta hegy: A hegyre induló termikek nagyobb része erről az előterepről szakad el. Ezért a termikelésre inkább alkalmas. Domborzatára jellemző, hogy a start vonala egy kettős törés mentén húzódik. Déli irányban meredekebb törést találunk, ami a lejtőzést is lehetővé teszi. Tengerszint feletti start magassága 350 méter. Leszállója egy jelenleg használaton kívüli legelő a város felé enyhén lejt, mérete két focipálya nagyságának felel meg.",
+    meteo: "",
+    video: "Sarhegy3.mov",
+    starthelyKep: "Sarhegy3.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "magasstart",
+  },
+  {
+    id: 13,
+    nev: "Sárhegy DNY D",
+    szintKulombseg: "330",
+    startIrany: ["D","DNY"],
+    gpsKoordinatak: "47.78369, 19.95859",
+    legter: "LH-SG30, LHGY, 2900m",
+    megJegyzes:
+      "Összesen 4 starthely van a hármas hegyvonulaton. Egy a valóban térkép szerint Sárhegynek nevezett hegyen majdnem az adótorony alatt, déli irányra. Kettő a Csepjetetőn (középső púp): egy DK-K irányra (Abasár felé) és egy NY-DNY irányra (Gyöngyös város felé). A negyedik pedig a Visonta hegyen D-DNY irányra - ez utóbbi a mogyorós start. Gyöngyösi Siklóernyős Sport Klub 2001, Fritz Gábor (30/9630-308) Parkolni a vegyszerraktár előtt lehet. A starthelyre vezető földút (inkább csak terepjárónak való) nem a leszállóból indul, hanem vissza kell menni kb 500m-t Gyöngyös felé. Egy másik lehetőség Gyöngyösről a Mátra felé menve, a vitorlázóreptéren keresztül sima szgk-val is fel lehet menni a starthelyre. Leszállásra a műút starthely felöli oldalán, a starthelyről nézve balra, a permetező helikopter leszállójának (betonkör) környéke alkalmas, vagy a bozótos hegyoldal, vagy az út másik oldalán a szőlők közötti földutak. A vegyszerrektártól a starthelyig gyalog 20 percen belül fel lehet érni. http://gyssk2001.tar.hu/sarhegy.htm Sárhegy-Csepjetető-Visonta hegy starthelyek közlekedési, start rendje: A starthelyeket a 24-es útról a Pipishegy repülőtér felé az INTERBIP üzem felé vezető útról lehet megközelíteni. A térkép másolaton piros vonallal megjelölt erdészeti úton lehet megközelíteni a starthely közelében megtalálható és kék keretben sárga jelzéssel ellátott 1-es parkolót. A parkoló a WESTEL-PANNON adó torony közvetlen lábánál a szervizkocsiknak kialakított parkoló. A 2-es parkoló az Abasári útról a Visonta hegy gerincén végigvezető földúton közelíthető meg. A parkoló a Csepjetető és a Visonta hegy közötti nyergen található a földút végén. A földút innen nem vezet tovább. A 2-es számú parkolóban csak rakodás céljából maximum 3 gépkocsi tartózkodhat. A rakodás befejeztével el kell hagyniuk a hegyet. Siklóernyővel sikertelen repülési feladat esetén az abasári út mellett elhelyezkedő a térkép másolaton zölddel jelzett területeken lehet leszállni. Sárhegy D-DNY-NY (Mandulás) start, Visonta hegy: A hegyre induló termikek nagyobb része erről az előterepről szakad el. Ezért a termikelésre inkább alkalmas. Domborzatára jellemző, hogy a start vonala egy kettős törés mentén húzódik. Déli irányban meredekebb törést találunk, ami a lejtőzést is lehetővé teszi. Tengerszint feletti start magassága 350 méter. Leszállója egy jelenleg használaton kívüli legelő a város felé enyhén lejt, mérete két focipálya nagyságának felel meg.",
+    meteo: "",
+    video: "Sarhegy4.mov",
+    starthelyKep: "Sarhegy4.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "magasstart",
+  },
+  {
+    id: 14,
+    nev: "Szársomlyó, Nagyharsány",
+    szintKulombseg: "310",
+    startIrany: ["DK", "D", "DNY", "ENY"],
+    gpsKoordinatak: "45.85533, 18.41029",
+    legter: "Pecs-Pogany TIZ-ben fekszik a starthely, max 2900m. repules elott bejelentkezes: 36/72/450-619 Mobil: 36/30/560-9325 - eleg valakinek a tarsosagbol napi 1x szolni, hogy tudjanak rolunk es akkor be lehet repulni. bovebben: http://www.airportpecs.hu/?ShowPage=41",
+    megJegyzes:
+      "infok, kotelezo reg: https://blue-sky.hu regisztracio majd partolo/rendes tagsag (2000/3600 Ft) atutalasa utan a hozzaferest engedelyezik es foglalhato Szarsomlyo. Parkolo a Szoborparknal, utana csak gyalog lehet megmaszni a hegyet a koves, bokros osvenyen, kb 40p alatt (1,9km). hivatalos leszallo jelenleg nincs, tobb terulet akad, amit hasznalni szoktak/lehet lottem egy korpanoramat: https://goo.gl/9OoGVV",
+    meteo: "",
+    video: "szarsomlyo.mov",
+    starthelyKep: "szarsomlyo.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "magasstart",
+  },
+  {
+    id: 15,
+    nev: "Tardos Gorba-tető K",
+    szintKulombseg: "80",
+    startIrany: ["K"],
+    gpsKoordinatak: "47.65328, 18.43566",
+    legter: "TMA1, LH-D21, 2300m",
+    megJegyzes:
+      "elerheto a starthely term. vedelmi engedelye, amit KEMRSE igenyelt. 2018.06.12-tol 2023.12.31-ig ervenyes, ezzel rendezodott a starthely jogi helyzete. reszeltek a hatarozatban: http://bit.ly/2WQS7jd",
+    meteo: "",
+    video: "Tardos.mov",
+    starthelyKep: "Tardos.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "++",
+    tipusa: "magasstart",
+  },
+  
+  {
+    id: 16,
+    nev: "Tokaj",
+    szintKulombseg: "400",
+    startIrany: ["DK", "D", "DNY"],
+    gpsKoordinatak: "48.11945, 21.38189",
+    legter: "max 2900m. E-ra Kassa TMA2: 305m AGL!",
+    megJegyzes:
+      "teljes leiras: http://tokajflyse.mindenkilapja.hu/html/24328793/render/klikk-ide infok: Engedély van az Észak- magyarországi Erdőgazdasági Rt - től(mint ideiglenes vagyonkezelő), azzal a feltétellel, hogy fokozott figylemet fordítunk a természetvédelmi előírásokra, az erdőre, tűzvédelmi előírásokra.TV engedély van az alábbi feltételekkel(2003 óta): -a repülés szünetel 12.31 és 04.15 között a ritka madarak fészkelési időszaka miatt - nem szabad a déli oldalon kivágni a melegkedvelő tölgyeseket a starthely környékén - nem szabad széljelzőt elhelyezni állandó jelleggel, az ideiglenes bulót minden repülés után el kell távolítani - a starthely állapotát tisztán és rendezetten meg kell őrizni - napi max 20 fő repülhet starthely info: Adam Elek, Tokaj Fly SE elnok, 20 9881452 A leszálló megközelítése a Tarcalt Tokajjal összekötő közútról lehetséges.Ez az út a hegy déli oldalán vezet, ahonnan kitűnően látni a starthelyet, valamint az egész vulkanikus kúphegy déli irányú alakzatának repülés szempontjából kiemelkedően fontos részleteit.Az aszfalt útról a szarvas dűlő elnevezésű terület felé bekanyarodva szemben látjuk a starhelyet, jobb kézről pedig a 25m széles és 150m hosszú bérelt leszállót.Ez a leszálló akadálymentes, csupán termikes időben kell jobban odafigyelni.A kiemelkedő nehézségi fokát nem a minősége miatt kapta hanem az elérhetősége miatt.A megközelítési tartományban ugyanis egy vasúti pálya valamint nagyfeszültségű felső vezetékének nyomvonala húzódik.Az e feletti átrepülés biztonságos magassága minimum 20m.A probléma abban a gyakori időjárási helyzetben lép fel, amikor a szemből érkező légáramlatok erősebbek.Ekkor az ernyők siklószáma a talaj viszonylatában nagymértékben lecsökken.Ilyenkor jelentkezik a bizonytalanság érzése: át érek - e a vasúti felső vezeték felett biztonsággal.Gyakorlati tanácsok a döntés meghozatalához: Ha még nem vagy P1 fokozatú, egyedül nem ajánlott próbálkozni helyi útbaigazítás nélkül.Ezen információk megszerzéséhez hozzásegít a helyi klub(Tokaj Fly) egy vizsgával egybekötött tájékoztató keretében.Akiknek az ernyőkezelési technikája megfelelően biztonságos(fülcsukás, testsúlykormányzás, talajközeli csukások megelőzése), azoknak az alábbi lehetőségek vannak",
+    meteo: "",
+    video: "tokaj.mov",
+    starthelyKep: "tokaj.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "++",
+    tipusa: "magasstart",
+  },
+
+  {
+    id: 17,
+    nev: "Vértes, Öregkovács-hegy - NY, (ENY)",
+    szintKulombseg: "210",
+    startIrany: ["NY", "ENY"],
+    gpsKoordinatak: "47.61913, 18.40824",
+    legter: "TMA1, 2300m",
+    megJegyzes:
+      "",
+    meteo: "",
+    video: "vertesszolos.mov",
+    starthelyKep: "vertesszolos.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+++",
+    tipusa: "magasstart",
+  },
+  {
+    id: 18,
+    nev: "Asszony tavi csőrlőpálya",
+    szintKulombseg: "0",
+    startIrany: ["DK"],
+    gpsKoordinatak: "47.6469, 18.25863",
+    legter: "TMA1, 2300m hataran, Per TIZ 2900m",
+    megJegyzes:
+      "",
+    meteo: "",
+    video: "asszonytavi.mov",
+    starthelyKep: "asszonytavi.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 19,
+    nev: "Bakuc, Kamut - csőrlőpálya",
+    szintKulombseg: "0",
+    startIrany: ["E", "K", "D", "NY"],
+    gpsKoordinatak: "46.79459, 20.96852",
+    legter: "na",
+    megJegyzes:
+      "Kamut külterület (Négyegyenes dűlő). Békéscsabai Siklóernyős Klub, kapcsolattartó: Veres Zoltán (70) 3105484. Megközelítés Békéscsaba-Mezőberény főútról. A csörlőpálya két egymásra merőleges földútból áll. Nincs fa, vezeték a közelben. K-NY irányban 6km egyenes földút, akadálymentesen! É-D irányban 2km egyenes földút, akadálymentesen! Leszállók, vészleszállók a földutakon és a parlagon hagyott területeken.",
+    meteo: "",
+    video: "kamut.mov",
+    starthelyKep: "kamut.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 20,
+    nev: "Bekecs csőrlőpálya",
+    szintKulombseg: "0",
+    startIrany: ["E","K","D","NY"],
+    gpsKoordinatak: "46.81528, 21.16927",
+    legter: "TIZ Békéscsabai Reptér Forgalmi Tájékoztató körzet",
+    megJegyzes:
+      "Békés Ludadi Terület (külterület). Békéscsabai Siklóernyős Klub, kapcsolattartó: Veres Zoltán (70) 3105484. Megközelítés Békéscsaba-Békés műúton. A csörlőpálya két egymásra merőleges földútból áll. Nincs fa, vezeték a közelben. K-NY irányban 2km egyenes földút, akadálymentesen! É-D irányban 2km egyenes földút, akadálymentesen! Leszállók, vészleszállók a földutakon és a parlagon hagyott területeken.",
+    meteo: "",
+    video: "bekecs.mov",
+    starthelyKep: "bekecs.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 21,
+    nev: "Békéscsaba reptér csőrlőpálya",
+    szintKulombseg: "0",
+    startIrany: ["K","NY"],
+    gpsKoordinatak: "46.6794, 21.14758",
+    legter: "na",
+    megJegyzes:
+      "A 2012-es starthelyalap palyazat alapjan a Békéscsabai SE uzemelteti. Utolso tracklogok 2011-bol: a csorles a reptertol NY-ra fekvo K-NY iranyu fuves teruleten tortent. kb. 300-400m-re huztak fel oket. gyanus, hogy mar nem aktiv a palya.",
+    meteo: "",
+    video: "bekescsaba.mov",
+    starthelyKep: "bekescsaba.jpg",
+    statusA: "tisztázatlan",
+    indicator: "tisztazatlan",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 22,
+    nev: "Billegpuszta",
+    szintKulombseg: "0",
+    startIrany: ["DK","ENY"],
+    gpsKoordinatak: "47.70641932181463, 18.22367802456713",
+    legter: "TMA2/A 1675m hataran",
+    megJegyzes:
+      "rádió 5.13 ",
+    meteo: "",
+    video: "billegpuszta.mov",
+    starthelyKep: "billegpuszta.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 23,
+    nev: "Csempuszta",
+    szintKulombseg: "0",
+    startIrany: ["DK", "ENY"],
+    gpsKoordinatak: "47.69104, 18.12639",
+    legter: "max 2900m",
+    megJegyzes:
+      "",
+    meteo: "",
+    video: "csempuszta.mov",
+    starthelyKep: "csempuszta.jpg",
+    statusA: "tisztázatlan",
+    indicator: "tisztazatlan",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 24,
+    nev: "Dinnyés EK-K, D-DNY (ENY-NY, DK-K, E) - csőrlőpálya",
+    szintKulombseg: "0",
+    startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
+    gpsKoordinatak: "47.14765, 18.59161",
+    legter: "max 2900m, de E-EK-re a TMA1, max 2300m hataran",
+    megJegyzes:
+      "EK-K, D-DNY iranyu aszfaltos ut (mindket iranybol behajtani tilos - maganut). A tobbi iranyba rovidebb a palya, tapasztaltabb pilotaknak ajanlott. kb. 300-450m AGL korul lehet leoldani. DK-re ket nagy szoloultetveny talalhato",
+    meteo: "",
+    video: "dinnyes.mov",
+    starthelyKep: "dinnyes.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 25,
+    nev: "Dunaújváros reptér",
+    szintKulombseg: "0",
+    startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
+    gpsKoordinatak: "46.89553, 18.91176",
+    legter: "2900m",
+    megJegyzes:
+      "",
+    meteo: "",
+    video: "dunaujvaros.mov",
+    starthelyKep: "dunaujvaros.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 26,
+    nev: "Érsekvadkert",
+    szintKulombseg: "0",
+    startIrany: ["DK", "ENY"],
+    gpsKoordinatak: "47.96514, 19.21811",
+    legter: "TMA5, 2000m",
+    megJegyzes:
+      "",
+    meteo: "",
+    video: "ersekvadkert.mov",
+    starthelyKep: "ersekvadkert.jpg",
+    statusA: "tisztázatlan",
+    indicator: "tisztazatlan",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 27,
+    nev: "Gödöllő reptér",
+    szintKulombseg: "0",
+    startIrany: ["DK", "ENY"],
+    gpsKoordinatak: "47.56828, 19.34648",
+    legter: "TMA6, 600m",
+    megJegyzes:
+      "",
+    meteo: "",
+    video: "godollo.mov",
+    starthelyKep: "godollo.jpg",
+    statusA: "tisztázatlan",
+    indicator: "tisztazatlan",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 28,
+    nev: "Hajdúszoboszló",
+    szintKulombseg: "0",
+    startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
+    gpsKoordinatak: "47.46108, 21.38819",
+    legter: "Debrecen CTA1, 600m, E es NY iranyokba szabad",
+    megJegyzes:
+      "fuves, 04/22 iranyu, (de kerek, igy minden iranyra jo) 1000x50m-es, nem nyilvanos repter, az Aero Club Hajdúszoboszló Sportegyesület uzemelteti. ( http://www.hajdufly.hu/ ). Logok alapjan kb. 300-400m-re huznak fel.  natura 2000 TV",
+    meteo: "",
+    video: "Hajduszoboszlo.mov",
+    starthelyKep: "Hajduszoboszlo.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 29,
+    nev: "Hatvan - Kerekharaszt repter",
+    szintKulombseg: "0",
+    startIrany: ["EK","DNY"],
+    gpsKoordinatak: "47.68037, 19.64995",
+    legter: "LH-SG22: 900m, delre G21: 750m",
+    megJegyzes:
+      "rövid csőrlőpálya, kb. 200m magasságig gyakorlásra jó",
+    meteo: "",
+    video: "kerekharaszt.mov",
+    starthelyKep: "kerekharaszt.jpg",
+    statusA: "tisztázatlan",
+    indicator: "tisztazatlan",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 30,
+    nev: "Jobbágyi",
+    szintKulombseg: "0",
+    startIrany: ["E", "D"],
+    gpsKoordinatak: "47.85089, 19.66029",
+    legter: "LHSG30, max 2900m",
+    megJegyzes:
+      "nem hasznalt csorolopalya",
+    meteo: "",
+    video: "jobbagyi.mov",
+    starthelyKep: "jobbagyi.jpg",
+    statusA: "tisztázatlan",
+    indicator: "tisztazatlan",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 31,
+    nev: "Kalocsa reptér",
+    szintKulombseg: "0",
+    startIrany: ["E", "D"],
+    gpsKoordinatak: "46.54135, 18.94313",
+    legter: "LH-TRA22, 2900m, kozelben LHP1, Paks",
+    megJegyzes:
+      "Airport Kalocsa és Bácska RK. Kapcsolattartók: Bíró Bálint (30) 9059925, Erdei István (Csörlőspityke) (70) 4503727 2008: A reptér vezetés által kiadott reptérrendben rádió használatot írtak elő: AM 134,8 csörlőkezelőknek és PMR 5,34 pilótáknak. Csörlőpálya hossza: kb. 2500 méter",
+    meteo: "",
+    video: "kalocsa.mov",
+    starthelyKep: "kalocsa.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 32,
+    nev: "Kartal",
+    szintKulombseg: "0",
+    startIrany: ["DK", "ENY"],
+    gpsKoordinatak: "47.70016, 19.55275",
+    legter: "LH-SG22: 900m, delre G21: 750m",
+    megJegyzes:
+      "lejtős pálya",
+    meteo: "",
+    video: "kartal.mov",
+    starthelyKep: "kartal.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "++",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 32,
+    nev: "Kisbér Áaszár",
+    szintKulombseg: "0",
+    startIrany: ["DK", "ENY"],
+    gpsKoordinatak: "47.50102, 17.9838",
+    legter: "Per TIZ 2900m",
+    megJegyzes:
+      "",
+    meteo: "",
+    video: "kisber.mov",
+    starthelyKep: "kisber.jpg",
+    statusA: "tisztázatlan",
+    indicator: "tisztazatlan",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 33,
+    nev: "Kiskunlachaza repter (Bankhaza)",
+    szintKulombseg: "0",
+    startIrany: ["DK", "ENY"],
+    gpsKoordinatak: "47.17047, 19.08745",
+    legter: "TMA3, 1050m",
+    megJegyzes:
+      "Sportrepülőtér, www.kiskunlachaza-airport.hu melynek használatára az MPC Extrém Sportegyesületnek szerződése van. www.mpc.hu Kapcsolattartó: Varga László, 30 2420970 Közelben Környezetvédelmi szempontból korlátozott légtér PPG-seknek 300m AGL alatt! Leírás: Megközelítés: 51-es főút Kiskunlacháza felől Bankháza irányába át a vasúti átjárón, majd jobbra. A mindenkori reptérrend szerint az F gurulóúton és annak közvetlen környezetében van a működési terület kijelölve. A fő leszállópályát megközelíteni, keresztezni tilos! A reptér csörléses és PPG repülésekre használható az F gurulóútrol történő felszállással. Pályairány: 140° / 320° A TMA határa déli irányba nagyon közel van, ezért ÉK É Ény irányú szelek esetén déli irányba remek távrepülési lehetőségek vannak. Az F gurulóút keleti oldalán minden mezőgazdasági terület kivételével bárhova le lehet szállni. A nyugati oldalon a főpálya és az F gurulóút közötti teljes terület leszállásra használható, kivéve a főpálya szegélyétől mért 50m-es területet.",
+    meteo: "",
+    video: "kiskunlachaza.mov",
+    starthelyKep: "kiskunlachaza.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 34,
+    nev: "Kunmadaras",
+    szintKulombseg: "0",
+    startIrany: ["EK", "DNY"],
+    gpsKoordinatak: "47.39831, 20.7875",
+    legter: "LH-TRA23, max 2900m",
+    megJegyzes:
+      "Felhout SE uzemelteti",
+    meteo: "",
+    video: "kunmadaras.mov",
+    starthelyKep: "kunmadaras.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 35,
+    nev: "Nagycenk",
+    szintKulombseg: "0",
+    startIrany: ["DK", "ENY"],
+    gpsKoordinatak: "47.57944, 16.69552",
+    legter: " max 2900m",
+    megJegyzes:
+      " Nyerges Akos uzemelteti, legordulo csorlovel",
+    meteo: "",
+    video: "nagycenk.mov",
+    starthelyKep: "nagycenk.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 36,
+    nev: "Nagykanizsa reptér",
+    szintKulombseg: "0",
+    startIrany: ["E", "D"],
+    gpsKoordinatak: "46.42783, 16.95756",
+    legter: "na",
+    megJegyzes:
+      "Sebestyén Attila(20-2541838) Gyakorlatilag 1 éve csörlőzünk 2-3 fővel. Ha nem nagy gond szeretném, hogy mi is felkerüljünk a lapra ezzel is bővítve a hazai repülési lehetőségeket. Maga a reptér É szélnél 1500 m, Déli szélnél 1300 m-en csörlőzhető, de ha valaki szeret gazból, bokorból startolni akkor 1500. A reptér: Az egyesület a nagykanizsai repülőtéren üzemel, amely a Nagykanizsa és Murakeresztur közötti út keleti oldalán található, a város szélétől kb. 1.5 km-re, a városközponttól délnyugatra kb. 4 km-re.",
+    meteo: "",
+    video: "nagykanizs.mov",
+    starthelyKep: "nagykanizsa.jpg",
+    statusA: "tisztázatlan",
+    indicator: "tisztazatlan",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 37,
+    nev: "Nyíregyháza",
+    szintKulombseg: "0",
+    startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
+    gpsKoordinatak: "47.87228, 21.69747",
+    legter: "na",
+    megJegyzes:
+      "EK-i szelben van potencial a helyben.:) Károly Radványi szerint: Homokipisztráng (Máté Zoli) a Sas, azaz Ő fogja üzemeltetni a Nyíregyi csörlőt.",
+    meteo: "",
+    video: "nyiregyhaza.mov",
+    starthelyKep: "nyiregyhaza.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 38,
+    nev: "Orosháza",
+    szintKulombseg: "0",
+    startIrany: ["EK", "DNY"],
+    gpsKoordinatak: "46.53772, 20.66283",
+    legter: "na",
+    megJegyzes:
+      "ritkán használt",
+    meteo: "",
+    video: "oroshaza.mov",
+    starthelyKep: "oroshaza.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 39,
+    nev: "Sándorfalva",
+    szintKulombseg: "0",
+    startIrany: ["E","K", "D", "NY"],
+    gpsKoordinatak: "46.39588, 20.14138",
+    legter: "na",
+    megJegyzes:
+      "2 pályát használunk. É-D irányban 2500-3000 méter, K-Ny 2000 méter Szegedtöl 17 km-re található. A hely adottságai miatt igen sok termiklelöhely található. A szakik szerint itt hamarabb beindul az idö. Csörléseke földúton zajlanak. Leteríett ponyván lehet teriteni. Gyalogsárkány csörlés is lehetséges. Átlag csörlések 500 méter felett vannak. Info.: http://www.auner.fw.hu Telefon.:70-3111-610 Auner Amadé",
+    meteo: "",
+    video: "sandorfalva.mov",
+    starthelyKep: "sandorfalva.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 40,
+    nev: "Szákszend",
+    szintKulombseg: "0",
+    startIrany: ["EK", "DK", "DNY","ENY"],
+    gpsKoordinatak: "47.58503, 18.14164",
+    legter: "Per TIZ 2900m, TMA1, 2300m hataran",
+    megJegyzes:
+      "Ket csorlopalya talalhato, az elso DNY-ra, a masik ENY-ra kicsit lejt.",
+    meteo: "",
+    video: "szakszend.mov",
+    starthelyKep: "szakszend.jpg",
+    statusA: "tisztazatlan",
+    indicator: "tisztazatlan",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 41,
+    nev: "Szegedi reptér",
+    szintKulombseg: "0",
+    startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
+    gpsKoordinatak: "46.25081, 20.0891",
+    legter: "Szeged TIZ PMR: 6.16",
+    megJegyzes:
+      "",
+    meteo: "",
+    video: "szeged.mov",
+    starthelyKep: "szeged.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 42,
+    nev: "Szentes",
+    szintKulombseg: "0",
+    startIrany: ["DK", "ENY"],
+    gpsKoordinatak: "46.60732, 20.31987",
+    legter: "Kecskemet MTMA2, class C",
+    megJegyzes:
+      "",
+    meteo: "",
+    video: "Szentes.mov",
+    starthelyKep: "szentes.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 43,
+    nev: "Szombathelyi reptér",
+    szintKulombseg: "0",
+    startIrany: ["DK", "ENY"],
+    gpsKoordinatak: "47.27762, 16.62398",
+    legter: "max 2900m",
+    megJegyzes:
+      "16/34-es palyairany, fuves, 1150x80m nem gyakori innen a csorles, de evente akad nehany log. Szombathelyi repulo klub",
+    meteo: "",
+    video: "szombathely.mov",
+    starthelyKep: "szombathely.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 44,
+    nev: "Tura",
+    szintKulombseg: "0",
+    startIrany: ["DK", "ENY"],
+    gpsKoordinatak: "47.60917, 19.61679",
+    legter: "TMA6, 600m AMSL",
+    megJegyzes:
+      "a sikloernyocsorlozes.hu csapata, Konkoly Szilardek hasznaljak idonkent a palyat, ami egy foldut Tura hataraban",
+    meteo: "",
+    video: "tura.mov",
+    starthelyKep: "tura.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 45,
+    nev: "Váducka",
+    szintKulombseg: "0",
+    startIrany: ["K", "NY"],
+    gpsKoordinatak: "47.75324, 19.19519",
+    legter: "G22, 900m, kozelben R32 (szodligetnel) es D29 (loter, 1100m)",
+    megJegyzes:
+      "",
+    meteo: "",
+    video: "vaducka.mov",
+    starthelyKep: "vaducka.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+  {
+    id: 45,
+    nev: "Zalaegerszegi Reptér",
+    szintKulombseg: "0",
+    startIrany: ["E", "D"],
+    gpsKoordinatak: "46.88484, 16.78916",
+    legter: "Sarmellek CTA / TIZ-2 600m a kozelben",
+    megJegyzes:
+      "",
+    meteo: "",
+    video: "zalaegerszeg.mov",
+    starthelyKep: "zalaegerszeg.jpg",
+    statusA: "engedélyezett",
+    indicator: "engedelyezett",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+
+
+
+  {
+    id: 1000,
+    nev: "Bakuc, Kamut - csőrlőpálya",
+    szintKulombseg: "0",
+    startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
+    gpsKoordinatak: "46.79459, 20.96852",
+    legter: "na",
+    megJegyzes:
+      "Kamut külterület (Négyegyenes dűlő). Békéscsabai Siklóernyős Klub, kapcsolattartó: Veres Zoltán (70) 3105484. Megközelítés Békéscsaba-Mezőberény főútról. A csörlőpálya két egymásra merőleges földútból áll. Nincs fa, vezeték a közelben. K-NY irányban 6km egyenes földút, akadálymentesen! É-D irányban 2km egyenes földút, akadálymentesen! Leszállók, vészleszállók a földutakon és a parlagon hagyott területeken.",
+    meteo: "",
+    video: "kamut.mov",
+    starthelyKep: "kamut.jpg",
+    statusA: "engedélyezett",
+    indicator: "tiltott",
+    nehezseg: "+",
+    tipusa: "csorlopalya",
+  },
+
 ];
 
 // starthely táblázat létrehozása starthelyelemek kiíratása
 function addSearchResoult(starthelyParam, statusParam) {
-
-    if (statusParam === starthelyParam.indicator || statusParam === "osszes") {
-      pozEredmeny.innerHTML += `<tr class="${starthelyParam.indicator}"><td>${starthelyParam.nev}</td><td>${starthelyParam.szintKulombseg}</td><td>${starthelyParam.startIrany}</td><td>${starthelyParam.gpsKoordinatak}</td><td>${starthelyParam.legter}</td><td>${starthelyParam.megJegyzes}</td><td>${starthelyParam.video}</td><td>${starthelyParam.starthelyKep}</td>`;
-    }
+  if (statusParam === starthelyParam.indicator || statusParam === "osszes") {
+    pozEredmeny.innerHTML += `<tr class="${starthelyParam.indicator}"><td>${starthelyParam.nev}</td><td>${starthelyParam.szintKulombseg}</td><td>${starthelyParam.startIrany}</td><td>${starthelyParam.gpsKoordinatak}</td><td>${starthelyParam.legter}</td><td>${starthelyParam.statusA}</td><td>${starthelyParam.video}</td><td>${starthelyParam.starthelyKep}</td>`;
   }
-
+}
 
 //az ősszes strthely kiválasztása kiiratáshoz
 function loadTableContent(ev) {
@@ -95,15 +853,14 @@ function loadTableContent(ev) {
   }
   pozEredmeny.innerHTML = "";
   pozEredmeny.innerHTML +=
-    "<tr><th>Név</th><th>Szint</th><th>Irány</th><th>GPS</th><th>Légtér</th><th>Statusz</th><th>Video</th><th>Kép</th></tr>";
+    "<tr><th>Név</th><th>Szint</th><th>Irány</th><th>GPS</th><th>Légtér</th><th>Státusz</th><th>Video</th><th>Kép</th></tr>";
   for (let i = 0; i < starthelyTombFull.length; i++) {
     const element = starthelyTombFull[i];
     //ha a starthely szeliránya megtalálható a kiválasztott szélirányok között renderel
-    if (element.startIrany.some(ai => szelIranyValasztott.includes(ai))) {
-      addSearchResoult(element, kilettValasztvaStatus);      
+    if (element.startIrany.some((ai) => szelIranyValasztott.includes(ai))) {
+      addSearchResoult(element, kilettValasztvaStatus);
     }
   }
-  
 }
 
 //Megnézi, hogy melyik start-szélirány lett-maradt aktív a kattintás hatására
@@ -113,7 +870,8 @@ function getIranyValasztottak() {
     if (szelIranyInputok[i].checked) {
       szelIranyValasztott.push(szelIranyInputok[i].defaultValue);
     }
-  } loadTableContent();
+  }
+  loadTableContent();
 }
 
 //Futatási terület____________________________________________
@@ -126,8 +884,11 @@ getIranyValasztottak();
 loadTableContent();
 
 /*melyik inputelem lett bejelölve?  eventlisener elhelyezése az imputokra a statusz szerinti választásnál*/
-melyikInput.forEach(elem => elem.addEventListener('click', loadTableContent, false));
-
+melyikInput.forEach((elem) =>
+  elem.addEventListener("click", loadTableContent, false)
+);
 
 //start-szél iranyvalaszó input eseményfigyelés függvény indítása eseményfigyeléssel
-szelIranyInputok.forEach(elem => elem.addEventListener('change', getIranyValasztottak, false));
+szelIranyInputok.forEach((elem) =>
+  elem.addEventListener("change", getIranyValasztottak, false)
+);
