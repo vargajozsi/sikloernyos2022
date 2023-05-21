@@ -1722,7 +1722,8 @@ const starthelyTombFull = [
     nev: "Tolcsva, Erdohorvati",
     szintKulombseg: "200",
     startIrany: ["D", "DNY"],
-    gpsKoordinatak: "48.3014, 21.45981",
+   gpsKoordinatak: "48.30144260609925, 21.459805230298898",
+    googleLink: "https://goo.gl/maps/xrAhmkAgCQ3sMX496",
     legter: "Kassa TMA2: 305m AGL",
     megJegyzes:
       "",
@@ -1737,31 +1738,12 @@ const starthelyTombFull = [
 
 
 
-//kkaskqsnwxqnwcxkjqwnxkjnqwkjxjwkq
-  {
-    id: 00,
-    nev: "",
-    szintKulombseg: "",
-    startIrany: ["E", "EK", "K", "DK", "D", "DNY", "NY", "ENY"],
-    gpsKoordinatak: "",
-    legter: "",
-    megJegyzes:
-      "",
-    meteo: "",
-    video: ".mov",
-    starthelyKep: ".jpg",
-    statusA: "tisztázatlan",
-    indicator: "tisztazatlan",
-    nehezseg: "+",
-    tipusa: "magasstart",
-  },
-
 ];
 
 // starthely táblázat létrehozása starthelyelemek kiíratása
 function addSearchResoult(starthelyParam, statusParam) {
   if (statusParam === starthelyParam.indicator || statusParam === "osszes") {
-    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><tr><td>${starthelyParam.nev}</td></tr><tr><td>${starthelyParam.szintKulombseg}</td></tr><tr><td>${starthelyParam.startIrany}</td></tr><tr><td>${starthelyParam.gpsKoordinatak}</td></tr><tr><td>${starthelyParam.legter}</td></tr><tr><td>${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.video}</td></tr><tr><td>${starthelyParam.starthelyKep}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr></tr><tbody></table>`;
+    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev}</td></tr><tr><td>${starthelyParam.szintKulombseg}</td></tr><tr><td>${starthelyParam.startIrany}</td></tr><tr><td><a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>${starthelyParam.legter}</td></tr><tr><td>${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.video}</td></tr><tr><td>${starthelyParam.starthelyKep}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
   }
 }
 
@@ -1780,6 +1762,7 @@ function loadTableContent(ev) {
       addSearchResoult(element, kilettValasztvaStatus);
     }
   }
+  document.getElementById(kilettValasztvaStatus).blur();
 }
 
 //Megnézi, hogy melyik start-szélirány lett-maradt aktív a kattintás hatására
@@ -1804,7 +1787,7 @@ loadTableContent();
 
 /*melyik inputelem lett bejelölve?  eventlisener elhelyezése az imputokra a statusz szerinti választásnál*/
 melyikInput.forEach((elem) =>
-  elem.addEventListener("click", loadTableContent, false)
+  elem.addEventListener("click", loadTableContent, false)  
 );
 
 //start-szél iranyvalaszó input eseményfigyelés függvény indítása eseményfigyeléssel

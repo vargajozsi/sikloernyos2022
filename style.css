@@ -409,6 +409,7 @@ div.tabla-starthely > a {
 }
 
 table, td, tr {
+  min-width: 100vw;
   border: 1px solid hsla(0, 21%, 64%, 0.432);
   border-collapse: collapse;
   padding: 0.5rem;
@@ -481,12 +482,6 @@ padding: 2rem 0;
 
 }
 
-.starthely-table tfoot {
-  color: var(--white-elements);
-  background: var(--attetszo-sotet);
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
-  height: 5rem;
-}
 
 /*the end of starthelyek specifed style elements*/
 
