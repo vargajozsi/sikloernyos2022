@@ -11,6 +11,7 @@ const szelIranyInputok = document.querySelectorAll(
   "form.startHelyValasztoForm fieldset div input"
 );
 let szelIranyValasztott = [];
+const torlesGombHelye = document.getElementById("osszesTorleseGomb");
 
 // starthelyegyedek
 const starthelyTombFull = [
@@ -1767,14 +1768,24 @@ function loadTableContent(ev) {
 
 //Megnézi, hogy melyik start-szélirány lett-maradt aktív a kattintás hatására
 function getIranyValasztottak() {
-  szelIranyValasztott = [];
-  for (i = 0; i < szelIranyInputok.length; i++) {
-    if (szelIranyInputok[i].checked) {
-      szelIranyValasztott.push(szelIranyInputok[i].defaultValue);
+    szelIranyValasztott = [];
+    for (i = 0; i < szelIranyInputok.length; i++) {
+      if (szelIranyInputok[i].checked) {
+        szelIranyValasztott.push(szelIranyInputok[i].defaultValue);
+      }
     }
-  }
-  loadTableContent();
+    loadTableContent();
 }
+
+function inputTorles(eventke) { 
+  eventke.preventDefault();
+  for (i = 0; i < szelIranyInputok.length; i++) {
+    szelIranyInputok[i].checked = false;
+  }
+  getIranyValasztottak();
+}
+
+torlesGombHelye.addEventListener("click", inputTorles, false);
 
 //Futatási terület____________________________________________
 //_____*****************************************______________
