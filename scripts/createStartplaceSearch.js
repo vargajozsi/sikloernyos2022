@@ -1761,7 +1761,7 @@ const starthelyTombFull = [
 // starthely táblázat létrehozása starthelyelemek kiíratása
 function addSearchResoult(starthelyParam, statusParam) {
   if (statusParam === starthelyParam.indicator || statusParam === "osszes") {
-    pozEredmeny.innerHTML += `<tr class="${starthelyParam.indicator}"><td>${starthelyParam.nev}</td><td>${starthelyParam.szintKulombseg}</td><td>${starthelyParam.startIrany}</td><td>${starthelyParam.gpsKoordinatak}</td><td>${starthelyParam.legter}</td><td>${starthelyParam.statusA}</td><td>${starthelyParam.video}</td><td>${starthelyParam.starthelyKep}</td>`;
+    pozEredmeny.innerHTML += `<div><table><tr class="${starthelyParam.indicator}"><td>${starthelyParam.nev}</td><td>${starthelyParam.szintKulombseg}</td><td>${starthelyParam.startIrany}</td><td>${starthelyParam.gpsKoordinatak}</td><td>${starthelyParam.legter}</td><td>${starthelyParam.statusA}</td><td>${starthelyParam.video}</td><td>${starthelyParam.starthelyKep}</td></tr></table></div>`;
   }
 }
 
