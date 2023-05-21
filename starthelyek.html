@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="starthelyek, Siklóernyős starthelyek, hármashatárhegy, csobánc, kevély, szársomlyó, kalocsa" />
+  <meta name="description"
+    content="starthelyek, Siklóernyős starthelyek, hármashatárhegy, csobánc, kevély, szársomlyó, kalocsa" />
   <meta property="og:title" content="sikloernyosklub.hu" />
   <meta property="og:url" content="https://www.sikloernyosklub.hu/" />
   <meta property="og:image" content="https://www.sikloernyosklub.hu/media/sikloernyosklub.jpg" />
@@ -15,7 +16,8 @@
   <meta name="DC.format" content="text/html" />
   <meta name="DC.identifier" content="https://www.sikloernyosklub.hu" />
   <meta name="DC.publisher" content="sikloernyosklub.hu" />
-  <meta name="keywords" content="starthelyek, Siklóernyős starthelyek, hármashatárhegy, csobánc, kevély, szársomlyó, kalocsa" />
+  <meta name="keywords"
+    content="starthelyek, Siklóernyős starthelyek, hármashatárhegy, csobánc, kevély, szársomlyó, kalocsa" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <link rel="stylesheet" href="style.css" />
@@ -150,6 +152,12 @@
       <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no"
         src="https://widget.holfuy.com/?station=1211&su=km/h&t=C&lang=hu&mode=mini"
         style="width:180px; height:120px;"></iframe>
+      <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no"
+        src="https://widget.holfuy.com/?station=143&su=km/h&t=C&lang=hu&mode=mini"
+        style="width:180px; height:120px;"></iframe>
+      <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no"
+        src="https://widget.holfuy.com/?station=1590&su=km/h&t=C&lang=hu&mode=mini"
+        style="width:180px; height:120px;"></iframe>
 
     </div>
     <!--Linkek kezdete-->
@@ -165,98 +173,97 @@
     <h2 id="starthelyKereso">Starthelykereső</h2>
     <br>
     <div class="starthelyKeresoWrapper">
-    <form class="startHelyValasztoForm">
-      <fieldset>
-        <legend>Válassz a keresendők közül</legend>
-        <div>
-          <label>
-            <input type="checkbox" id="eszak" name="startirany" value="E" checked/>
-            Észak
-          </label>
+      <form class="startHelyValasztoForm">
+        <fieldset>
+          <legend>Válassz a keresendők közül</legend>
+          <div>
+            <label>
+              <input type="checkbox" id="eszak" name="startirany" value="E" checked />
+              Észak
+            </label>
 
-        </div>
-        <div>
-          <label>
-            <input type="checkbox" id="eszakKelet" name="startirany" value="EK" checked/>
-            Északkelet
-          </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" id="eszakKelet" name="startirany" value="EK" checked />
+              Északkelet
+            </label>
 
-        </div>
-        <div>
-          <label>
-            <input type="checkbox" id="kelet" name="startirany" value="K" checked />
-            Kelet
-          </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" id="kelet" name="startirany" value="K" checked />
+              Kelet
+            </label>
 
-        </div>
-        <div>
-          <label>
-            <input type="checkbox" id="delKelet" name="startirany" value="DK" checked/>
-            Délkelet
-          </label>
-        </div>
-        <div>
-          <label>
-            <input type="checkbox" id="del" name="startirany" value="D" checked/>
-            Dél
-          </label>
-        </div>
-        <div>
-          <label>
-            <input type="checkbox" id="delNyugat" name="startirany" value="DNY" checked/>
-            Délnyugat
-          </label>
-        </div>
-        <div>
-          <label>
-            <input type="checkbox" id="nyugat" name="startirany" value="NY" checked/>
-            Nyugat
-          </label>
-        </div>
-        <div>
-          <label>
-            <input type="checkbox" id="eszakNyugat" name="startirany" value="ENY" checked/>
-            Északnyugat
-          </label>
-        </div>
-        <button id="osszesTorleseGomb">összes törlése</button>
-      </fieldset>
-    </form>
-    <form action="#" class="startHelyStatusForm">
-      <fieldset id="statusLegendId">
-        <legend >Starthely Státusza</legend>
-        <input type="radio" id="osszes" name="startirany" value="osszes" checked/>
-        <label for="osszes">Összes</label><br>
-        <input type="radio" id="tiltott" name="startirany" value="tiltott"  />
-        <label for="tiltott">Tiltott</label><br>
-        <input type="radio" id="engedelyezett" name="startirany" value="engedelyezett" />
-        <label for="engedelyezett">Engedélyezett</label><br>
-        <input type="radio" id="tisztazatlan" name="startirany" value="tisztazatlan" />
-        <label for="tisztazatlan">Tisztázatlan</label>
-      </fieldset>
-    </form>
-    <br>
-</div>
-<!-- ide jönnek a starthelyek sorai -->
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" id="delKelet" name="startirany" value="DK" checked />
+              Délkelet
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" id="del" name="startirany" value="D" checked />
+              Dél
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" id="delNyugat" name="startirany" value="DNY" checked />
+              Délnyugat
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" id="nyugat" name="startirany" value="NY" checked />
+              Nyugat
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" id="eszakNyugat" name="startirany" value="ENY" checked />
+              Északnyugat
+            </label>
+          </div>
+          <button id="osszesTorleseGomb">összes törlése</button>
+        </fieldset>
+      </form>
+      <form action="#" class="startHelyStatusForm">
+        <fieldset id="statusLegendId">
+          <legend>Starthely Státusza</legend>
+          <input type="radio" id="osszes" name="startirany" value="osszes" checked />
+          <label for="osszes">Összes</label><br>
+          <input type="radio" id="tiltott" name="startirany" value="tiltott" />
+          <label for="tiltott">Tiltott</label><br>
+          <input type="radio" id="engedelyezett" name="startirany" value="engedelyezett" />
+          <label for="engedelyezett">Engedélyezett</label><br>
+          <input type="radio" id="tisztazatlan" name="startirany" value="tisztazatlan" />
+          <label for="tisztazatlan">Tisztázatlan</label>
+        </fieldset>
+      </form>
+      <br>
+    </div>
+    <!-- ide jönnek a starthelyek sorai -->
     <div id="starthelyKereses">
-      
+
     </div>
 
 
 
     <!--Starthelykereső vége-->
 
-    
+
     <!--Google starthelyek kezdete-->
     <h2 class="bevezető tartalom" id="starthelyekGoogleMaps">Magyar Starthelyek Google Maps</h2>
 
-    <iframe class="ogniframe" src="https://www.google.com/maps/d/embed?mid=1AP2TbiVYt4Sxde1oQPODilAXGaA"
-      ></iframe>
+    <iframe class="ogniframe" src="https://www.google.com/maps/d/embed?mid=1AP2TbiVYt4Sxde1oQPODilAXGaA"></iframe>
 
     <!--Google starthelyek vége-->
   </main>
   <footer>
-    <div>&copy; Copyright 2021 sikloernyosklub.hu</div>
+    <div>&copy; Copyright 2021 sikloernyosklub.hu <a href="https://vargajozsef.hu" target="_blank">Varga József</a></div>
   </footer>
   <script type="text/javascript" src="./scripts/script.js"></script>
   <script type="text/javascript" src="./scripts/createStartplaceSearch.js"></script>

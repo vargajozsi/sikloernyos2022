@@ -21,6 +21,7 @@ const starthelyTombFull = [
     szintKulombseg: "110",
     startIrany: ["DK", "D", "DNY"],
     gpsKoordinatak: "47.68868, 18.70899",
+    googleLink: "https://goo.gl/maps/s6Ra7BnNbvJpVEQW9?coh=178573&entry=tt",
     legter: "G10, 1350m",
     megJegyzes:
       "Natura 2000, harombol ket starthely TV engedelyezett 2023.12.31-ig, magasstart",
@@ -38,6 +39,7 @@ const starthelyTombFull = [
     szintKulombseg: "110",
     startIrany: ["D", "DNY", "DK"],
     gpsKoordinatak: "47.34942, 18.29998",
+    googleLink: "https://goo.gl/maps/wHszSs5opQ4TCvGQ8?coh=178573&entry=tt",
     legter: "TMA1, 2300m",
     megJegyzes:
       "Status: term. ved. engedelyezett magasstart, Asztalos Zoltan Peternel bejelentkezes facebookon (vagy +36 303854875) repules elott (a leszallo magantulajdon, ennek hasznalata miatt) rádió: 5.13",
@@ -55,6 +57,7 @@ const starthelyTombFull = [
     szintKulombseg: "350",
     startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "46.87145, 17.50362",
+    googleLink: "https://goo.gl/maps/W69VHDhZuCbPNjHcA?coh=178573&entry=tt",
     legter: "nincs, max 2900m",
     megJegyzes:
       "Status: BFNP, fokozottan védett terület, 2011-tol engedellyel, de 03.01-05.31 kozott tiltva, egyebkent a bejelentkezes kotelezo bejelentkezes: http://csobanc.bfnp.hu/",
@@ -72,6 +75,7 @@ const starthelyTombFull = [
     szintKulombseg: "180",
     startIrany: ["D", "DNY"],
     gpsKoordinatak: "47.37065, 18.25199",
+    googleLink: "https://goo.gl/maps/vTk5RFXxypD1hM8J6?coh=178573&entry=tt",
     legter: "TMA1, 2300m határán",
     megJegyzes: "Engyedély pdf: http://bit.ly/2U7tagY rádió: 5.13",
     meteo: "",
@@ -88,6 +92,7 @@ const starthelyTombFull = [
     szintKulombseg: "65",
     startIrany: ["DNY", "NY", "ENY"],
     gpsKoordinatak: "47.55554, 18.98858",
+    googleLink: "https://goo.gl/maps/wjN7f9C9UderwGYLA?coh=178573&entry=tt",
     legter: "TMA4, 750m",
     megJegyzes:
       "Kezelő klub a BSE. starthelyrend, behajtási tudnivalok: http://www.bse.hupont.hu/33/hhh-infok facebook postok: https://goo.gl/CUL0Lb es https://goo.gl/m86lb9",
@@ -105,6 +110,7 @@ const starthelyTombFull = [
     szintKulombseg: "280",
     startIrany: ["EK", "K"],
     gpsKoordinatak: "47.55581, 19.00279",
+    googleLink: "https://goo.gl/maps/39Xt7zqm69zitwsTA?coh=178573&entry=tt",
     legter: " TMA4, 750m, erdemes a teljes BP TMA-t atnezni tav elott: http://goo.gl/ONXIhm",
     megJegyzes:
       "Kezelo klub a BSE, 2017.03.31-2021.03.31 kozott. starthelyrend, behajtasi tudnivalok: http://www.bse.hupont.hu/33/hhh-infok facebook postok: https://goo.gl/CUL0Lb es https://goo.gl/m86lb9",
@@ -122,6 +128,7 @@ const starthelyTombFull = [
     szintKulombseg: "95",
     startIrany: ["DNY", "NY", "ENY"],
     gpsKoordinatak: "47.55215, 18.98929",
+    googleLink: "https://goo.gl/maps/Tx1MFTHiVe5mpSU1A?coh=178573&entry=tt",
     legter: "TMA4, 750m",
     megJegyzes:
       "Kezelo klub a BSE. Starthelyrend, behajtasi tudnivalok: http://www.bse.hupont.hu/33/hhh-infok facebook postok: https://goo.gl/CUL0Lb es https://goo.gl/m86lb9",
@@ -139,6 +146,7 @@ const starthelyTombFull = [
     szintKulombseg: "190",
     startIrany: ["DNY"],
     gpsKoordinatak: "46.0973, 18.12716",
+    googleLink: "https://goo.gl/maps/HxQ9NSQroTAnKBxe7?coh=178573&entry=tt",
     legter: "Legter: Pecs-Pogany TIZ-ben fekszik a starthely, max 2900m. repules elott bejelentkezes: 36/72/450-619 Mobil: 36/30/560-9325 - eleg valakinek a tarsosagbol napi 1x szolni, hogy tudjanak rolunk es akkor be lehet repulni. bovebben: http://www.airportpecs.hu/?ShowPage=41",
     megJegyzes:
       "2001 óta van megállapodás szerinti engedély. 2008-ra ugyan még folyamatban van a kérelem, de remélhetőleg nem lesz gond... A Jakabhegy a környék egyik legtöbbet látogatott starthelye. A Kővágószőlős északi végében lévő Jakabhegyen még valamikor a nyolcvanas években alakítottak ki starthelyet az akkor virágkorát élő Pécsi Sárkányrepülő Klub pilótái, az uránbánya hozzájárulásával. A starthely egy kiszögellésen kialakított tisztás. Elegendő hely van akár két ernyő kiterítéséhez is, de egyszerre csak egy tud elstartolni. Körben fák övezik, de dél, délnyugat felé kellően nyitott. A kezdőket néha megrettenti a starthely végén lévő 20 méteres szakadék. 2001-ben a starthelyalapból a Pécsi SRK és a BlueSky közösen rendbehozta a starthelyet. Azóta geoháló van lefektetve az erózió ellen, de jövő tavasszal újból rendbe kell hozni a területet. A hegyen déli, délnyugati szélben lehet repülni. Időnként enyhe délkeleti szélben is lehet repülni. A starthely a lejtő közepén helyezkedik el, a lejtő kb. 1 - 1,5 kilométer hosszú. Lejtőzésre kiválóan alkalmas. A starthelytől északra kb. 5 kilométerre található Orfű, ide akár +500 méterről át lehet repülni és élvezni a tó és a völgy látványát. 2005-ben Papp László 105 kilométer repült Jakabhegyről Balatonra, ez az eddigi legnagyobb táv Jakabhegyről. Gratulálunk Laci! A hivatalos leszálló a starthelytől nyugatra van, egy elég nagy rét. Ide a szintkülönbség csak 190 méter, tehát érdemes figyelni mert alacsonyról vagy erős nyugatias szélben már nem biztos hogy kiér a pilóta. A starthely alatt van még egy leszálló, a nyárfás. Ez kicsi és bent van egy domb takarásában, tehát kicsit turbulens lehet, de könyebben elérhető. A starthelyet a hegy mögül lehet megközelíteni, a felfelé vezető út nagyon szar minőségü, de magasabb autóval járható!",
@@ -156,6 +164,7 @@ const starthelyTombFull = [
     szintKulombseg: "350",
     startIrany: ["E", "EK"],
     gpsKoordinatak: "47.87447, 20.00811",
+    googleLink: "https://goo.gl/maps/Hk9xMJoesjZKfUkZ7?coh=178573&entry=tt",
     legter: "LH-SG30, max 2900m. D-re LHGY",
     megJegyzes:
       "Gyöngyösi Siklóernyős Sport Klub 2001, Fritz Gábor (30/9630-308) http://gyssk2001.tar.hu/a.htm Két helyről is lehet indulni, egyik a sípálya, másik a starthely: A térképen jelölt leszálló hely nagyon becsapós, lejtős L alakú mező, magas fákkal körülvéve. De azért könnyen le lehet szállni, ha előre átgondoljuk. A helyiek szerint a start után balra meg lehet kerülni a Som hegyet, és mögötte több, kényelmesebb leszálló van. De általában akik ott ernyővel elindulnak azok vagy visszaszállnak, vagy átrepülik a Mátrát. a túrista út a kékestető csúcsáról indul, a vendéglők mögött kanyarog lásd a térképet autóval is megközelíthető egy másik erdei úton ami nem a hegycsúcsról indul, hanem hosszú egyenes utáni S kanyarból ágazik le, lásd a térképet Rekord erről a helyről: Simonics Peter/Sector L/? -120km/1997.apr.? Szász Péter: Legkiralyabb hely, csak a leszallo (Karamos) eleg messze van es eleg kicsi (sarkanynak). Ez rendszerint megsem jelent problemat, hiszen az eltekeres a jellemzo. Utobbi evek komolyabb tavjai: Kekes-Kecskemet, Kekes -Labatlan (Ujhelyi Balika), Kekes-Matranovak-Paszto-Kekes (Balko Imi) --- Kékestető-északi sípálya közlekedési és start rendje. A starthely a pálya két oldalán elhelyezkedő fák miatt oldalszélben és egyes esetekben turbulens áramlási viszonyokat produkál. A starthely az északi sípálya felső végénél helyezkedik el, az adótorony lábától északi irányban 50 méterre elhelyezkedő természetes padkán. Megközelítése a közúti parkolóból gyalogosan, vagy sárkányrepülő szállító járművel a rakodás idejére. Téli havas időszakban a sípálya üzemelése alatt a területre gépkocsival behajtani Tilos. A startot a 24-es útról Mátraháza felé közforgalmi úton érhető el. A starthelyre vezető közforgalmi út télen Mátraházától Kékestetőig csak autóbusszal vagy sí buszokkal járható. A starthelyen a pálya két oldalán elhelyezkedő fák oldalszélben és egyes esetekben turbulens áramlási viszonyokat produkálnak. Vészleszállásra kijelölt területek: Siklóernyővel a Som hegyi erdészlak előtt található a térképmásolaton zölddel jelzett réten. Megközelíthető a 24-es útról a Vörösmarty turistaháztól földúton, és Parádfürdőről Sándor rét felé. Sárkányrepülővel a Som hegy lábánál Parádóhuta felőli részén található zölddel jelzett mezőn lehet sikertelen repülési feladat esetén leszállni. Megközelíthető a 24-es útról Parádóhuta felől. A leszállásokat a repülési szabályzatokban meghatározott feltételekkel azok betartásával kell megtenni. A leszállás abban az esetben amennyiben ez a pilóta testi épségét veszélyezteti bárhol a pilóta választása szerint az arra alkalmas területen végrehajtható.",
@@ -173,6 +182,7 @@ const starthelyTombFull = [
     szintKulombseg: "470",
     startIrany: ["K","DK"],
     gpsKoordinatak: "47.79273, 19.96936",
+    googleLink: "https://goo.gl/maps/J6XbtEXvMoJ8N4b78?coh=178573&entry=tt",
     legter: "LH-SG30, LHGY, 2900m",
     megJegyzes:
       "Összesen 4 starthely van a hármas hegyvonulaton. Egy a valóban térkép szerint Sárhegynek nevezett hegyen majdnem az adótorony alatt, déli irányra. Kettő a Csepjetetőn (középső púp): egy DK-K irányra (Abasár felé) és egy NY-DNY irányra (Gyöngyös város felé). A negyedik pedig a Visonta hegyen D-DNY irányra - ez utóbbi a mogyorós start. Gyöngyösi Siklóernyős Sport Klub 2001, Fritz Gábor (30/9630-308) Parkolni a vegyszerraktár előtt lehet. A starthelyre vezető földút (inkább csak terepjárónak való) nem a leszállóból indul, hanem vissza kell menni kb 500m-t Gyöngyös felé. Egy másik lehetőség Gyöngyösről a Mátra felé menve, a vitorlázóreptéren keresztül sima szgk-val is fel lehet menni a starthelyre. Leszállásra a műút starthely felöli oldalán, a starthelyről nézve balra, a permetező helikopter leszállójának (betonkör) környéke alkalmas, vagy a bozótos hegyoldal, vagy az út másik oldalán a szőlők közötti földutak. A vegyszerrektártól a starthelyig gyalog 20 percen belül fel lehet érni. http://gyssk2001.tar.hu/sarhegy.htm Sárhegy-Csepjetető-Visonta hegy starthelyek közlekedési, start rendje: A starthelyeket a 24-es útról a Pipishegy repülőtér felé az INTERBIP üzem felé vezető útról lehet megközelíteni. A térkép másolaton piros vonallal megjelölt erdészeti úton lehet megközelíteni a starthely közelében megtalálható és kék keretben sárga jelzéssel ellátott 1-es parkolót. A parkoló a WESTEL-PANNON adó torony közvetlen lábánál a szervizkocsiknak kialakított parkoló. A 2-es parkoló az Abasári útról a Visonta hegy gerincén végigvezető földúton közelíthető meg. A parkoló a Csepjetető és a Visonta hegy közötti nyergen található a földút végén. A földút innen nem vezet tovább. A 2-es számú parkolóban csak rakodás céljából maximum 3 gépkocsi tartózkodhat. A rakodás befejeztével el kell hagyniuk a hegyet. Siklóernyővel sikertelen repülési feladat esetén az abasári út mellett elhelyezkedő a térkép másolaton zölddel jelzett területeken lehet leszállni. Sárhegy D-DNY-NY (Mandulás) start, Visonta hegy: A hegyre induló termikek nagyobb része erről az előterepről szakad el. Ezért a termikelésre inkább alkalmas. Domborzatára jellemző, hogy a start vonala egy kettős törés mentén húzódik. Déli irányban meredekebb törést találunk, ami a lejtőzést is lehetővé teszi. Tengerszint feletti start magassága 350 méter. Leszállója egy jelenleg használaton kívüli legelő a város felé enyhén lejt, mérete két focipálya nagyságának felel meg.",
@@ -190,6 +200,7 @@ const starthelyTombFull = [
     szintKulombseg: "470",
     startIrany: ["D"],
     gpsKoordinatak: "47.79513, 19.97316",
+    googleLink: "https://goo.gl/maps/m9TTH5T5ddUKxyaZ6?coh=178573&entry=tt",
     legter: "LH-SG30, LHGY, 2900m",
     megJegyzes:
       "ld. Sárhegy DK K",
@@ -207,6 +218,7 @@ const starthelyTombFull = [
     szintKulombseg: "468",
     startIrany: ["DNY","NY"],
     gpsKoordinatak: "47.79258, 19.968",
+    googleLink: "https://goo.gl/maps/11We3EwNVBeTrFoK6?coh=178573&entry=tt",
     legter: "LH-SG30, LHGY, 2900m",
     megJegyzes:
       "Összesen 4 starthely van a hármas hegyvonulaton. Egy a valóban térkép szerint Sárhegynek nevezett hegyen majdnem az adótorony alatt, déli irányra. Kettő a Csepjetetőn (középső púp): egy DK-K irányra (Abasár felé) és egy NY-DNY irányra (Gyöngyös város felé). A negyedik pedig a Visonta hegyen D-DNY irányra - ez utóbbi a mogyorós start. Gyöngyösi Siklóernyős Sport Klub 2001, Fritz Gábor (30/9630-308) Parkolni a vegyszerraktár előtt lehet. A starthelyre vezető földút (inkább csak terepjárónak való) nem a leszállóból indul, hanem vissza kell menni kb 500m-t Gyöngyös felé. Egy másik lehetőség Gyöngyösről a Mátra felé menve, a vitorlázóreptéren keresztül sima szgk-val is fel lehet menni a starthelyre. Leszállásra a műút starthely felöli oldalán, a starthelyről nézve balra, a permetező helikopter leszállójának (betonkör) környéke alkalmas, vagy a bozótos hegyoldal, vagy az út másik oldalán a szőlők közötti földutak. A vegyszerrektártól a starthelyig gyalog 20 percen belül fel lehet érni. http://gyssk2001.tar.hu/sarhegy.htm Sárhegy-Csepjetető-Visonta hegy starthelyek közlekedési, start rendje: A starthelyeket a 24-es útról a Pipishegy repülőtér felé az INTERBIP üzem felé vezető útról lehet megközelíteni. A térkép másolaton piros vonallal megjelölt erdészeti úton lehet megközelíteni a starthely közelében megtalálható és kék keretben sárga jelzéssel ellátott 1-es parkolót. A parkoló a WESTEL-PANNON adó torony közvetlen lábánál a szervizkocsiknak kialakított parkoló. A 2-es parkoló az Abasári útról a Visonta hegy gerincén végigvezető földúton közelíthető meg. A parkoló a Csepjetető és a Visonta hegy közötti nyergen található a földút végén. A földút innen nem vezet tovább. A 2-es számú parkolóban csak rakodás céljából maximum 3 gépkocsi tartózkodhat. A rakodás befejeztével el kell hagyniuk a hegyet. Siklóernyővel sikertelen repülési feladat esetén az abasári út mellett elhelyezkedő a térkép másolaton zölddel jelzett területeken lehet leszállni. Sárhegy D-DNY-NY (Mandulás) start, Visonta hegy: A hegyre induló termikek nagyobb része erről az előterepről szakad el. Ezért a termikelésre inkább alkalmas. Domborzatára jellemző, hogy a start vonala egy kettős törés mentén húzódik. Déli irányban meredekebb törést találunk, ami a lejtőzést is lehetővé teszi. Tengerszint feletti start magassága 350 méter. Leszállója egy jelenleg használaton kívüli legelő a város felé enyhén lejt, mérete két focipálya nagyságának felel meg.",
@@ -224,6 +236,7 @@ const starthelyTombFull = [
     szintKulombseg: "330",
     startIrany: ["D","DNY"],
     gpsKoordinatak: "47.78369, 19.95859",
+    googleLink: "https://goo.gl/maps/QCgrpg9ZRrkEBZvy9?coh=178573&entry=tt",
     legter: "LH-SG30, LHGY, 2900m",
     megJegyzes:
       "Összesen 4 starthely van a hármas hegyvonulaton. Egy a valóban térkép szerint Sárhegynek nevezett hegyen majdnem az adótorony alatt, déli irányra. Kettő a Csepjetetőn (középső púp): egy DK-K irányra (Abasár felé) és egy NY-DNY irányra (Gyöngyös város felé). A negyedik pedig a Visonta hegyen D-DNY irányra - ez utóbbi a mogyorós start. Gyöngyösi Siklóernyős Sport Klub 2001, Fritz Gábor (30/9630-308) Parkolni a vegyszerraktár előtt lehet. A starthelyre vezető földút (inkább csak terepjárónak való) nem a leszállóból indul, hanem vissza kell menni kb 500m-t Gyöngyös felé. Egy másik lehetőség Gyöngyösről a Mátra felé menve, a vitorlázóreptéren keresztül sima szgk-val is fel lehet menni a starthelyre. Leszállásra a műút starthely felöli oldalán, a starthelyről nézve balra, a permetező helikopter leszállójának (betonkör) környéke alkalmas, vagy a bozótos hegyoldal, vagy az út másik oldalán a szőlők közötti földutak. A vegyszerrektártól a starthelyig gyalog 20 percen belül fel lehet érni. http://gyssk2001.tar.hu/sarhegy.htm Sárhegy-Csepjetető-Visonta hegy starthelyek közlekedési, start rendje: A starthelyeket a 24-es útról a Pipishegy repülőtér felé az INTERBIP üzem felé vezető útról lehet megközelíteni. A térkép másolaton piros vonallal megjelölt erdészeti úton lehet megközelíteni a starthely közelében megtalálható és kék keretben sárga jelzéssel ellátott 1-es parkolót. A parkoló a WESTEL-PANNON adó torony közvetlen lábánál a szervizkocsiknak kialakított parkoló. A 2-es parkoló az Abasári útról a Visonta hegy gerincén végigvezető földúton közelíthető meg. A parkoló a Csepjetető és a Visonta hegy közötti nyergen található a földút végén. A földút innen nem vezet tovább. A 2-es számú parkolóban csak rakodás céljából maximum 3 gépkocsi tartózkodhat. A rakodás befejeztével el kell hagyniuk a hegyet. Siklóernyővel sikertelen repülési feladat esetén az abasári út mellett elhelyezkedő a térkép másolaton zölddel jelzett területeken lehet leszállni. Sárhegy D-DNY-NY (Mandulás) start, Visonta hegy: A hegyre induló termikek nagyobb része erről az előterepről szakad el. Ezért a termikelésre inkább alkalmas. Domborzatára jellemző, hogy a start vonala egy kettős törés mentén húzódik. Déli irányban meredekebb törést találunk, ami a lejtőzést is lehetővé teszi. Tengerszint feletti start magassága 350 méter. Leszállója egy jelenleg használaton kívüli legelő a város felé enyhén lejt, mérete két focipálya nagyságának felel meg.",
@@ -241,6 +254,7 @@ const starthelyTombFull = [
     szintKulombseg: "310",
     startIrany: ["DK", "D", "DNY", "ENY"],
     gpsKoordinatak: "45.85533, 18.41029",
+    googleLink: "https://goo.gl/maps/bkSX4PcerWse6Y8a6?coh=178573&entry=tt",
     legter: "Pecs-Pogany TIZ-ben fekszik a starthely, max 2900m. repules elott bejelentkezes: 36/72/450-619 Mobil: 36/30/560-9325 - eleg valakinek a tarsosagbol napi 1x szolni, hogy tudjanak rolunk es akkor be lehet repulni. bovebben: http://www.airportpecs.hu/?ShowPage=41",
     megJegyzes:
       "infok, kotelezo reg: https://blue-sky.hu regisztracio majd partolo/rendes tagsag (2000/3600 Ft) atutalasa utan a hozzaferest engedelyezik es foglalhato Szarsomlyo. Parkolo a Szoborparknal, utana csak gyalog lehet megmaszni a hegyet a koves, bokros osvenyen, kb 40p alatt (1,9km). hivatalos leszallo jelenleg nincs, tobb terulet akad, amit hasznalni szoktak/lehet lottem egy korpanoramat: https://goo.gl/9OoGVV",
@@ -258,6 +272,7 @@ const starthelyTombFull = [
     szintKulombseg: "80",
     startIrany: ["K"],
     gpsKoordinatak: "47.65328, 18.43566",
+    googleLink: "https://goo.gl/maps/JiP9sKRxGjpKuN9AA?coh=178573&entry=tt",
     legter: "TMA1, LH-D21, 2300m",
     megJegyzes:
       "elerheto a starthely term. vedelmi engedelye, amit KEMRSE igenyelt. 2018.06.12-tol 2023.12.31-ig ervenyes, ezzel rendezodott a starthely jogi helyzete. reszeltek a hatarozatban: http://bit.ly/2WQS7jd",
@@ -276,6 +291,7 @@ const starthelyTombFull = [
     szintKulombseg: "400",
     startIrany: ["DK", "D", "DNY"],
     gpsKoordinatak: "48.11945, 21.38189",
+    googleLink: "https://goo.gl/maps/H8ConttnpfxEedU6A?coh=178573&entry=tt",
     legter: "max 2900m. E-ra Kassa TMA2: 305m AGL!",
     megJegyzes:
       "teljes leiras: http://tokajflyse.mindenkilapja.hu/html/24328793/render/klikk-ide infok: Engedély van az Észak- magyarországi Erdőgazdasági Rt - től(mint ideiglenes vagyonkezelő), azzal a feltétellel, hogy fokozott figylemet fordítunk a természetvédelmi előírásokra, az erdőre, tűzvédelmi előírásokra.TV engedély van az alábbi feltételekkel(2003 óta): -a repülés szünetel 12.31 és 04.15 között a ritka madarak fészkelési időszaka miatt - nem szabad a déli oldalon kivágni a melegkedvelő tölgyeseket a starthely környékén - nem szabad széljelzőt elhelyezni állandó jelleggel, az ideiglenes bulót minden repülés után el kell távolítani - a starthely állapotát tisztán és rendezetten meg kell őrizni - napi max 20 fő repülhet starthely info: Adam Elek, Tokaj Fly SE elnok, 20 9881452 A leszálló megközelítése a Tarcalt Tokajjal összekötő közútról lehetséges.Ez az út a hegy déli oldalán vezet, ahonnan kitűnően látni a starthelyet, valamint az egész vulkanikus kúphegy déli irányú alakzatának repülés szempontjából kiemelkedően fontos részleteit.Az aszfalt útról a szarvas dűlő elnevezésű terület felé bekanyarodva szemben látjuk a starhelyet, jobb kézről pedig a 25m széles és 150m hosszú bérelt leszállót.Ez a leszálló akadálymentes, csupán termikes időben kell jobban odafigyelni.A kiemelkedő nehézségi fokát nem a minősége miatt kapta hanem az elérhetősége miatt.A megközelítési tartományban ugyanis egy vasúti pálya valamint nagyfeszültségű felső vezetékének nyomvonala húzódik.Az e feletti átrepülés biztonságos magassága minimum 20m.A probléma abban a gyakori időjárási helyzetben lép fel, amikor a szemből érkező légáramlatok erősebbek.Ekkor az ernyők siklószáma a talaj viszonylatában nagymértékben lecsökken.Ilyenkor jelentkezik a bizonytalanság érzése: át érek - e a vasúti felső vezeték felett biztonsággal.Gyakorlati tanácsok a döntés meghozatalához: Ha még nem vagy P1 fokozatú, egyedül nem ajánlott próbálkozni helyi útbaigazítás nélkül.Ezen információk megszerzéséhez hozzásegít a helyi klub(Tokaj Fly) egy vizsgával egybekötött tájékoztató keretében.Akiknek az ernyőkezelési technikája megfelelően biztonságos(fülcsukás, testsúlykormányzás, talajközeli csukások megelőzése), azoknak az alábbi lehetőségek vannak",
@@ -294,6 +310,7 @@ const starthelyTombFull = [
     szintKulombseg: "210",
     startIrany: ["NY", "ENY"],
     gpsKoordinatak: "47.61913, 18.40824",
+    googleLink: "https://goo.gl/maps/aEPmJf37uzVPvXH96?coh=178573&entry=tt",
     legter: "TMA1, 2300m",
     megJegyzes:
       "",
@@ -311,6 +328,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["DK"],
     gpsKoordinatak: "47.6469, 18.25863",
+    googleLink: "https://goo.gl/maps/54wuqN4hXCiw665K6?coh=178573&entry=tt",
     legter: "TMA1, 2300m hataran, Per TIZ 2900m",
     megJegyzes:
       "",
@@ -328,6 +346,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["E", "K", "D", "NY"],
     gpsKoordinatak: "46.79459, 20.96852",
+    googleLink: "https://goo.gl/maps/tAw4QFrjtsuBbPqY6?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "Kamut külterület (Négyegyenes dűlő). Békéscsabai Siklóernyős Klub, kapcsolattartó: Veres Zoltán (70) 3105484. Megközelítés Békéscsaba-Mezőberény főútról. A csörlőpálya két egymásra merőleges földútból áll. Nincs fa, vezeték a közelben. K-NY irányban 6km egyenes földút, akadálymentesen! É-D irányban 2km egyenes földút, akadálymentesen! Leszállók, vészleszállók a földutakon és a parlagon hagyott területeken.",
@@ -341,10 +360,11 @@ const starthelyTombFull = [
   },
   {
     id: 20,
-    nev: "Bekecs csőrlőpálya",
+    nev: "Békés csőrlőpálya",
     szintKulombseg: "0",
     startIrany: ["E","K","D","NY"],
     gpsKoordinatak: "46.81528, 21.16927",
+    googleLink: "https://goo.gl/maps/Dfmi7tJdaCgJSM156?coh=178573&entry=tt",
     legter: "TIZ Békéscsabai Reptér Forgalmi Tájékoztató körzet",
     megJegyzes:
       "Békés Ludadi Terület (külterület). Békéscsabai Siklóernyős Klub, kapcsolattartó: Veres Zoltán (70) 3105484. Megközelítés Békéscsaba-Békés műúton. A csörlőpálya két egymásra merőleges földútból áll. Nincs fa, vezeték a közelben. K-NY irányban 2km egyenes földút, akadálymentesen! É-D irányban 2km egyenes földút, akadálymentesen! Leszállók, vészleszállók a földutakon és a parlagon hagyott területeken.",
@@ -362,6 +382,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["K","NY"],
     gpsKoordinatak: "46.6794, 21.14758",
+    googleLink: "https://goo.gl/maps/dAmupMYfnnVof9df8?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "A 2012-es starthelyalap palyazat alapjan a Békéscsabai SE uzemelteti. Utolso tracklogok 2011-bol: a csorles a reptertol NY-ra fekvo K-NY iranyu fuves teruleten tortent. kb. 300-400m-re huztak fel oket. gyanus, hogy mar nem aktiv a palya.",
@@ -379,6 +400,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["DK","ENY"],
     gpsKoordinatak: "47.70641932181463, 18.22367802456713",
+    googleLink: "https://goo.gl/maps/2K8HyKzwtaHrYWnZ8?coh=178573&entry=tt",
     legter: "TMA2/A 1675m hataran",
     megJegyzes:
       "rádió 5.13 ",
@@ -396,6 +418,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["DK", "ENY"],
     gpsKoordinatak: "47.69104, 18.12639",
+    googleLink: "https://goo.gl/maps/Z9ZhCW9MHuY1iY8W6?coh=178573&entry=tt",
     legter: "max 2900m",
     megJegyzes:
       "",
@@ -409,10 +432,11 @@ const starthelyTombFull = [
   },
   {
     id: 24,
-    nev: "Dinnyés EK-K, D-DNY (ENY-NY, DK-K, E) - csőrlőpálya",
+    nev: "Dinnyés, Seregélyes  - csőrlőpálya",
     szintKulombseg: "0",
     startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "47.14765, 18.59161",
+    googleLink: "https://goo.gl/maps/652K8b2vRZSi1t7X7?coh=178573&entry=tt",
     legter: "max 2900m, de E-EK-re a TMA1, max 2300m hataran",
     megJegyzes:
       "EK-K, D-DNY iranyu aszfaltos ut (mindket iranybol behajtani tilos - maganut). A tobbi iranyba rovidebb a palya, tapasztaltabb pilotaknak ajanlott. kb. 300-450m AGL korul lehet leoldani. DK-re ket nagy szoloultetveny talalhato",
@@ -430,6 +454,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "46.89553, 18.91176",
+    googleLink: "https://goo.gl/maps/Q8tTCDJKXjkuHPGS6?coh=178573&entry=tt",
     legter: "2900m",
     megJegyzes:
       "",
@@ -447,6 +472,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["DK", "ENY"],
     gpsKoordinatak: "47.96514, 19.21811",
+    googleLink: "https://goo.gl/maps/XUGYFP7jzEDi9WAT6?coh=178573&entry=tt",
     legter: "TMA5, 2000m",
     megJegyzes:
       "",
@@ -464,6 +490,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["DK", "ENY"],
     gpsKoordinatak: "47.56828, 19.34648",
+    googleLink: "https://goo.gl/maps/a4CxsKqBRbq5SM2V9?coh=178573&entry=tt",
     legter: "TMA6, 600m",
     megJegyzes:
       "",
@@ -481,6 +508,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "47.46108, 21.38819",
+    googleLink: "https://goo.gl/maps/yvXwM9RAeMvNMLRTA?coh=178573&entry=tt",
     legter: "Debrecen CTA1, 600m, E es NY iranyokba szabad",
     megJegyzes:
       "fuves, 04/22 iranyu, (de kerek, igy minden iranyra jo) 1000x50m-es, nem nyilvanos repter, az Aero Club Hajdúszoboszló Sportegyesület uzemelteti. ( http://www.hajdufly.hu/ ). Logok alapjan kb. 300-400m-re huznak fel.  natura 2000 TV",
@@ -498,6 +526,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["EK","DNY"],
     gpsKoordinatak: "47.68037, 19.64995",
+    googleLink: "https://goo.gl/maps/LM4vra3p7Txn1xmd8?coh=178573&entry=tt",
     legter: "LH-SG22: 900m, delre G21: 750m",
     megJegyzes:
       "rövid csőrlőpálya, kb. 200m magasságig gyakorlásra jó",
@@ -511,10 +540,11 @@ const starthelyTombFull = [
   },
   {
     id: 30,
-    nev: "Jobbágyi",
+    nev: "Jobbágyi, Szurdokpüspöki",
     szintKulombseg: "0",
     startIrany: ["E", "D"],
     gpsKoordinatak: "47.85089, 19.66029",
+    googleLink: "https://goo.gl/maps/GG1JgsqzUyVFh9PB9?coh=178573&entry=tt",
     legter: "LHSG30, max 2900m",
     megJegyzes:
       "nem hasznalt csorolopalya",
@@ -532,6 +562,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["E", "D"],
     gpsKoordinatak: "46.54135, 18.94313",
+    googleLink: "https://goo.gl/maps/8RubctzZE4QPGSP37?coh=178573&entry=tt",
     legter: "LH-TRA22, 2900m, kozelben LHP1, Paks",
     megJegyzes:
       "Airport Kalocsa és Bácska RK. Kapcsolattartók: Bíró Bálint (30) 9059925, Erdei István (Csörlőspityke) (70) 4503727 2008: A reptér vezetés által kiadott reptérrendben rádió használatot írtak elő: AM 134,8 csörlőkezelőknek és PMR 5,34 pilótáknak. Csörlőpálya hossza: kb. 2500 méter",
@@ -545,10 +576,11 @@ const starthelyTombFull = [
   },
   {
     id: 32,
-    nev: "Kartal",
+    nev: "Kartal, Verseg",
     szintKulombseg: "0",
     startIrany: ["DK", "ENY"],
     gpsKoordinatak: "47.70016, 19.55275",
+    googleLink: "https://goo.gl/maps/fVAX4PHHQPR1d4447?coh=178573&entry=tt",
     legter: "LH-SG22: 900m, delre G21: 750m",
     megJegyzes:
       "lejtős pálya",
@@ -566,6 +598,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["DK", "ENY"],
     gpsKoordinatak: "47.50102, 17.9838",
+    googleLink: "https://goo.gl/maps/ZXHL4RMJAqUKZT6VA?coh=178573&entry=tt",
     legter: "Per TIZ 2900m",
     megJegyzes:
       "",
@@ -583,6 +616,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["DK", "ENY"],
     gpsKoordinatak: "47.17047, 19.08745",
+    googleLink: "https://goo.gl/maps/3ohRkrqTso9qr2VN8?coh=178573&entry=tt",
     legter: "TMA3, 1050m",
     megJegyzes:
       "Sportrepülőtér, www.kiskunlachaza-airport.hu melynek használatára az MPC Extrém Sportegyesületnek szerződése van. www.mpc.hu Kapcsolattartó: Varga László, 30 2420970 Közelben Környezetvédelmi szempontból korlátozott légtér PPG-seknek 300m AGL alatt! Leírás: Megközelítés: 51-es főút Kiskunlacháza felől Bankháza irányába át a vasúti átjárón, majd jobbra. A mindenkori reptérrend szerint az F gurulóúton és annak közvetlen környezetében van a működési terület kijelölve. A fő leszállópályát megközelíteni, keresztezni tilos! A reptér csörléses és PPG repülésekre használható az F gurulóútrol történő felszállással. Pályairány: 140° / 320° A TMA határa déli irányba nagyon közel van, ezért ÉK É Ény irányú szelek esetén déli irányba remek távrepülési lehetőségek vannak. Az F gurulóút keleti oldalán minden mezőgazdasági terület kivételével bárhova le lehet szállni. A nyugati oldalon a főpálya és az F gurulóút közötti teljes terület leszállásra használható, kivéve a főpálya szegélyétől mért 50m-es területet.",
@@ -600,6 +634,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["EK", "DNY"],
     gpsKoordinatak: "47.39831, 20.7875",
+    googleLink: "https://goo.gl/maps/rn5UGeE7n4WvoBn78?coh=178573&entry=tt",
     legter: "LH-TRA23, max 2900m",
     megJegyzes:
       "Felhout SE uzemelteti",
@@ -617,6 +652,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["DK", "ENY"],
     gpsKoordinatak: "47.57944, 16.69552",
+    googleLink: "https://goo.gl/maps/DvBs8PruQ3y7t7mx7?coh=178573&entry=tt",
     legter: " max 2900m",
     megJegyzes:
       " Nyerges Akos uzemelteti, legordulo csorlovel",
@@ -634,6 +670,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["E", "D"],
     gpsKoordinatak: "46.42783, 16.95756",
+    googleLink: "https://goo.gl/maps/Tse6s2s6ojsLQAya6?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "Sebestyén Attila(20-2541838) Gyakorlatilag 1 éve csörlőzünk 2-3 fővel. Ha nem nagy gond szeretném, hogy mi is felkerüljünk a lapra ezzel is bővítve a hazai repülési lehetőségeket. Maga a reptér É szélnél 1500 m, Déli szélnél 1300 m-en csörlőzhető, de ha valaki szeret gazból, bokorból startolni akkor 1500. A reptér: Az egyesület a nagykanizsai repülőtéren üzemel, amely a Nagykanizsa és Murakeresztur közötti út keleti oldalán található, a város szélétől kb. 1.5 km-re, a városközponttól délnyugatra kb. 4 km-re.",
@@ -651,6 +688,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "47.87228, 21.69747",
+    googleLink: "https://goo.gl/maps/CpnnrFEdRPDVJnsy7?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "EK-i szelben van potencial a helyben.:) Károly Radványi szerint: Homokipisztráng (Máté Zoli) a Sas, azaz Ő fogja üzemeltetni a Nyíregyi csörlőt.",
@@ -668,6 +706,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["EK", "DNY"],
     gpsKoordinatak: "46.53772, 20.66283",
+    googleLink: "https://goo.gl/maps/98FmMQQVLMBYFvCj7?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "ritkán használt",
@@ -685,6 +724,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["E","K", "D", "NY"],
     gpsKoordinatak: "46.39588, 20.14138",
+    googleLink: "https://goo.gl/maps/bqZzArqCyCZ8GcgAA?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "2 pályát használunk. É-D irányban 2500-3000 méter, K-Ny 2000 méter Szegedtöl 17 km-re található. A hely adottságai miatt igen sok termiklelöhely található. A szakik szerint itt hamarabb beindul az idö. Csörléseke földúton zajlanak. Leteríett ponyván lehet teriteni. Gyalogsárkány csörlés is lehetséges. Átlag csörlések 500 méter felett vannak. Info.: http://www.auner.fw.hu Telefon.:70-3111-610 Auner Amadé",
@@ -702,6 +742,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["EK", "DK", "DNY","ENY"],
     gpsKoordinatak: "47.58503, 18.14164",
+    googleLink: "https://goo.gl/maps/UB3M4keowYHPLc9W7?coh=178573&entry=tt",
     legter: "Per TIZ 2900m, TMA1, 2300m hataran",
     megJegyzes:
       "Ket csorlopalya talalhato, az elso DNY-ra, a masik ENY-ra kicsit lejt.",
@@ -719,6 +760,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "46.25081, 20.0891",
+    googleLink: "https://goo.gl/maps/Bxz8H8pRE21v5mz36?coh=178573&entry=tt",
     legter: "Szeged TIZ PMR: 6.16",
     megJegyzes:
       "",
@@ -736,6 +778,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["DK", "ENY"],
     gpsKoordinatak: "46.60732, 20.31987",
+    googleLink: "https://goo.gl/maps/f7QYWkBVJUZZHWch6?coh=178573&entry=tt",
     legter: "Kecskemet MTMA2, class C",
     megJegyzes:
       "",
@@ -753,6 +796,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["DK", "ENY"],
     gpsKoordinatak: "47.27762, 16.62398",
+    googleLink: "https://goo.gl/maps/y74h3T4PHPsvnYfC8?coh=178573&entry=tt",
     legter: "max 2900m",
     megJegyzes:
       "16/34-es palyairany, fuves, 1150x80m nem gyakori innen a csorles, de evente akad nehany log. Szombathelyi repulo klub",
@@ -770,6 +814,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["DK", "ENY"],
     gpsKoordinatak: "47.60917, 19.61679",
+    googleLink: "https://goo.gl/maps/VC6nkBZjHtLQiMGLA?coh=178573&entry=tt",
     legter: "TMA6, 600m AMSL",
     megJegyzes:
       "a sikloernyocsorlozes.hu csapata, Konkoly Szilardek hasznaljak idonkent a palyat, ami egy foldut Tura hataraban",
@@ -783,10 +828,11 @@ const starthelyTombFull = [
   },
   {
     id: 45,
-    nev: "Váducka",
+    nev: "Váducka, Vác",
     szintKulombseg: "0",
     startIrany: ["K", "NY"],
     gpsKoordinatak: "47.75324, 19.19519",
+    googleLink: "https://goo.gl/maps/RnyCMpRus6vHJ1577?coh=178573&entry=tt",
     legter: "G22, 900m, kozelben R32 (szodligetnel) es D29 (loter, 1100m)",
     megJegyzes:
       "",
@@ -804,6 +850,7 @@ const starthelyTombFull = [
     szintKulombseg: "0",
     startIrany: ["E", "D"],
     gpsKoordinatak: "46.88484, 16.78916",
+    googleLink: "https://goo.gl/maps/bpBXSA8kDrkzak8GA?coh=178573&entry=tt",
     legter: "Sarmellek CTA / TIZ-2 600m a kozelben",
     megJegyzes:
       "",
@@ -817,10 +864,11 @@ const starthelyTombFull = [
   },
   {
     id: 46,
-    nev: "Bekecs tanulódomb",
+    nev: "Bekecs, Legyesbénye tanulódomb",
     szintKulombseg: "80",
     startIrany: ["K"],
     gpsKoordinatak: "48.16234, 21.11567",
+    googleLink: "https://goo.gl/maps/14pWjWtve6qzwxGo7?coh=178573&entry=tt",
     legter: "Kassa TMA2: 305m AGL hataran. (E-ra)",
     megJegyzes:
       "Megközelítése: A 37-es út 21 km szelvényénél ráfordulunk az északi irányban lévő aszfalt burkolatú bekötő útra amin 4 km es autózás megérkezünk a domb lábához. A domb keleti irányú, 300 m széles és 80 m magas. Egyedüli oktató,gyakorló pálya a Zemplén környéken. Az előtte elterülő szántóról termikek rendszeresen a starthely felé érkeznek ami a gyakorlott pilótáknak lehetőséget biztosít a távrepülésre. Kezdőknek természetesen a termikmentes egyenletes keleti szelet ajánlanám. A szél iránya 90 fokról optimális de 10-20 fok eltérés még tűrhető lehetőséget biztosít a repülésre. A legeltetések elmaradása miatt a csipke elharapódzott, amit rendszeresen nagy munkával kell használható állapotban tartani. Nagyon jó tanfolyamozóhely, egyedüli hátránya, hogy csak keleti szélre jó. Ideális esetben jókat lehet lejtőzni a kb: 300 méter széles lejtőn. Megközelítés: A 37-es úton Miskolc felől a 21-es km-tábla előtt 50m-rel balra kell kanyarodni, szerény minőségű aszfalt úton kb.: 3km után elérjük a domb lábánál a gyümölcsöst, egy jobb kanyar, majd 200 méter után megint balra tartunk, még szerényebb úton kikerülvén a mezőgazdasági épületet, megérkeztünk a leszállóba. Elég biztonságos a leszállóterület, azt az akácbozótot leszámítva ami csaknem teljesen keresztben húzódik a domb előtt. A startmező 10 pontos!",
@@ -834,10 +882,11 @@ const starthelyTombFull = [
   },
   {
     id: 47,
-    nev: "Bekölce tanulódomb",
+    nev: "Bekölce, Mikófalva tanulódomb",
     szintKulombseg: "30",
     startIrany: ["EK", "K", "D", "DNY", "NY"],
     gpsKoordinatak: "48.07763, 20.30468",
+    googleLink: "https://goo.gl/maps/mvnLh5t4eiDyYWoi9?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "a keleti oldalon lévő tanya felől villanypásztort húztak, újabban idegesen reagál a tulaj az ernyősökre. A domb ÉNY-ban sem használható, egyébként nincs probléma a hellyel. A starthely tanulódomb, ami egy nagy kopár domb, valójában Bekölce, Mikófalva, és Balaton között található. Mikófalváról Bekölce felé autózva érhetjük el, a tanyához vezető fasornál lévő kereszteződésben jobbra, a földútra kell kanyarodni az országútról, és felfelé menni. Mivel nincsenek fák és bokrok, 20-40 m-es magassága ideálissá teszi a képzésre, kisdombozásra, ahol a siklóernyőzés alapelemei jól megtanulhatók. Északi és délkeleti irányon kívül szinte minden irányban repülhető, vigyázzunk azonban az északkeleti oldalon lévő tanyára, az onnan kijáró nyájat ne háborgassuk. Stabil délkeleti szélben érdemes pár kilométert autózva Mikófalvára menni.",
@@ -851,10 +900,11 @@ const starthelyTombFull = [
   },
   {
     id: 48,
-    nev: "Belsőbáránd Aba",
+    nev: "Belsőbáránd, Aba",
     szintKulombseg: "20",
     startIrany: ["E", "EK","DNY", "NY"],
     gpsKoordinatak: "47.09661, 18.51887",
+    googleLink: "https://goo.gl/maps/c2NNMrRZdRaqENAaA?coh=178573&entry=tt",
     legter: "max 2900m, de E-EK-re a TMA1, max 2300m hataran",
     megJegyzes:
       "A tulaj kéri, hogy gyakorlás előtt jelentkezzünk be nála, hogy elkerülhessük a természetvédőkkel való félreértéseket. Ezen kívül kéri, hogy vigyázzunk a gyepre. Domján Miklós, 30/2351510",
@@ -872,6 +922,7 @@ const starthelyTombFull = [
     szintKulombseg: "25",
     startIrany: ["EK"],
     gpsKoordinatak: "47.63192, 18.94778",
+    googleLink: "https://goo.gl/maps/DembPF8zf2PkEckTA?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "nem engedélyezett tanulódomb, jelenleg nem hasznalhato, a tulajjal nem sikerult megegyezni",
@@ -885,10 +936,11 @@ const starthelyTombFull = [
   },
   {
     id: 50,
-    nev: "Egerszalók tanulódomb",
+    nev: "Egerszalók, Eger tanulódomb",
     szintKulombseg: "40",
     startIrany: ["DNY", "NY", "ENY"],
     gpsKoordinatak: "47.89486, 20.32468",
+    googleLink: "https://goo.gl/maps/5phg6mectktYVaSc6?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "infok 5mp.eu oldalrol: A szóláti út mellett kell a tó felé haladni, és a gáttól kb. 500 méterre lesznek a dombok, az úttól jobbra. Több domb is van, amiről lehet repülni, érdemes átgondolni, hogy az adott szélirány alapján melyik dombról repüljünk. KORLÁTOZÁS: A starthelyet benőtték a bokrok",
@@ -906,6 +958,7 @@ const starthelyTombFull = [
     szintKulombseg: "25",
     startIrany: ["E", "DNY", "NY", "ENY"],
     gpsKoordinatak: "47.64144, 18.65566",
+    googleLink: "https://goo.gl/maps/MSkq9uLp31Vqwdr37?coh=178573&entry=tt",
     legter: "TMA2 2000m, kozelben LH-G10,  1350m",
     megJegyzes:
       "elerheto a starthely term. vedelmi engedelye, amit KEMRSE igenyelt. 2018.06.12-tol 2023.12.31-ig ervenyes, ezzel rendezodott a starthely jogi helyzete.",
@@ -923,6 +976,7 @@ const starthelyTombFull = [
     szintKulombseg: "50",
     startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "48.02776, 20.16613",
+    googleLink: "https://goo.gl/maps/yQuMw4sVXRbiD21w6?coh=178573&entry=tt",
     legter: "LH-TRA23E, 1200m Időszakosan korlátozott honvédségi légtér, csak munkaszüneti napokon használható, bár a honvédség jelenleg nem használja a területet. A területet lefedő nagy NATO-gyakorlózónának erre a picike sarkára vonatkozó, folyamatos használhatóságról szóló engedélykérelem folyamatban van.",
     megJegyzes:
       "",
@@ -936,10 +990,11 @@ const starthelyTombFull = [
   },
   {
     id: 53,
-    nev: "HHH, Homok-hegy tanulódomb",
+    nev: "HHH, Homok-hegy tanulódomb, Csapcse Pad",
     szintKulombseg: "18",
     startIrany: ["NY"],
     gpsKoordinatak: "47.54694, 18.98321",
+    googleLink: "https://goo.gl/maps/MqnHdzVhJToTT2A6A?coh=178573&entry=tt",
     legter: "TMA4, 750m",
     megJegyzes:
       "tiltott kisdomb tulajdonosi hozzájárulás hiányában",
@@ -957,6 +1012,7 @@ const starthelyTombFull = [
     szintKulombseg: "",
     startIrany: ["ENY"],
     gpsKoordinatak: "47.55642, 18.98798",
+    googleLink: "https://goo.gl/maps/mvQKbpY53BQXLd2q9?coh=178573&entry=tt",
     legter: "TMA4, 750m",
     megJegyzes:
       "A kornyek tisztitasa megkezdodott. https://www.bse.hupont.hu/",
@@ -974,6 +1030,7 @@ const starthelyTombFull = [
     szintKulombseg: "35",
     startIrany: ["DK", "D", "DNY"],
     gpsKoordinatak: "47.55599, 18.97952",
+    googleLink: "https://goo.gl/maps/2qWpv9e4AuP9pw1g6?coh=178573&entry=tt",
     legter: "TMA4, 750m",
     megJegyzes:
       "Kezelo klub a BSE ",
@@ -987,10 +1044,11 @@ const starthelyTombFull = [
   },
   {
     id: 56,
-    nev: "Hild tanulódomb",
+    nev: "Hild tanulódomb, Érsekhalma",
     szintKulombseg: "25",
     startIrany: ["ENY"],
     gpsKoordinatak: "46.36339, 19.11509",
+    googleLink: "https://goo.gl/maps/t3uqxQXCRHhr7ekB7?coh=178573&entry=tt",
     legter: "max 2900m",
     megJegyzes:
       "a helyet 2015-ben takaritottak ki, elotte bozotos volt. a leszallo egy ret. eros szelben lejtozheto is a mini gerinc. Barna Tibor infoi:  A hildi sorra kell lemenmi,a régi pezsgő gyárnál,be a faluba és ott jobbra megkerülni a dombot.van út a kaszálón a leszállóig a starthely tulaja baratsagos az ernyosokkel.",
@@ -1008,6 +1066,7 @@ const starthelyTombFull = [
     szintKulombseg: "20",
     startIrany: ["EK"],
     gpsKoordinatak: "47.53175, 19.37337",
+    googleLink: "https://goo.gl/maps/JkN2x54JYPBpR1ur9?coh=178573&entry=tt",
     legter: "TMA6, 600m",
     megJegyzes:
       "Ezek igazából nem is dombok, hanem negatív dombok, vagyis inkább egy gödörbe lehet berepülni : - ) A lankás már akkor sem volt jó a végén, mert lent bekerítették a földet betonkarókkal (volt, aki neki is ütközött).",
@@ -1026,6 +1085,7 @@ const starthelyTombFull = [
     szintKulombseg: "20",
     startIrany: ["DNY"],
     gpsKoordinatak: "47.53962, 19.37688",
+    googleLink: "https://goo.gl/maps/PMxTESQ6S2ZAAEBL6?coh=178573&entry=tt",
     legter: "TMA6, 600m",
     megJegyzes:
       "Ezek igazából nem is dombok, hanem negatív dombok, vagyis inkább egy gödörbe lehet berepülni : - ) A lankás már akkor sem volt jó a végén, mert lent bekerítették a földet betonkarókkal (volt, aki neki is ütközött).",
@@ -1043,6 +1103,7 @@ const starthelyTombFull = [
     szintKulombseg: "75",
     startIrany: ["K", "DK", "D", "DNY"],
     gpsKoordinatak: "47.70368, 18.80307",
+    googleLink: "https://goo.gl/maps/Wv5SQNTLooDpSEFB6?coh=178573&entry=tt",
     legter: "TMA3, 1050m",
     megJegyzes:
       "Tiltott magánterület DNY-ra a legjobb, de hasznalhato D, DK, K iranyokra is. leszallok a domb labanal, a tarolo ENY-i es EK-i reszenel a fakon tul.",
@@ -1056,10 +1117,11 @@ const starthelyTombFull = [
   },
   {
     id: 60,
-    nev: "Kis-strázsa hegy tanulódomb",
+    nev: "Kis-strázsa hegy tanulódomb, Esztergom",
     szintKulombseg: "78",
     startIrany: ["E", "ENY"],
     gpsKoordinatak: "47.75052, 18.74186",
+    googleLink: "https://goo.gl/maps/CWUwrsiKbL79N5oS6?coh=178573&entry=tt",
     legter: "LH-SG10, 1350m",
     megJegyzes:
       "Kis-Strázsa hegy, a 117 es útról letérve a Suzuki gyár felé kb. 500 méter (a domb lábáig kocsival lehet menni). A starhely kényelmes, azt hiszem északias szélre jó, kb 50-60 méter szintkülönbség, tulajdonképpen csak egy púp az egész, tetején vmi régi katonai ojjektummal. Az emelőtér rendkívül kicsi (max 1-2 ernyő és csak ideális szélben), leszálló a domb tövében.",
@@ -1077,6 +1139,7 @@ const starthelyTombFull = [
     szintKulombseg: "20",
     startIrany: ["EK"],
     gpsKoordinatak: "47.864386666277674, 18.985516274242062",
+    googleLink: "https://goo.gl/maps/MxyDUg7J9yr3mBRK6?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "",
@@ -1090,10 +1153,11 @@ const starthelyTombFull = [
   },
   {
     id: 62,
-    nev: "Kövesgyűrűpuszta tanulódomb",
+    nev: "Kövesgyűrűpuszta tanulódomb, Tótvázsony",
     szintKulombseg: "30",
     startIrany: ["EK", "K"],
     gpsKoordinatak: "47.03779, 17.77107",
+    googleLink: "https://goo.gl/maps/MWvNYSe4u7cQSRsb6?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "",
@@ -1107,10 +1171,11 @@ const starthelyTombFull = [
   },
   {
     id: 63,
-    nev: "Máriahalom tanulódomb",
+    nev: "Máriahalom tanulódomb, Gyermely",
     szintKulombseg: "60",
     startIrany: ["DNY"],
     gpsKoordinatak: "47.6225, 18.69452",
+    googleLink: "https://goo.gl/maps/NWLc9U6o4fhAL9F96?coh=178573&entry=tt",
     legter: "TMA3, 1050m. kozelben G10, 1350m es TMA2 2000m",
     megJegyzes:
       "Natura 2000, TV engedelyezett",
@@ -1128,6 +1193,7 @@ const starthelyTombFull = [
     szintKulombseg: "60",
     startIrany: ["DK"],
     gpsKoordinatak: "48.04772, 20.31105",
+    googleLink: "https://goo.gl/maps/qqpxu9Wxwq7a9PU27?coh=178573&entry=tt",
     legter: "",
     megJegyzes:
       " A Mikófalva melletti starthelyet a következőképp érhetjük el. Eger felől érkezve a faluban a sportpálya utáni kereszteződésben balra kell fordulni a kocsmánál, és a tanya mellé kiérve már látható a domb. Jó szél esetén akár meg is lehet lejtőzni. Kissé hosszabb, de szélesebb a bekölcei tanulónál és itt is szép kilátás fogad.",
@@ -1145,6 +1211,7 @@ const starthelyTombFull = [
     szintKulombseg: "25",
     startIrany: ["NY", "ENY"],
     gpsKoordinatak: "47.5015, 18.84567",
+    googleLink: "https://goo.gl/maps/L4fZHvW1V2Rkk5PD7?coh=178573&entry=tt",
     legter: "G3/V: 1350m AMSL",
     megJegyzes:
       "a leszallonak alkalmas resz maganterulet, meg a kirandulokat is elhajtottak onnan. (egy Nivas rendeszet feliratu autoval)",
@@ -1162,6 +1229,7 @@ const starthelyTombFull = [
     szintKulombseg: "40",
     startIrany: ["K", "DK", "D", "DNY"],
     gpsKoordinatak: "48.13661, 20.4068",
+    googleLink: "https://goo.gl/maps/tMrmCf4KRiAVPFCn8?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "Szilvásvárad és Nagyvisnyó között félúton található lovarda felé kell venni az irányt, majd mielőtt elérnénk a tanyát, lesz egy kis útkereszteződés. Itt balra kell fordulni, majd onnan kb. 500m-re parkolható le a kocsi. Itt lesz egy magas fasor, ami alatt egy kis patak folyik keresztül, de itt annyira keskennyé válik a patak egy ponton, hogy át lehet lépni. A patak után egy mezőre jutunk, majd vasúti sín következik. Innen már csak egyenesen fel a domb tetejére. Egy pici szalag jelzi a starthelyet /2012./. Leszállni bármelyik mezőn lehet, de ha a kocsi mellett akarunk landolni, akkor számításba kell venni, hogy a magas fasor tetejére nem egészséges felakadni!",
@@ -1179,6 +1247,7 @@ const starthelyTombFull = [
     szintKulombseg: "25",
     startIrany: ["E", "ENY"],
     gpsKoordinatak: "47.39849, 18.81745",
+    googleLink: "https://goo.gl/maps/QUMRB1cPbz2QTGvF9?coh=178573&entry=tt",
     legter: "TMA2, 2000m",
     megJegyzes:
       "Dombtető jellege: cserjéktől mentes, kb 25x30 méteres, gondozatlan, de sima, füves terület. Járművel közepes minőségű földúton a starthely megközelíthető különösebb vezetői tudás nélkül, de a jármúveket a leszállóval szemben, az aszfaltút mellett érdemes hagyni.Natura 2000, egyéb táblák nme találhatóak. A domb ÉNY részével szemben, az útra lehet leszállni. Balra, jobbra szántók., sík, fa mentes területek. Nyáron gyakori az ültetés. A földeket kerülni kell.",
@@ -1196,6 +1265,7 @@ const starthelyTombFull = [
     szintKulombseg: "90",
     startIrany: ["NY", "ENY"],
     gpsKoordinatak: "47.10974, 17.84283",
+    googleLink: "https://goo.gl/maps/BcffQ1QMqQ1Rk3LN6?coh=178573&entry=tt",
     legter: "LH-TRA11, 2900m",
     megJegyzes:
       "kapcsolattartó: György Tibor Honvédségi terület, mely a HM Verga Rt erdészet kezelésében van. 2004-ben engedélyezték a repülést azzal a feltétellel, hogy látszik, hogy nem okozunk gondot, nem zavarjuk a vadmozgást, stb. Azóta nincs is gond, az engedélyünk jelenleg visszavonásig érvényes. Templom mellett lehet parkolni (5-8 perc séta), vagy a kilátónál, bátrabbak a starthelyig is elmehetnek autóval, csak akkor már nincs hely az ernyők kiterítésére. Kicsi a starthely és az emelőtér.",
@@ -1213,6 +1283,7 @@ const starthelyTombFull = [
     szintKulombseg: "129",
     startIrany: ["DNY"],
     gpsKoordinatak: "47.57027, 18.98333",
+    googleLink: "https://goo.gl/maps/wYqYTmiVU9xmWLQZ9?coh=178573&entry=tt",
     legter: "TMA4, 750m",
     megJegyzes:
       "telefonos elérhetőség: 20-777 6829 Kezelo klub a BSE",
@@ -1226,10 +1297,11 @@ const starthelyTombFull = [
   },
   {
     id: 70,
-    nev: "Kőhegy Pomáz",
+    nev: "Kőhegy Pomáz, Szentendre",
     szintKulombseg: "240",
     startIrany: ["K", "DK", "D"],
     gpsKoordinatak: "47.67386, 19.01863",
+    googleLink: "https://goo.gl/maps/CS74wjMiujbQYaxZA?coh=178573&entry=tt",
     legter: "TMA4, 750m",
     megJegyzes:
       "Autóval Szentendrén át Lajosforrás irányába kell haladni, majd a Kő hegyi túristaházhoz kell eljutni. A starthely a túristaháztól a kilátóhely felé vezető túristaútról balra leágazó ösvényről érhető el (vízszintes séta, kb.500m). A starthely nem túl bizalomgerjesztő. Előtte, alatta kb.50m -el egy kisebb bozótos völgy (tereplépcső) fogadja a rosszul startolókat, vagy a merülésbe indulókat. A sziklák és kilátó Bp környék egyik geológiai és turisztikai  érdekessége. Pomáz felöl is megközelítheto, itt a Susnyár utcán menni a szeméttelep felol, majd a Meredek utcán végig a Kecske téren keresztül. Majdnem végén balra lesz egy üres telek, ahova ernyovel biztonságosan le lehet szállni. Itt lehet hagyni a kocsit és a gyalogösvényen fel lehet menni a hegytetore. A Kő hegy tetején müködö turistaház várja ernyosöket. Itt örülnek nekünk.",
@@ -1243,10 +1315,11 @@ const starthelyTombFull = [
   },
   {
     id: 71,
-    nev: "Márkó",
+    nev: "Márkó, Bánd",
     szintKulombseg: "125",
     startIrany: ["E", "ENY"],
     gpsKoordinatak: "47.10868, 17.81986",
+    googleLink: "https://goo.gl/maps/SMMcGuYPEeDcz26T6?coh=178573&entry=tt",
     legter: "LH-TRA11, 2900m",
     megJegyzes:
       "ha kicsit oldalas, turbulens! a fak miatt. szembol eleg meredek, kis kerulovel kenyelmesebb. kb 25-35perc. Mielőtt Márkóra érnénk Veszprém irányából, balra kell elkanyarodni, a Malom fogadó felé. A fogadó mellett jobbra érünk a hegy lábához, innét lehet felgyalogolni A starthely észak, esetleg enyhe északkeleti szélre jó, a nyugatiasra az ugyanezen a hegyvonulaton Veszprém irányában kb2 km-re levő csatár hegyi starthely a kedvezőbb. A startolás nem egyszerű feladat, enyhén oldalas szélben is örvények keveregnek a körben levő magas fák miatt. Ha sikerül elstartolni, több kellemes düzni is segíti a kikapaszkodást, a gerinc egyenes vonalú, optimális körülmények között akár Csatár-hegyig végigrepülhető. Leszállás kissé körülményes, a hegy lábánál van egy rét, vagy szántóföld, amit két oldalról villanyvezeték határol, másik kettőről pedig fasor, kissé rázós. Összességében első magas startnak nem ajánlom, de lehet felette több órát is repülni kedvező széllel.",
@@ -1260,10 +1333,11 @@ const starthelyTombFull = [
   },
   {
     id: 72,
-    nev: "Nagy-Eged hegy DK",
+    nev: "Nagy-Eged hegy DK, Eger",
     szintKulombseg: "235",
     startIrany: ["DK"],
     gpsKoordinatak: "47.92755, 20.42019",
+    googleLink: "https://goo.gl/maps/KgffCKgBe2kvXxPK8?coh=178573&entry=tt",
     legter: "TRA-23E / TRA-23D, 2900m",
     megJegyzes:
       "három starthely van a hegyen a délkeleti starthely leszállójában lévő vezetéket gyakran megtalálják az ernyősök Autóval Egerből a Noszvaj felé vezető országútról közelíthető meg. Eger várost elhagyva kb 1km után a starthely alatt kell balra, egy nagyüzemi szöllő táblába befordulni. Az út először a DK starthelyhez vissz. Tovább menve, az erdőben balra fordulva jutunk az antennákhoz, ahonnan gyalog kb 100m -re van a másik két starthely. a ÉNY leszállóból 40 perc, a DK-ból 35 perc felgyalogolni a hegyre ",
@@ -1277,10 +1351,11 @@ const starthelyTombFull = [
   },
   {
     id: 73,
-    nev: "Nagy-Eged hegy DNY",
+    nev: "Nagy-Eged hegy DNY, Eger",
     szintKulombseg: "235",
     startIrany: ["DNY"],
     gpsKoordinatak: "47.9281, 20.4116",
+    googleLink: "https://goo.gl/maps/MQVzbjTpJDef7Yrp9?coh=178573&entry=tt",
     legter: "TRA-23E / TRA-23D, 2900m",
     megJegyzes:
       "három starthely van a hegyen a délkeleti starthely leszállójában lévő vezetéket gyakran megtalálják az ernyősök Autóval Egerből a Noszvaj felé vezető országútról közelíthető meg. Eger várost elhagyva kb 1km után a starthely alatt kell balra, egy nagyüzemi szöllő táblába befordulni. Az út először a DK starthelyhez vissz. Tovább menve, az erdőben balra fordulva jutunk az antennákhoz, ahonnan gyalog kb 100m -re van a másik két starthely. a ÉNY leszállóból 40 perc, a DK-ból 35 perc felgyalogolni a hegyre ",
@@ -1298,6 +1373,7 @@ const starthelyTombFull = [
     szintKulombseg: "235",
     startIrany: ["NY", "ENY"],
     gpsKoordinatak: "47.92919, 20.4116",
+    googleLink: "https://goo.gl/maps/TCZm4EirxNHgLBuLA?coh=178573&entry=tt",
     legter: "TRA-23E / TRA-23D, 2900m",
     megJegyzes:
       "három starthely van a hegyen a délkeleti starthely leszállójában lévő vezetéket gyakran megtalálják az ernyősök Autóval Egerből a Noszvaj felé vezető országútról közelíthető meg. Eger várost elhagyva kb 1km után a starthely alatt kell balra, egy nagyüzemi szöllő táblába befordulni. Az út először a DK starthelyhez vissz. Tovább menve, az erdőben balra fordulva jutunk az antennákhoz, ahonnan gyalog kb 100m -re van a másik két starthely. a ÉNY leszállóból 40 perc, a DK-ból 35 perc felgyalogolni a hegyre ",
@@ -1315,6 +1391,7 @@ const starthelyTombFull = [
     szintKulombseg: "270",
     startIrany: ["E", "EK", "DNY", "NY", "ENY"],
     gpsKoordinatak: "47.91005, 19.76126",
+    googleLink: "https://goo.gl/maps/4uHttyyxU8r9wnsg8?coh=178573&entry=tt",
     legter: "LH-SG30, 2900m",
     megJegyzes:
       "Parkoló (47°55’47.1″N 19°44’32.5″E): A térképen jelölt helyig aszfaltozott út vezet, ahol önkormányzati kezelésű, beton gyeprácsos parkoló van kialakítva 6-8 személyautó részére. Nyikom-leszálló (47°54’54.5″N 19°44’50.0″E): 340-350m AMSL. A területig egyik irányból zúzott kavicsos út, másik irányból földút vezet. Jelenleg a térképen jelölt szürke útvonalon személyautóval, a zöld útvonalon terepjáróval javasolt a leszállót megközelíteni. A terület vadhálóval körbekerített, kérjük csak a járt utat használd! 2021. évben a starthelyalapot befizetett pilótáknak (HFFA és SIRESZ tagok) a parkolás a széljelző zsáktól északra, a kerítés mellett engedélyezett. Nyikom-starthely (47°54’36.3″N 19°45’40.2″E): 610m AMSL. Startolható (D)-DNY-NY-ÉNY-É-(ÉK) irányban. 3 rámpa, két gumiszőnyeg és DNY irányába kialakított füves start várja az idelátogatókat. A leszállótól a starthelyig vezető út 2/3-ig zúzott kavicsos, ami személyautóval járható. ",
@@ -1332,7 +1409,8 @@ const starthelyTombFull = [
     szintKulombseg: "110",
     startIrany: ["DNY", "NY"],
     gpsKoordinatak: "48.19819, 20.70167",
-    legter: "na",
+    googleLink: "https://goo.gl/maps/C3oQRJRwCnUUqd1v8?coh=178573&entry=tt",
+    legter: "nincs közelben LHR12 Sajóbábony LHB32 Bükk LHSDZLHMC/Miskolc Drop Zone légtér",
     megJegyzes:
       "",
     meteo: "",
@@ -1349,6 +1427,7 @@ const starthelyTombFull = [
     szintKulombseg: "200",
     startIrany: ["DK", "D", "DNY"],
     gpsKoordinatak: "45.88381, 18.24769",
+    googleLink: "https://goo.gl/maps/4nnxVRUhNKKbia5NA?coh=178573&entry=tt",
     legter: "Pecs-Pogany TIZ-ben fekszik a starthely, max 2900m. repules elott bejelentkezes: 36/72/450-619 Mobil: 36/30/560-9325 - eleg valakinek a tarsosagbol napi 1x szolni, hogy tudjanak rolunk es akkor be lehet repulni.",
     megJegyzes:
       "Autóval nem közelíthető meg, csak gyalog, de kb. 20-25 perc könnyű sétával elérhető a starthely. Ritkábban használjuk ezt a starthelyet, az alacsony szintkülönbség és a lejtő hiánya miatt. Leggyakrabban akkor, ha Jakabhegyen vagy Szársomlyón túl erős a szél. A starthely a jakabhegyi leszálló magasságában van. Ideális hely kezdők oktatására, első magasstartokra. A starthely a hegy oldalában lévő kőfejtő felett található. A starthely előtti lejtő nem túl nagy, de ha sikerül kiemelkedni, akkor keleti irányban egészen Máriagyűdig lejtőzhető a Villányi hegység. Leszálló a főút mellett van, vagy a főút túloldalán a parlagon hagyott szántóföldek is használhatók. Pécstől dél felé kell indulni az 58-as főúton Siklós, Harkány felé. A Villányi hegységet elérve Siklós irányt kövessük. Az elágazás után rögtön le kell fordulni első kis utcán a kertesházak közé. Az út végén egy kőfejtő van. Itt lehet parkolni. Innen kell nekiindulni a hegynek. Két placc van, az egyik amit elöször elérsz a D, DK és DNy irányokra jó, s egy kicsit hátrébb van a Nyugati starthely.",
@@ -1366,6 +1445,7 @@ const starthelyTombFull = [
     szintKulombseg: "100",
     startIrany: ["EK", "K", "DK"],
     gpsKoordinatak: "48.26209, 20.53026",
+    googleLink: "https://goo.gl/maps/j31zDXsEjRmb64hu6?coh=178573&entry=tt",
     legter: "max. 2900m",
     megJegyzes:
       "Megközelíteni a 26. számú főút és Nagybarca közötti mellékútról lehet. Főútról lefordulni a nagy trafóháznál kell. A starthelyre feljutni nem túl nehéz, kb. 20 perc kényelmesen. Magasság a leszállóig 110 méter. A völgyhöz képest pedig 130-140. A starthely ideális méretű és meredekségű, viszont Északias szélben rotoros lehet a fák miatt. Ideális szélirány K-ÉK, K és K-DK.",
@@ -1383,6 +1463,7 @@ const starthelyTombFull = [
     szintKulombseg: "",
     startIrany: ["DNY"],
     gpsKoordinatak: "47.836427308291995, 19.04332028130655",
+    googleLink: "https://goo.gl/maps/hZMkQJ72v5Lbqc1LA?coh=178573&entry=tt",
     legter: "TMA5, 2000m, kozelben D34",
     megJegyzes:
       "iden tavasszal kialakitott, szuk, kb mint a visegradi Nagyvillam start amit mindket oldalrol fak szegelyeznek, igy turbos lehet. a start also reszen egy romos epulet alapja folott emelkedunk ki. az emeloter nem tul nagy, nincs egyseges lejtoter, de a kilatas kaprotol a Dunakanyarra. nem DINP, maganterulet. leszallok mezok a lakott teruleten tul, deli iranyba.",
@@ -1399,7 +1480,8 @@ const starthelyTombFull = [
     nev: "Beloiannisz, Iváncsa",
     szintKulombseg: "20",
     startIrany: ["K"],
-    gpsKoordinatak: "47.17811, 18.8303",
+   gpsKoordinatak: "47.17811, 18.8303",
+   googleLink: "https://goo.gl/maps/sGCPgTfBngCh61Eu7?coh=178573&entry=tt",
     legter: "max 2900m",
     megJegyzes:
       "E-D iranyu, keletre nezo tobb km hosszusagu, kis szintkulonbsegu loszfal. erosebb keleti iranyu szelben lejtozheto",
@@ -1416,7 +1498,8 @@ const starthelyTombFull = [
     nev: "Berceli-hegy, Szanda",
     szintKulombseg: "250",
     startIrany: ["DNY"],
-    gpsKoordinatak: "47.88909, 19.41425",
+   gpsKoordinatak: "47.88909, 19.41425",
+   googleLink: "https://goo.gl/maps/XbHG3pYXxwEm3ta77?coh=178573&entry=tt",
     legter: "TMA5, 2000m hataran",
     megJegyzes:
       "",
@@ -1433,7 +1516,8 @@ const starthelyTombFull = [
     nev: "Csakhegy",
     szintKulombseg: "90",
     startIrany: ["E", "EK", "ENY"],
-    gpsKoordinatak: "47.85805, 18.8642",
+   gpsKoordinatak: "47.85805, 18.8642",
+   googleLink: "https://goo.gl/maps/JQUDnVaAUDfycRhY9?coh=178573&entry=tt",
     legter: "TMA5, 2000m, kozelben D34",
     megJegyzes:
       "A terulet: Csak-hegy andezitbanya, Marianosztra hataraban",
@@ -1447,10 +1531,11 @@ const starthelyTombFull = [
   },
  {
     id: 83,
-    nev: "Csehi-Berc, Szucs - NY, DNY",
+    nev: "Csehi-Berc, Szúcs",
     szintKulombseg: "110",
     startIrany: ["DNY", "NY"],
-    gpsKoordinatak: "48.05353, 20.24333",
+   gpsKoordinatak: "48.05353, 20.24333",
+   googleLink: "https://goo.gl/maps/Bf4tcDETnfX8UawA9?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "Szúcs faluból kiérve balról kerüljük meg a Csehi-bércet Tarnalelesz irányába, majd egy balos kanyar közepén le tudunk fordulni jobbra a földútra. Ez végigvezet a csöcsök alá. A baloldali csöcs bimbójáról startolhatunk. A csöcsös két kúp alakú domb. NY-i szélben nagyon szűk az emelőtér. Max. 1-2 ernyő fér el lejtőn. A csöcs sikeres meghágása után lenézve jobbra, magas fák között található a jókora leszálló. A leszálló körüli bozontos erdő, de leginkább némely magasra felálló fa miatt javaslom, hogy magasról helyezkedjünk be a leszállóba, majd föléérve S-elve koptassuk a magasságunk és így középtájt könnyen leszállhatunk. Ha a csöcsről egyenesen, nyugat felé repülünk, a csöcs aljában a keresztben lévő földút másik oldalán lévő, azzal párhuzamos mezőn is leszállhatunk, de a mező túlsó oldalán villanyvezeték fut, erre szállva megrázó élményben lehet részünk még akkor is, ha előtte kellemesen elcsöcsörésztük az időt",
@@ -1467,7 +1552,8 @@ const starthelyTombFull = [
     nev: "Csúcsos-hegy, Nadap ",
     szintKulombseg: "80",
     startIrany: ["EK"],
-    gpsKoordinatak: "47.26891, 18.62775",
+   gpsKoordinatak: "47.26891, 18.62775",
+   googleLink: "https://goo.gl/maps/JTt67MweQ5epXskk8?coh=178573&entry=tt",
     legter: "TMA1, 2300m",
     megJegyzes:
       "A Csúcsos-hegy a Velencei-hegység legkeletibb csúcsa Nadap és Pázmánd között. Magassága 268m. Elég szűkös a starthely, vigyázni kell a leakadásokra. Szintkülönbség 100m, lejtőzni nem nagyon lehet, az alakjából következtetve, viszont termikfogással távrepülésre ösztönzi a siklóernyős pilótákat, amire volt már nem egy példa. Leszálló a szőlő és a szántóföld közötti füves rész, de szántóföld is alkalmas leszállásra. Leszállóból vissza a hegyre nagyon vigyázzunk a méhkaptárra!",
@@ -1484,7 +1570,8 @@ const starthelyTombFull = [
     nev: "HHH, Költők padja ",
     szintKulombseg: "120",
     startIrany: ["E"],
-    gpsKoordinatak: "47.576, 18.96761",
+   gpsKoordinatak: "47.576, 18.96761",
+   googleLink: "https://goo.gl/maps/i9n9VcwG2drqpuNc6?coh=178573&entry=tt",
     legter: "TMA4, 750m",
     megJegyzes:
       "Még éppen startolható, szűk, nagyon turbós, ágas bogas, leakadós. Nagyon ritkán használható starthely. A völgyben szinte mindig völgyirányú a szél. A hegy és a fák ráfordítják a szelet a starthelyre, így el lehet indulni, oldalas szélben is, de amint kiérsz a fa mellől, ordas csukást kapsz. A leszálló épp csak elérhető, kicsi a szintkülönbség. A völgyben is valódi határozott É-i szélben repülhető csak! Kizárólag nagyon tapasztalt pilótáknak! A megközelítése nagyon könnyű. Kb 5 perc a kocsitól, déli irányból. A leszállóból viszont, kb. mint Vértes megmászása",
@@ -1501,7 +1588,8 @@ const starthelyTombFull = [
     nev: "Ipolydamásd - DNY",
     szintKulombseg: "170",
     startIrany: ["DNY"],
-    gpsKoordinatak: "47.85207, 18.83439",
+   gpsKoordinatak: "47.85207, 18.83439",
+   googleLink: "https://goo.gl/maps/R9j3FBaJgxNeGUjB6?coh=178573&entry=tt",
     legter: "TMA5, 2000m, kozelben D34",
     megJegyzes:
       "a helyszinen a tulajdonos fenyegetoen lepett fel (rendorseg, stb) igy nem latnak szivesen minket jelenleg. Amúgy nagyon szép panorámával rendelkezik a hely, a starthely jó, leszálló jó, kicsit messze van, de elérhető, az egész terület nem túl meredek, de élénk szélben tart, sok hely van visszaszállni is",
@@ -1518,8 +1606,9 @@ const starthelyTombFull = [
     nev: "Karancs, Somoskoujfalu",
     szintKulombseg: "240",
     startIrany: ["DK", "D"],
-    gpsKoordinatak: "48.15205, 19.79787",
-    legter: "na",
+   gpsKoordinatak: "48.15205, 19.79787",
+   googleLink: "https://goo.gl/maps/aWc8htcqKNWC66HQ7?coh=178573&entry=tt",
+    legter: "Határ közelsége",
     megJegyzes:
       "nehany log akad csupa. valoszinuleg nem lesz ezentul sem tul nepszeru, mert D-DK iranyra jo, viszont nagyon kozel a szlovak hatar.",
     meteo: "",
@@ -1535,7 +1624,8 @@ const starthelyTombFull = [
     nev: "Kő-hegy, Szokolya",
     szintKulombseg: "185",
     startIrany: ["DNY", "NY"],
-    gpsKoordinatak: "47.87581, 19.03699",
+   gpsKoordinatak: "47.87581, 19.03699",
+   googleLink: "https://goo.gl/maps/2AyMn1W7bj8y8WJ3A?coh=178573&entry=tt",
     legter: " TMA5, 2000m, kozelben D34",
     megJegyzes:
       "",
@@ -1552,7 +1642,8 @@ const starthelyTombFull = [
     nev: "Magas hegy, Sátoraljaújhely",
     szintKulombseg: "375",
     startIrany: ["E", "EK"],
-    gpsKoordinatak: "48.40258, 21.63177",
+   gpsKoordinatak: "48.40258, 21.63177",
+   googleLink: "https://goo.gl/maps/rbEqcdStm76v7zzs8?coh=178573&entry=tt",
     legter: "Kassa TMA2: 305m AGL",
     megJegyzes:
       "inkabb a jobboldali sipalyat erdemes hasznalni starthoz. jelenleg magas a novenyzet, nehol koves, de meredek, konnyen emel. a mai gyengebb szelben ok, de elenkben valoszinuleg igen turbos a fak miatt. a helyiek szerint tavra a 37-es fout iranyaba szabad menni itt lehet a 305m AGL fole (Kassa TMA2) emelkedni. Zemplen fole nem szabad indulni.",
@@ -1567,10 +1658,11 @@ const starthelyTombFull = [
 
  {
     id: 90,
-    nev: "Monok (Bekecs)",
+    nev: "Monok (Bekecs), Kopasz hegy",
     szintKulombseg: "126",
     startIrany: ["NY", "ENY"],
-    gpsKoordinatak: "48.20213, 21.13885",
+   gpsKoordinatak: "48.20213, 21.13885",
+   googleLink: "https://goo.gl/maps/YXcbMX1DFpNo2vSa8?coh=178573&entry=tt",
     legter: "Kassa TMA2: 305m AGL",
     megJegyzes:
       "Magas start helyett inkább tanulódomb?",
@@ -1584,10 +1676,11 @@ const starthelyTombFull = [
   },
  {
     id: 91,
-    nev: "Muzsla, Horak-berc, Csalarda-berc",
+    nev: "Muzsla, Horak-berc, Csalarda-berc, Pásztó",
     szintKulombseg: "185",
     startIrany: ["NY", "ENY"],
-    gpsKoordinatak: "47.89706, 19.75081",
+   gpsKoordinatak: "47.89706, 19.75081",
+   googleLink: "https://goo.gl/maps/S3gb4eFdVn9qNAbk8?coh=178573&entry=tt",
     legter: "LH-SG30, 2900m",
     megJegyzes:
       "a starthelyen sok a csipkebokor",
@@ -1604,7 +1697,8 @@ const starthelyTombFull = [
     nev: "Nagylóc",
     szintKulombseg: "100",
     startIrany: ["DNY", "NY"],
-    gpsKoordinatak: "48.06039, 19.56913",
+   gpsKoordinatak: "48.06039, 19.56913",
+   googleLink: "https://goo.gl/maps/Q9EgFk3TDgyTJfJ4A?coh=178573&entry=tt",
     legter: "max 2900m",
     megJegyzes:
       "Szécsény-Nagylóc útról nem túl jó minőségű betonozott út (narancs vonal) vezet a gerinc déli csücskéhez. Gödrös, töredezett, de városi kisautóval is simán járható. A betonút végén bőven van füves terület parkolni. Innen kényelmes, kb. negyed órás séta, jól látható ösvényen (sárga vonal). Starthely: Óriási, füves, nem leakadós, visszaszállni is jócskán van hely. Egyetlen -nem elhanyagolható- problémája, hogy teljesen a hegy tetején van, és nem túl meredek: baromira beerősödik a szél és inkább csak hátra felé tol, de nem emel. Cserébe pont annyira magasak a fák-bokrok a végén, hogy kétséges legyen, hogy megugorhatóak-e :) (én csak úgy mertem megpróbálni, hogy vártam jó nagy befúvásra, hogy jóval a fák előtt kiemeljen; ha mégsem tűnik elégnek a magasság, van hely meggondolni magunkat) Gerinc: NY-DNY szélre jó, ~90-100m szintkülönbséggel. Kb. 2km hosszan lejtőzhető, leszálló végig akad, de figyelni kell azért.",
@@ -1621,7 +1715,8 @@ const starthelyTombFull = [
     nev: "Nagyvillam, Visegrad",
     szintKulombseg: "120",
     startIrany: ["E", "ENY"],
-    gpsKoordinatak: "47.79617, 18.99145",
+   gpsKoordinatak: "47.79617, 18.99145",
+   googleLink: "https://goo.gl/maps/RHtaFaaLtCLN31Li9?coh=178573&entry=tt",
     legter: "TMA5, 2000m. kozelben TMA3, 1050m",
     megJegyzes:
       "parkolni (napijegy 1000Ft) inkabb a Nagyvillam Etteremnel erdemes, innen a legrovidebb gyalog. a bobpalya mellett is fel lehet gyalogolni, a Zsitvay kilatot erintve. startszoge kb. 340-17 fok. nagyon meredek (es vegig fuves), igy gyenge szelben is hamar elemel. a starthely igen turbulens oldalas szelben. a leszallok szinten, barmilyen szelben a domborzati viszonyok es a kornyeken talalhato fasorok, maganyos fak miatt. az emeloter viszonylag kicsi.",
@@ -1638,7 +1733,8 @@ const starthelyTombFull = [
     nev: "Pilisjászfalu",
     szintKulombseg: "80",
     startIrany: ["D", "DNY"],
-    gpsKoordinatak: "47.66019, 18.78942",
+   gpsKoordinatak: "47.66019, 18.78942",
+   googleLink: "https://goo.gl/maps/P9T5SJwqYJc9omAw8?coh=178573&entry=tt",
     legter: "TMA3, 1050m",
     megJegyzes:
       "",
@@ -1655,7 +1751,8 @@ const starthelyTombFull = [
     nev: "Rád, Koporsó-hegy - DNY",
     szintKulombseg: "100",
     startIrany: ["DNY"],
-    gpsKoordinatak: "47.80114, 19.22511",
+   gpsKoordinatak: "47.80114, 19.22511",
+   googleLink: "https://goo.gl/maps/Qr24QEzHxTyKRPrGA?coh=178573&entry=tt",
     legter: "G23 es E-ra TMA5: 2000m",
     megJegyzes:
       "",
@@ -1672,7 +1769,8 @@ const starthelyTombFull = [
     nev: "Rimóc",
     szintKulombseg: "80",
     startIrany: ["NY"],
-    gpsKoordinatak: "48.04099, 19.55022",
+   gpsKoordinatak: "48.04099, 19.55022",
+   googleLink: "https://goo.gl/maps/4jGu3iHxN3eWoNXC8?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "A starthely kényelmes, kb. 30m széles kezelt füves terület, az ernyő kiterítéséhez bőven elegendő hellyel, visszaszállásra is alkalmas, kétoldalt cserjés, bokros sávokkal. Szalagok és szélzsák is segít a szélirány meghatározásában.",
@@ -1689,7 +1787,8 @@ const starthelyTombFull = [
     nev: "Szekszárd I. - E, EK",
     szintKulombseg: "140",
     startIrany: ["E", "EK"],
-    gpsKoordinatak: "46.37183, 18.68317",
+   gpsKoordinatak: "46.37183, 18.68317",
+   googleLink: "https://goo.gl/maps/euzBdskrywiyb8mC6?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "A hatos út déli oldalán található. Kicsi az emelőtér, ha lemerülsz nívó alá rögtön indulj a leszállóba, amit a 6os út tuloldanlán találsz, a Siófoki elágazásnál",
@@ -1706,8 +1805,9 @@ const starthelyTombFull = [
     nev: "Szekszárd II. - ENY",
     szintKulombseg: "120",
     startIrany: ["ENY"],
-    gpsKoordinatak: "46.37023, 18.67253",
-    legter: "na",
+   gpsKoordinatak: "46.37023, 18.67253",
+   googleLink: "https://goo.gl/maps/y6mnpBq5N7rPGftH6?coh=178573&entry=tt",
+    legter: "Reptéri közelben dropzone",
     megJegyzes:
       "A hegygerinc végén található, a starthelytől keletre van a gerinc, nyugatra pedig egy völgy, amiben felgyorsul a szél, ezért kissé turbulens. A hegy kb még 50 méterrel magasabb. elég nagy az emelőtér, leszálló pedig alatt, a 6os út mindkét oldalán található",
     meteo: "",
