@@ -834,6 +834,7 @@ height: auto;
 
 
 th, td {
+  font-size: calc(1rem + 5vw);
   
   background-color: var(--white-elements);
   padding: 1rem;
