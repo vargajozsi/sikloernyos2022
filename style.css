@@ -57,7 +57,6 @@ a {
   font-size: calc(1rem + 1vw);
 }
 
-
 p {
   font-size: calc(1rem + 0.8vw);
   line-height: inherit;
@@ -120,7 +119,7 @@ header {
   left: 0;
 }
 
-.menuhider>.menuhiderarrow {
+.menuhider > .menuhiderarrow {
   position: absolute;
   bottom: 50%;
   right: 50%;
@@ -171,17 +170,17 @@ header {
   transform-origin: top center;
 }
 
-.submenu>li>a {
+.submenu > li > a {
   padding: 0.5em 1.5em;
 }
 
-.menu>li:hover>a,
-.submenu>li:hover>a {
+.menu > li:hover > a,
+.submenu > li:hover > a {
   background-color: hsla(0, 0%, 100%, 0.07);
   color: var(--linkelement);
 }
 
-menu>li:hover>a {
+menu > li:hover > a {
   background-color: hsla(0, 0%, 100%, 0.2);
 }
 
@@ -196,12 +195,12 @@ menu>li:hover>a {
 }
 
 /* Arrow animating*/
-.menu>li:hover>a>.arrow {
+.menu > li:hover > a > .arrow {
   font-size: 0.4em;
 }
 
 /* unhide submenus */
-.menu>li:hover>a+.submenu {
+.menu > li:hover > a + .submenu {
   opacity: 1;
   transform: scaleY(1);
   transition: transform 0.5s;
@@ -231,8 +230,8 @@ h1 {
   text-shadow: -2px -2px 19px rgb(255, 255, 255), black 3px 3px;
 }
 
-h2, .abc {
-  
+h2,
+.abc {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   font-size: calc(1.5rem + 1vw);
@@ -302,7 +301,6 @@ i[forditas]:hover::after {
   font-family: "Source Sans Pro", sans-serif;
   transition: background-color 1s;
   line-height: 1.6em;
-
 }
 
 .tartalom::first-letter {
@@ -357,8 +355,8 @@ footer div {
 }
 
 /*the beginn of starthelyek specifed style elements*/
-div.google-starthely>a,
-div.tabla-starthely>a {
+div.google-starthely > a,
+div.tabla-starthely > a {
   font-size: calc(1.5rem + 1vw);
 }
 
@@ -386,7 +384,6 @@ div.tabla-starthely>a {
   max-width: 100vw;
 }
 
-
 .google-starthely:hover,
 .tabla-starthely:hover {
   background-color: var(--black-elements);
@@ -405,24 +402,38 @@ div.tabla-starthely>a {
   color: var(--linkelement);
 }
 
-.starthelyKeresoWrapper {
-display: flex;
-margin: 2rem 0 2rem 0;
-justify-content: flex-end;
+#starthelyKereses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+table, td, tr {
+  border: 1px solid hsla(0, 21%, 64%, 0.432);
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+.starthelyKeresoWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0 2rem 0;
+  justify-content: center;
+  align-items: center;
+}
 
-.startHelyValasztoForm, .startHelyStatusForm {
+.startHelyValasztoForm,
+.startHelyStatusForm {
   background-color: var(--white-elements);
   max-width: fit-content;
   margin: auto;
 }
-.startHelyValasztoForm fieldset, .startHelyStatusForm fieldset {
+.startHelyValasztoForm fieldset,
+.startHelyStatusForm fieldset {
   max-width: fit-content;
 
   padding: 1.4rem;
   font-size: calc(1rem + 1vw);
-  font-weight:600;
+  font-weight: 600;
   margin: auto;
   color: #000;
   background-color: #fff;
@@ -433,6 +444,48 @@ justify-content: flex-end;
 }
 .showElement {
   display: block;
+}
+
+
+
+.tisztazatlan{
+  width: 100vw;
+  margin: 3rem;
+  text-align: center;
+width: 90vw;
+font-size: calc(1rem + 1vw);
+padding: 2rem 0;
+background-color: var(--white-elements);
+
+}
+
+.engedelyezett{
+  width: 100vw;
+  margin: 3rem;
+  text-align: center;
+width: 90vw;
+font-size: calc(1rem + 1vw);
+padding: 2rem 0;
+  background-color: #2be453;
+
+}
+
+.tiltott {
+  width: 100vw;
+  margin: 3rem;
+  text-align: center;
+width: 90vw;
+font-size: calc(1rem + 1vw);
+padding: 2rem 0;
+  background-color: #e4372b;
+
+}
+
+.starthely-table tfoot {
+  color: var(--white-elements);
+  background: var(--attetszo-sotet);
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  height: 5rem;
 }
 
 /*the end of starthelyek specifed style elements*/
@@ -470,9 +523,8 @@ justify-content: flex-end;
 
 #pic-header-airborne {
   background: url(./media/airborneBg.jpg);
-  background-position:center;
-  background-size: cover ;
-
+  background-position: center;
+  background-size: cover;
 }
 
 #pic-header-aeroclub {
@@ -497,11 +549,9 @@ justify-content: flex-end;
 
 #pic-header-budaiSE {
   background: url(./media/budaise_logo.jpg);
-  background-position:center;
-  background-size: cover ;
-
+  background-position: center;
+  background-size: cover;
 }
-
 
 #pic-header-flyaway {
   background: url(./media/flyawayBg.png);
@@ -641,12 +691,11 @@ address {
   width: 100%;
 }
 
-
 .formdiv {
-border: var(--linkelement-dark) 1px solid;
+  border: var(--linkelement-dark) 1px solid;
 }
 
-.flex{
+.flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -663,17 +712,19 @@ border: var(--linkelement-dark) 1px solid;
   border: 3px solid;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: linear-gradient(to bottom,
-      var(--linkelement-dark),
-      rgba(252, 252, 252, 0.1));
+  border-image-source: linear-gradient(
+    to bottom,
+    var(--linkelement-dark),
+    rgba(252, 252, 252, 0.1)
+  );
   border-radius: 0.5rem;
 }
 
-.articlesiklo img, .articlesiklo video {
-width: 100%;
-height: auto;    
+.articlesiklo img,
+.articlesiklo video {
+  width: 100%;
+  height: auto;
 }
-
 
 .articlesiklo h2 {
   min-width: 100%;
@@ -696,7 +747,6 @@ height: auto;
   padding: 0.2rem;
 }
 
-
 .articlesiklo p {
   display: none;
   font-size: clamp(1rem, 2vw, 2rem);
@@ -705,8 +755,6 @@ height: auto;
   color: var(--white-elements);
   line-height: 1.6;
 }
-
-
 
 .rekordokbox {
   display: flex;
@@ -719,13 +767,16 @@ height: auto;
 .range {
   display: flex;
   width: 100%;
-  justify-content:flex-start;
+  justify-content: flex-start;
 }
 
-
 @keyframes rekordRange {
-  from {width: 0; }
-  to {width: 30,35%;}
+  from {
+    width: 0;
+  }
+  to {
+    width: 30, 35%;
+  }
 }
 
 #A1990 {
@@ -783,7 +834,6 @@ height: auto;
   animation-fill-mode: forwards;
 }
 
-
 #A2012 {
   color: var(--white-elements);
   margin: calc(0.2rem + 0.5vw) 1rem;
@@ -806,8 +856,6 @@ height: auto;
   animation-fill-mode: forwards;
 }
 
-
-
 .rejtes {
   display: none;
 }
@@ -829,55 +877,14 @@ height: auto;
   background-color: var(--black-elements);
 }
 
-
 /*the end of sikloernyozes specifed style elements*/
 
-
-th, td {
-  
-  background-color: var(--white-elements);
-  padding: 1rem;
-}
-
-
-.starthely-table a {
-  text-decoration: none;
-  color: var(--black-elements);
-}
-
-.starthely-table thead {
-  color: var(--white-elements);
-  background: var(--attetszo-sotet);
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
-  height: 5rem;
-}
-
-.tisztazatlan td {
-background-color: var(--white-elements);
-}
-
-.engedelyezett td {
-    background-color:  #2be453;
-}
-
-.tiltott td {
-  background-color:  #e4372b;
-}
-
-.starthely-table tfoot {
-  color: var(--white-elements);
-  background: var(--attetszo-sotet);
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
-  height: 5rem;
-}
-
-/*the end of starthelyek specifed style elements*/
 /* The begin of hirek specificed elements */
 .hirek-kontener {
   width: 100%;
 }
 
-table {
+#hirekTable {
   display: table;
   margin: auto;
   border-collapse: separate;
@@ -888,23 +895,25 @@ table {
   font-size: calc(0.5rem + 1vw);
 }
 
-tbody {
+#hirekTable tbody {
   display: table-row-group;
   vertical-align: middle;
   border-color: inherit;
 }
 
 article {
-  margin: 3rem auto 3rem ;
+  margin: 3rem auto 3rem;
   max-width: 80%;
   background-color: var(--attetszo-sotet);
   overflow: hidden;
   border: 3px solid;
   border-image-slice: 1;
   border-width: 2px;
-  border-image-source: linear-gradient(to bottom,
-      var(--linkelement-dark),
-      rgba(252, 252, 252, 0.1));
+  border-image-source: linear-gradient(
+    to bottom,
+    var(--linkelement-dark),
+    rgba(252, 252, 252, 0.1)
+  );
   border-radius: 0.5rem;
 }
 
@@ -1043,18 +1052,17 @@ article {
   border-radius: 3px;
 }
 
-
 /*-------the end of the top to bottom specifed style elements*/
 
 /*-------the begin of Legterek specifed style elements*/
 
-.legtereksection{
-text-align: center;
+.legtereksection {
+  text-align: center;
 }
 
 .legterArticle {
-width: 95%;
-overflow: hidden;
+  width: 95%;
+  overflow: hidden;
 }
 
 .legterkep {
@@ -1065,7 +1073,7 @@ overflow: hidden;
   font-size: 2rem;
   font-weight: bold;
   background-color: var(--attetszo-sotet);
-  color: var(--linkelement)
+  color: var(--linkelement);
 }
 
 .legterkep:hover {
@@ -1074,12 +1082,10 @@ overflow: hidden;
   color: var(--white-elements);
 }
 
-
 .ogniframe {
   width: 100vw;
   height: 768px;
 }
-
 
 /* The end of Legterek specificed elements */
 /*-------the begin of Reporvosi specifed style elements*/
@@ -1098,25 +1104,20 @@ overflow: hidden;
   line-height: 1.6em;
 }
 
-
 .reporvosiul:hover {
   background-color: black;
 }
 
-.reporvosiul>li {
+.reporvosiul > li {
   margin: 2rem;
 }
 
-
-.LAPL_minta:hover  {
-position: absolute;
-width: 70%;
-height: auto;
-margin-left: 0;
-
+.LAPL_minta:hover {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  margin-left: 0;
 }
-
-
 
 /* The end of Reporvosi specificed elements */
 
@@ -1136,7 +1137,6 @@ margin-left: 0;
   border: var(--linkelement-dark) 2px solid;
 }
 
-
 .markak {
   min-height: 200px;
   height: fit-content;
@@ -1146,18 +1146,17 @@ margin-left: 0;
   margin: 2em;
   max-width: 300px;
   border: var(--linkelement-dark) 2px solid;
-
 }
 
 .markak img {
- width: 100%;
- height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .gyartoSzoveg {
   padding: 1rem;
-background-color: var(--attetszo-sotet);
-color: var(--white-elements);
+  background-color: var(--attetszo-sotet);
+  color: var(--white-elements);
 }
 
 .gyartoLi {
@@ -1165,14 +1164,11 @@ color: var(--white-elements);
   margin: 0.2rem;
   padding: 1rem;
 }
-.gyartoLi ul li{
+.gyartoLi ul li {
   list-style: none;
-
 }
 
-
 /*-------the end of Sikloernyo gyarto cegek specifed style elements*/
-
 
 /*-------the begin of szövetségek specifed style elements*/
 .szovetsegek {
@@ -1184,19 +1180,15 @@ color: var(--white-elements);
   margin: 2em;
   max-width: 450px;
   border: var(--linkelement-dark) 2px solid;
-
 }
 
-
-.szovetsegek img, .szovetsegek video {
+.szovetsegek img,
+.szovetsegek video {
   width: 100%;
-  height: auto;    
-  }
+  height: auto;
+}
 
 /*-------the end of szövetségek specifed style elements*/
-
-
-
 
 /*-------the begin of meterologi specifed style elements*/
 .meteo-wrapper {
@@ -1221,7 +1213,7 @@ color: var(--white-elements);
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: auto;
   gap: 1rem;
-  
+
   justify-items: center;
   align-content: center;
   justify-content: space-around;
@@ -1265,8 +1257,6 @@ article p span {
   font-size: calc(1rem + 1vw);
 }
 
-
-
 .link-egyed a:hover {
   font-size: calc(1.2rem + 1vw);
   color: var(--linkelement-dark);
@@ -1275,7 +1265,6 @@ article p span {
 .link-egyed a img {
   max-width: 100%;
   margin-bottom: 2rem;
-  
 }
 
 #windy {
@@ -1345,7 +1334,7 @@ iframe {
     margin-left: 15rem;
   }
 
-  header>nav>div:nth-child(2)>ul>div {
+  header > nav > div:nth-child(2) > ul > div {
     visibility: visible;
   }
 
@@ -1355,12 +1344,12 @@ iframe {
     visibility: visible;
   }
 
-  .menu>li>a,
+  .menu > li > a,
   .arrow {
     font-size: 1.5rem;
   }
 
-  .submenu>li>a {
+  .submenu > li > a {
     font-size: 1.5rem;
   }
 
@@ -1399,19 +1388,19 @@ iframe {
     margin-left: 1rem;
   }
 
-  .submenu>li {
+  .submenu > li {
     padding-top: 0.8em;
   }
 
-  .menu>li>a {
+  .menu > li > a {
     font-size: 2rem;
   }
 
-  .submenu>li>a {
+  .submenu > li > a {
     font-size: 2rem;
   }
 
-  .menu>li:hover>a+.submenu {
+  .menu > li:hover > a + .submenu {
     position: relative;
   }
 
@@ -1463,7 +1452,7 @@ iframe {
   }
 
   /*unhide hamburgermenu*/
-  input[type="checkbox"]:checked+.menu {
+  input[type="checkbox"]:checked + .menu {
     z-index: 500;
     visibility: visible;
     position: absolute;
@@ -1495,15 +1484,15 @@ iframe {
     z-index: 100;
   }
 
-  body>main>div>div:nth-child(1)>div.content>div {
+  body > main > div > div:nth-child(1) > div.content > div {
     left: 22vw;
   }
 
-  body>main>div>div:nth-child(2)>div.content>div {
+  body > main > div > div:nth-child(2) > div.content > div {
     left: -11vw;
   }
 
-  body>main>div>div:nth-child(3)>div.content>div {
+  body > main > div > div:nth-child(3) > div.content > div {
     left: -46vw;
     width: -moz-fit-content;
     width: fit-content;
@@ -1581,75 +1570,63 @@ iframe {
   .ogniframeanglia {
     display: none;
   }
-  
-  /*-------the end of meterologi specifed style elements for under600**/
 
+  /*-------the end of meterologi specifed style elements for under600**/
 
   /*-------the begin of legterek specifed style elements for under600**/
 
   .legterArticle {
-    width:100%;
-    }
+    width: 100%;
+  }
 
   /*-------the end of legterek specifed style elements for under600**/
 
- /*-------the begin of sikloernyozesről specifed style elements for under600**/
- 
- .flex{
-  display: block;
- }
- .articlesiklo {
-  width: auto;
-}
-.articlesiklo p{
-font-size: calc(1.5rem + 1vw); 
-}
+  /*-------the begin of sikloernyozesről specifed style elements for under600**/
 
-.formdiv input {
-  font-size: calc(1.2rem + 1vw);
-}
-/*-------the end of siklóernyőzésről specifed style elements for under600**/
-
-
- /*-------the begin of sikloernyo gyartók specifed style elements for under600**/
- .sikloernyosGyartok {
-  max-width: 100%;
-  padding: 0%;
- }
-
- .markak {
-  font-size: calc(1.5rem + 1vw); 
-  margin: 0;
-  width: 90%;
-    margin: 2rem 0 2rem 0;
-}
-
-
-
- /*-------the end of sikloernyo gyartók specifed style elements for under600**/
-
- /*-------the begin of reporvosi gyartók specifed style elements for under600**/
-
-
-
- .LAPL_minta:hover  {
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin-left: auto;
-  
+  .flex {
+    display: block;
+  }
+  .articlesiklo {
+    width: auto;
+  }
+  .articlesiklo p {
+    font-size: calc(1.5rem + 1vw);
   }
 
- /*-------the end of reporvosi gyartók specifed style elements for under600**/
+  .formdiv input {
+    font-size: calc(1.2rem + 1vw);
+  }
+  /*-------the end of siklóernyőzésről specifed style elements for under600**/
 
-/*-------the begin of the top to bottom specifed style elements*/
+  /*-------the begin of sikloernyo gyartók specifed style elements for under600**/
+  .sikloernyosGyartok {
+    max-width: 100%;
+    padding: 0%;
+  }
 
+  .markak {
+    font-size: calc(1.5rem + 1vw);
+    margin: 0;
+    width: 90%;
+    margin: 2rem 0 2rem 0;
+  }
 
+  /*-------the end of sikloernyo gyartók specifed style elements for under600**/
 
-/*-------the end of the top to bottom specifed style elements*/
+  /*-------the begin of reporvosi gyartók specifed style elements for under600**/
 
+  .LAPL_minta:hover {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+  }
 
+  /*-------the end of reporvosi gyartók specifed style elements for under600**/
 
-/*_____________________ende az után már csak záró kapcsoszárójel_________*/
+  /*-------the begin of the top to bottom specifed style elements*/
 
+  /*-------the end of the top to bottom specifed style elements*/
+
+  /*_____________________ende az után már csak záró kapcsoszárójel_________*/
 }
