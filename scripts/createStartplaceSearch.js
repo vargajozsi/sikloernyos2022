@@ -1423,7 +1423,7 @@ const starthelyTombFull = [
     video: "szanda.mov",
     starthelyKep: "szanda.jpg",
     statusA: "tisztázatlan",
-    indicator: "tisztázatlan",
+    indicator: "tisztazatlan",
     nehezseg: "+++",
     tipusa: "magasstart",
   },
@@ -1761,7 +1761,7 @@ const starthelyTombFull = [
 // starthely táblázat létrehozása starthelyelemek kiíratása
 function addSearchResoult(starthelyParam, statusParam) {
   if (statusParam === starthelyParam.indicator || statusParam === "osszes") {
-    pozEredmeny.innerHTML += `<tr class="${starthelyParam.indicator}"><td>${starthelyParam.nev}</td><td>${starthelyParam.szintKulombseg}</td><td>${starthelyParam.startIrany}</td><td>${starthelyParam.gpsKoordinatak}</td><td>${starthelyParam.legter}</td><td>${starthelyParam.statusA}</td><td>${starthelyParam.video}</td><td>${starthelyParam.starthelyKep}</td></tr>`;
+    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><tr><td>${starthelyParam.nev}</td></tr><tr><td>${starthelyParam.szintKulombseg}</td></tr><tr><td>${starthelyParam.startIrany}</td></tr><tr><td>${starthelyParam.gpsKoordinatak}</td></tr><tr><td>${starthelyParam.legter}</td></tr><tr><td>${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.video}</td></tr><tr><td>${starthelyParam.starthelyKep}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr></tr><tbody></table>`;
   }
 }
 
@@ -1773,8 +1773,6 @@ function loadTableContent(ev) {
     kilettValasztvaStatus = ev.target.id;
   }
   pozEredmeny.innerHTML = "";
-  pozEredmeny.innerHTML +=
-    "<tr><th>Név</th><th>Szint</th><th>Irány</th><th>GPS</th><th>Légtér</th><th>Státusz</th><th>Video</th><th>Kép</th></tr>";
   for (let i = 0; i < starthelyTombFull.length; i++) {
     const element = starthelyTombFull[i];
     //ha a starthely szeliránya megtalálható a kiválasztott szélirányok között renderel
