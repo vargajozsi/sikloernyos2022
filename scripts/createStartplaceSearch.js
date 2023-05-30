@@ -1844,7 +1844,7 @@ const starthelyTombFull = [
 // starthely táblázat létrehozása starthelyelemek kiíratása
 function addSearchResoult(starthelyParam, statusParam) {
   if (statusParam === starthelyParam.indicator || statusParam === "osszes") {
-    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev}</td></tr><tr><td>${starthelyParam.szintKulombseg}</td></tr><tr><td>${starthelyParam.startIrany}</td></tr><tr><td><a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>${starthelyParam.legter}</td></tr><tr><td>${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.video}</td></tr><tr><td>${starthelyParam.starthelyKep}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
+    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev}</td></tr><tr><td>${starthelyParam.szintKulombseg}</td></tr><tr><td>${starthelyParam.startIrany}</td></tr><tr><td><a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>${starthelyParam.legter}</td></tr><tr><td>${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
   }
 }
 
