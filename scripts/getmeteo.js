@@ -46,7 +46,7 @@ const getForecastOpenW = async (latitude, longitude) => {
         const response = await fetch(urlToFetch);
         if (response.ok) {
             const jsonResponse = await response.json();
-            log(jsonResponse);
+            //log(jsonResponse);
             return jsonResponse;
         } else throw new Error('something went wrong...');
     } catch (error) {
@@ -124,3 +124,8 @@ getForecastOpenW(lat, long).then(forecast => {
     indexVaros = 3;
     renderForecast(forecast, indexVaros, varosPeldany);
 });
+
+for (let helyEgyed in helyekMeteohoz) {
+    console.log(helyekMeteohoz[helyEgyed][2]);
+
+}
