@@ -1174,6 +1174,10 @@ article {
   height: auto;
 }
 
+.markak figcaption {
+  background-color: #000;
+}
+
 .gyartoSzoveg {
   padding: 1rem;
   background-color: var(--attetszo-sotet);
@@ -1188,6 +1192,7 @@ article {
 .gyartoLi ul li {
   list-style: none;
 }
+
 
 /*-------the end of Sikloernyo gyarto cegek specifed style elements*/
 
