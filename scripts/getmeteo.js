@@ -1,5 +1,6 @@
 //shorthand console.log
 // OpenWeather Info
+let startTablaMeteoval = [];
 const openWeatherKey = 'c4a4e45630e841072bf9ef16bb89e412';
 const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather';
 const helyekMeteohoz = {
@@ -125,7 +126,3 @@ getForecastOpenW(lat, long).then(forecast => {
     renderForecast(forecast, indexVaros, varosPeldany);
 });
 
-for (let helyEgyed in helyekMeteohoz) {
-    console.log(helyekMeteohoz[helyEgyed][2]);
-
-}
