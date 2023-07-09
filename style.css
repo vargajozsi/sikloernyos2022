@@ -1185,7 +1185,7 @@ article {
 }
 
 .gyartoLi {
-  background-color: var(--attetszo-sotet);
+  background-color: var(--black-elements);
   margin: 0.2rem;
   padding: 1rem;
 }
