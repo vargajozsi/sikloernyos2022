@@ -1566,7 +1566,7 @@ iframe {
   /*-------the begin of clubcard specifed style elements*/
   .clubcard {
     border: none;
-    max-width: 30rem;
+    /* max-width: 30rem; */
   }
 
   .clubcard:active {
