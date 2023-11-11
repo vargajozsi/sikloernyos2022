@@ -275,10 +275,12 @@ i[forditas]:hover::after {
   padding: 3rem;
   background-color: var(--black-elements);
   color: rgb(255, 255, 255);
-  font-size: calc(1rem + 1vw);
+  font-size: calc(0.8rem + 1vw);
   font-family: "Source Sans Pro", sans-serif;
   text-align: left;
 }
+
+ 
 
 .bevezető::first-letter {
   font-size: 2em;
@@ -353,6 +355,10 @@ footer {
 
 footer div {
   font-size: 1em;
+}
+
+footer a {
+  font-size: calc(0.8em + 0.5vw)
 }
 
 /*the beginn of starthelyek specifed style elements*/
