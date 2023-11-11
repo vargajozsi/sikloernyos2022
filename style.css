@@ -232,6 +232,7 @@ h1 {
 
 h2,
 .abc {
+  position: sticky;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   font-size: calc(1.5rem + 1vw);
@@ -295,7 +296,7 @@ i[forditas]:hover::after {
 .tartalom {
   background-color: rgba(0, 0, 0, 0.822);
   color: rgb(255, 255, 255);
-  font-size: calc(1.5rem + 1vw);
+  font-size: calc(0.8em + 1vw);
   font-weight: 100;
   padding: 3em;
   font-family: "Source Sans Pro", sans-serif;
@@ -542,6 +543,14 @@ padding: 2rem 0;
   border: var(--linkelement-dark) 1px solid;
 }
 
+#pic-header-xcontest {
+  background: url(./media/Klubok/xcontest.gif);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color:  white;
+}
+
 #pic-header-airborne {
   background: url(./media/airborneBg.jpg);
   background-position: center;
@@ -677,6 +686,15 @@ padding: 2rem 0;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#pic-header-Winchflyer {
+  background: url(./media/Klubok/winchmaster.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
 }
 
 .clubcard .tevekenysegek,
