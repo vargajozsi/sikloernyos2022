@@ -11,8 +11,11 @@ const szelIranyInputok = document.querySelectorAll(
   "form.startHelyValasztoForm fieldset div input"
 );
 let szelIranyValasztott = [];
+// szélirányválasztó összes mező törlése kijelölése gombok
 const torlesGombHelye = document.getElementById("osszesTorleseGomb");
 const kijelolGombHelye = document.getElementById("osszesKijelolGomb");
+// searchbar változok
+const searchbar = document.querySelector(".inputClass");
 
 // starthelyegyedek
 const starthelyTombFull = [
@@ -56,7 +59,7 @@ const starthelyTombFull = [
     id: 3,
     nev: "Csobánc",
     szintKulombseg: "350",
-    startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
+    startIrany: ["E", "EK", "K", "DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "46.87145, 17.50362",
     googleLink: "https://goo.gl/maps/W69VHDhZuCbPNjHcA?coh=178573&entry=tt",
     legter: "nincs, max 2900m",
@@ -181,7 +184,7 @@ const starthelyTombFull = [
     id: 10,
     nev: "Sárhegy DK K",
     szintKulombseg: "470",
-    startIrany: ["K","DK"],
+    startIrany: ["K", "DK"],
     gpsKoordinatak: "47.79273, 19.96936",
     googleLink: "https://goo.gl/maps/J6XbtEXvMoJ8N4b78?coh=178573&entry=tt",
     legter: "LH-SG30, LHGY, 2900m",
@@ -217,7 +220,7 @@ const starthelyTombFull = [
     id: 12,
     nev: "Sárhegy NY DNY",
     szintKulombseg: "468",
-    startIrany: ["DNY","NY"],
+    startIrany: ["DNY", "NY"],
     gpsKoordinatak: "47.79258, 19.968",
     googleLink: "https://goo.gl/maps/11We3EwNVBeTrFoK6?coh=178573&entry=tt",
     legter: "LH-SG30, LHGY, 2900m",
@@ -235,7 +238,7 @@ const starthelyTombFull = [
     id: 13,
     nev: "Sárhegy DNY D",
     szintKulombseg: "330",
-    startIrany: ["D","DNY"],
+    startIrany: ["D", "DNY"],
     gpsKoordinatak: "47.78369, 19.95859",
     googleLink: "https://goo.gl/maps/QCgrpg9ZRrkEBZvy9?coh=178573&entry=tt",
     legter: "LH-SG30, LHGY, 2900m",
@@ -285,7 +288,7 @@ const starthelyTombFull = [
     nehezseg: "++",
     tipusa: "magasstart",
   },
-  
+
   {
     id: 16,
     nev: "Tokaj",
@@ -363,7 +366,7 @@ const starthelyTombFull = [
     id: 20,
     nev: "Békés csőrlőpálya",
     szintKulombseg: "0",
-    startIrany: ["E","K","D","NY"],
+    startIrany: ["E", "K", "D", "NY"],
     gpsKoordinatak: "46.81528, 21.16927",
     googleLink: "https://goo.gl/maps/Dfmi7tJdaCgJSM156?coh=178573&entry=tt",
     legter: "TIZ Békéscsabai Reptér Forgalmi Tájékoztató körzet",
@@ -381,7 +384,7 @@ const starthelyTombFull = [
     id: 21,
     nev: "Békéscsaba reptér csőrlőpálya",
     szintKulombseg: "0",
-    startIrany: ["K","NY"],
+    startIrany: ["K", "NY"],
     gpsKoordinatak: "46.6794, 21.14758",
     googleLink: "https://goo.gl/maps/dAmupMYfnnVof9df8?coh=178573&entry=tt",
     legter: "na",
@@ -399,7 +402,7 @@ const starthelyTombFull = [
     id: 22,
     nev: "Billegpuszta",
     szintKulombseg: "0",
-    startIrany: ["DK","ENY"],
+    startIrany: ["DK", "ENY"],
     gpsKoordinatak: "47.70641932181463, 18.22367802456713",
     googleLink: "https://goo.gl/maps/2K8HyKzwtaHrYWnZ8?coh=178573&entry=tt",
     legter: "TMA2/A 1675m hataran",
@@ -435,7 +438,7 @@ const starthelyTombFull = [
     id: 24,
     nev: "Dinnyés, Seregélyes  - csőrlőpálya",
     szintKulombseg: "0",
-    startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
+    startIrany: ["E", "EK", "K", "DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "47.14765, 18.59161",
     googleLink: "https://goo.gl/maps/652K8b2vRZSi1t7X7?coh=178573&entry=tt",
     legter: "max 2900m, de E-EK-re a TMA1, max 2300m hataran",
@@ -453,7 +456,7 @@ const starthelyTombFull = [
     id: 25,
     nev: "Dunaújváros reptér",
     szintKulombseg: "0",
-    startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
+    startIrany: ["E", "EK", "K", "DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "46.89553, 18.91176",
     googleLink: "https://goo.gl/maps/Q8tTCDJKXjkuHPGS6?coh=178573&entry=tt",
     legter: "2900m",
@@ -507,7 +510,7 @@ const starthelyTombFull = [
     id: 28,
     nev: "Hajdúszoboszló",
     szintKulombseg: "0",
-    startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
+    startIrany: ["E", "EK", "K", "DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "47.46108, 21.38819",
     googleLink: "https://goo.gl/maps/yvXwM9RAeMvNMLRTA?coh=178573&entry=tt",
     legter: "Debrecen CTA1, 600m, E es NY iranyokba szabad",
@@ -525,7 +528,7 @@ const starthelyTombFull = [
     id: 29,
     nev: "Hatvan - Kerekharaszt repter",
     szintKulombseg: "0",
-    startIrany: ["EK","DNY"],
+    startIrany: ["EK", "DNY"],
     gpsKoordinatak: "47.68037, 19.64995",
     googleLink: "https://goo.gl/maps/LM4vra3p7Txn1xmd8?coh=178573&entry=tt",
     legter: "LH-SG22: 900m, delre G21: 750m",
@@ -687,7 +690,7 @@ const starthelyTombFull = [
     id: 37,
     nev: "Nyíregyháza",
     szintKulombseg: "0",
-    startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
+    startIrany: ["E", "EK", "K", "DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "47.87228, 21.69747",
     googleLink: "https://goo.gl/maps/CpnnrFEdRPDVJnsy7?coh=178573&entry=tt",
     legter: "na",
@@ -723,7 +726,7 @@ const starthelyTombFull = [
     id: 39,
     nev: "Sándorfalva",
     szintKulombseg: "0",
-    startIrany: ["E","K", "D", "NY"],
+    startIrany: ["E", "K", "D", "NY"],
     gpsKoordinatak: "46.39588, 20.14138",
     googleLink: "https://goo.gl/maps/bqZzArqCyCZ8GcgAA?coh=178573&entry=tt",
     legter: "na",
@@ -741,7 +744,7 @@ const starthelyTombFull = [
     id: 40,
     nev: "Szákszend",
     szintKulombseg: "0",
-    startIrany: ["EK", "DK", "DNY","ENY"],
+    startIrany: ["EK", "DK", "DNY", "ENY"],
     gpsKoordinatak: "47.58503, 18.14164",
     googleLink: "https://goo.gl/maps/UB3M4keowYHPLc9W7?coh=178573&entry=tt",
     legter: "Per TIZ 2900m, TMA1, 2300m hataran",
@@ -759,7 +762,7 @@ const starthelyTombFull = [
     id: 41,
     nev: "Szegedi reptér",
     szintKulombseg: "0",
-    startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
+    startIrany: ["E", "EK", "K", "DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "46.25081, 20.0891",
     googleLink: "https://goo.gl/maps/Bxz8H8pRE21v5mz36?coh=178573&entry=tt",
     legter: "Szeged TIZ PMR: 6.16",
@@ -903,7 +906,7 @@ const starthelyTombFull = [
     id: 48,
     nev: "Belsőbáránd, Aba",
     szintKulombseg: "20",
-    startIrany: ["E", "EK","DNY", "NY"],
+    startIrany: ["E", "EK", "DNY", "NY"],
     gpsKoordinatak: "47.09661, 18.51887",
     googleLink: "https://goo.gl/maps/c2NNMrRZdRaqENAaA?coh=178573&entry=tt",
     legter: "max 2900m, de E-EK-re a TMA1, max 2300m hataran",
@@ -975,7 +978,7 @@ const starthelyTombFull = [
     id: 52,
     nev: "Födémes tanulódomb",
     szintKulombseg: "50",
-    startIrany: ["E", "EK", "K","DK", "D", "DNY", "NY", "ENY"],
+    startIrany: ["E", "EK", "K", "DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "48.02776, 20.16613",
     googleLink: "https://goo.gl/maps/yQuMw4sVXRbiD21w6?coh=178573&entry=tt",
     legter: "LH-TRA23E, 1200m Időszakosan korlátozott honvédségi légtér, csak munkaszüneti napokon használható, bár a honvédség jelenleg nem használja a területet. A területet lefedő nagy NATO-gyakorlózónának erre a picike sarkára vonatkozó, folyamatos használhatóságról szóló engedélykérelem folyamatban van.",
@@ -1476,13 +1479,13 @@ const starthelyTombFull = [
     nehezseg: "++",
     tipusa: "magasstart",
   },
- {
+  {
     id: 80,
     nev: "Beloiannisz, Iváncsa",
     szintKulombseg: "20",
     startIrany: ["K"],
-   gpsKoordinatak: "47.17811, 18.8303",
-   googleLink: "https://goo.gl/maps/sGCPgTfBngCh61Eu7?coh=178573&entry=tt",
+    gpsKoordinatak: "47.17811, 18.8303",
+    googleLink: "https://goo.gl/maps/sGCPgTfBngCh61Eu7?coh=178573&entry=tt",
     legter: "max 2900m",
     megJegyzes:
       "E-D iranyu, keletre nezo tobb km hosszusagu, kis szintkulonbsegu loszfal. erosebb keleti iranyu szelben lejtozheto",
@@ -1494,13 +1497,13 @@ const starthelyTombFull = [
     nehezseg: "+",
     tipusa: "magasstart",
   },
- {
+  {
     id: 81,
     nev: "Berceli-hegy, Szanda",
     szintKulombseg: "250",
     startIrany: ["DNY"],
-   gpsKoordinatak: "47.88909, 19.41425",
-   googleLink: "https://goo.gl/maps/XbHG3pYXxwEm3ta77?coh=178573&entry=tt",
+    gpsKoordinatak: "47.88909, 19.41425",
+    googleLink: "https://goo.gl/maps/XbHG3pYXxwEm3ta77?coh=178573&entry=tt",
     legter: "TMA5, 2000m hataran",
     megJegyzes:
       "",
@@ -1512,13 +1515,13 @@ const starthelyTombFull = [
     nehezseg: "+++",
     tipusa: "magasstart",
   },
- {
+  {
     id: 82,
     nev: "Csakhegy",
     szintKulombseg: "90",
     startIrany: ["E", "EK", "ENY"],
-   gpsKoordinatak: "47.85805, 18.8642",
-   googleLink: "https://goo.gl/maps/JQUDnVaAUDfycRhY9?coh=178573&entry=tt",
+    gpsKoordinatak: "47.85805, 18.8642",
+    googleLink: "https://goo.gl/maps/JQUDnVaAUDfycRhY9?coh=178573&entry=tt",
     legter: "TMA5, 2000m, kozelben D34",
     megJegyzes:
       "A terulet: Csak-hegy andezitbanya, Marianosztra hataraban",
@@ -1530,13 +1533,13 @@ const starthelyTombFull = [
     nehezseg: "+",
     tipusa: "magasstart",
   },
- {
+  {
     id: 83,
     nev: "Csehi-Berc, Szúcs",
     szintKulombseg: "110",
     startIrany: ["DNY", "NY"],
-   gpsKoordinatak: "48.05353, 20.24333",
-   googleLink: "https://goo.gl/maps/Bf4tcDETnfX8UawA9?coh=178573&entry=tt",
+    gpsKoordinatak: "48.05353, 20.24333",
+    googleLink: "https://goo.gl/maps/Bf4tcDETnfX8UawA9?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "Szúcs faluból kiérve balról kerüljük meg a Csehi-bércet Tarnalelesz irányába, majd egy balos kanyar közepén le tudunk fordulni jobbra a földútra. Ez végigvezet a csöcsök alá. A baloldali csöcs bimbójáról startolhatunk. A csöcsös két kúp alakú domb. NY-i szélben nagyon szűk az emelőtér. Max. 1-2 ernyő fér el lejtőn. A csöcs sikeres meghágása után lenézve jobbra, magas fák között található a jókora leszálló. A leszálló körüli bozontos erdő, de leginkább némely magasra felálló fa miatt javaslom, hogy magasról helyezkedjünk be a leszállóba, majd föléérve S-elve koptassuk a magasságunk és így középtájt könnyen leszállhatunk. Ha a csöcsről egyenesen, nyugat felé repülünk, a csöcs aljában a keresztben lévő földút másik oldalán lévő, azzal párhuzamos mezőn is leszállhatunk, de a mező túlsó oldalán villanyvezeték fut, erre szállva megrázó élményben lehet részünk még akkor is, ha előtte kellemesen elcsöcsörésztük az időt",
@@ -1548,13 +1551,13 @@ const starthelyTombFull = [
     nehezseg: "+",
     tipusa: "magasstart",
   },
- {
+  {
     id: 84,
     nev: "Csúcsos-hegy, Nadap ",
     szintKulombseg: "80",
     startIrany: ["EK"],
-   gpsKoordinatak: "47.26891, 18.62775",
-   googleLink: "https://goo.gl/maps/JTt67MweQ5epXskk8?coh=178573&entry=tt",
+    gpsKoordinatak: "47.26891, 18.62775",
+    googleLink: "https://goo.gl/maps/JTt67MweQ5epXskk8?coh=178573&entry=tt",
     legter: "TMA1, 2300m",
     megJegyzes:
       "A Csúcsos-hegy a Velencei-hegység legkeletibb csúcsa Nadap és Pázmánd között. Magassága 268m. Elég szűkös a starthely, vigyázni kell a leakadásokra. Szintkülönbség 100m, lejtőzni nem nagyon lehet, az alakjából következtetve, viszont termikfogással távrepülésre ösztönzi a siklóernyős pilótákat, amire volt már nem egy példa. Leszálló a szőlő és a szántóföld közötti füves rész, de szántóföld is alkalmas leszállásra. Leszállóból vissza a hegyre nagyon vigyázzunk a méhkaptárra!",
@@ -1566,13 +1569,13 @@ const starthelyTombFull = [
     nehezseg: "++",
     tipusa: "magasstart",
   },
- {
+  {
     id: 85,
     nev: "HHH, Költők padja ",
     szintKulombseg: "120",
     startIrany: ["E"],
-   gpsKoordinatak: "47.576, 18.96761",
-   googleLink: "https://goo.gl/maps/i9n9VcwG2drqpuNc6?coh=178573&entry=tt",
+    gpsKoordinatak: "47.576, 18.96761",
+    googleLink: "https://goo.gl/maps/i9n9VcwG2drqpuNc6?coh=178573&entry=tt",
     legter: "TMA4, 750m",
     megJegyzes:
       "Még éppen startolható, szűk, nagyon turbós, ágas bogas, leakadós. Nagyon ritkán használható starthely. A völgyben szinte mindig völgyirányú a szél. A hegy és a fák ráfordítják a szelet a starthelyre, így el lehet indulni, oldalas szélben is, de amint kiérsz a fa mellől, ordas csukást kapsz. A leszálló épp csak elérhető, kicsi a szintkülönbség. A völgyben is valódi határozott É-i szélben repülhető csak! Kizárólag nagyon tapasztalt pilótáknak! A megközelítése nagyon könnyű. Kb 5 perc a kocsitól, déli irányból. A leszállóból viszont, kb. mint Vértes megmászása",
@@ -1584,13 +1587,13 @@ const starthelyTombFull = [
     nehezseg: "+++",
     tipusa: "magasstart",
   },
- {
+  {
     id: 86,
     nev: "Ipolydamásd - DNY",
     szintKulombseg: "170",
     startIrany: ["DNY"],
-   gpsKoordinatak: "47.85207, 18.83439",
-   googleLink: "https://goo.gl/maps/R9j3FBaJgxNeGUjB6?coh=178573&entry=tt",
+    gpsKoordinatak: "47.85207, 18.83439",
+    googleLink: "https://goo.gl/maps/R9j3FBaJgxNeGUjB6?coh=178573&entry=tt",
     legter: "TMA5, 2000m, kozelben D34",
     megJegyzes:
       "a helyszinen a tulajdonos fenyegetoen lepett fel (rendorseg, stb) igy nem latnak szivesen minket jelenleg. Amúgy nagyon szép panorámával rendelkezik a hely, a starthely jó, leszálló jó, kicsit messze van, de elérhető, az egész terület nem túl meredek, de élénk szélben tart, sok hely van visszaszállni is",
@@ -1602,13 +1605,13 @@ const starthelyTombFull = [
     nehezseg: "+",
     tipusa: "magasstart",
   },
- {
+  {
     id: 87,
     nev: "Karancs, Somoskoujfalu",
     szintKulombseg: "240",
     startIrany: ["DK", "D"],
-   gpsKoordinatak: "48.15205, 19.79787",
-   googleLink: "https://goo.gl/maps/aWc8htcqKNWC66HQ7?coh=178573&entry=tt",
+    gpsKoordinatak: "48.15205, 19.79787",
+    googleLink: "https://goo.gl/maps/aWc8htcqKNWC66HQ7?coh=178573&entry=tt",
     legter: "Határ közelsége",
     megJegyzes:
       "nehany log akad csupa. valoszinuleg nem lesz ezentul sem tul nepszeru, mert D-DK iranyra jo, viszont nagyon kozel a szlovak hatar.",
@@ -1620,13 +1623,13 @@ const starthelyTombFull = [
     nehezseg: "++",
     tipusa: "magasstart",
   },
- {
+  {
     id: 88,
     nev: "Kő-hegy, Szokolya",
     szintKulombseg: "185",
     startIrany: ["DNY", "NY"],
-   gpsKoordinatak: "47.87581, 19.03699",
-   googleLink: "https://goo.gl/maps/2AyMn1W7bj8y8WJ3A?coh=178573&entry=tt",
+    gpsKoordinatak: "47.87581, 19.03699",
+    googleLink: "https://goo.gl/maps/2AyMn1W7bj8y8WJ3A?coh=178573&entry=tt",
     legter: " TMA5, 2000m, kozelben D34",
     megJegyzes:
       "",
@@ -1638,13 +1641,13 @@ const starthelyTombFull = [
     nehezseg: "++",
     tipusa: "magasstart",
   },
- {
+  {
     id: 89,
     nev: "Magas hegy, Sátoraljaújhely",
     szintKulombseg: "375",
     startIrany: ["E", "EK"],
-   gpsKoordinatak: "48.40258, 21.63177",
-   googleLink: "https://goo.gl/maps/rbEqcdStm76v7zzs8?coh=178573&entry=tt",
+    gpsKoordinatak: "48.40258, 21.63177",
+    googleLink: "https://goo.gl/maps/rbEqcdStm76v7zzs8?coh=178573&entry=tt",
     legter: "Kassa TMA2: 305m AGL",
     megJegyzes:
       "inkabb a jobboldali sipalyat erdemes hasznalni starthoz. jelenleg magas a novenyzet, nehol koves, de meredek, konnyen emel. a mai gyengebb szelben ok, de elenkben valoszinuleg igen turbos a fak miatt. a helyiek szerint tavra a 37-es fout iranyaba szabad menni itt lehet a 305m AGL fole (Kassa TMA2) emelkedni. Zemplen fole nem szabad indulni.",
@@ -1657,13 +1660,13 @@ const starthelyTombFull = [
     tipusa: "magasstart",
   },
 
- {
+  {
     id: 90,
     nev: "Monok (Bekecs), Kopasz hegy",
     szintKulombseg: "126",
     startIrany: ["NY", "ENY"],
-   gpsKoordinatak: "48.20213, 21.13885",
-   googleLink: "https://goo.gl/maps/YXcbMX1DFpNo2vSa8?coh=178573&entry=tt",
+    gpsKoordinatak: "48.20213, 21.13885",
+    googleLink: "https://goo.gl/maps/YXcbMX1DFpNo2vSa8?coh=178573&entry=tt",
     legter: "Kassa TMA2: 305m AGL",
     megJegyzes:
       "Magas start helyett inkább tanulódomb?",
@@ -1675,13 +1678,13 @@ const starthelyTombFull = [
     nehezseg: "+",
     tipusa: "magasstart",
   },
- {
+  {
     id: 91,
     nev: "Muzsla, Horak-berc, Csalarda-berc, Pásztó",
     szintKulombseg: "185",
     startIrany: ["NY", "ENY"],
-   gpsKoordinatak: "47.89706, 19.75081",
-   googleLink: "https://goo.gl/maps/S3gb4eFdVn9qNAbk8?coh=178573&entry=tt",
+    gpsKoordinatak: "47.89706, 19.75081",
+    googleLink: "https://goo.gl/maps/S3gb4eFdVn9qNAbk8?coh=178573&entry=tt",
     legter: "LH-SG30, 2900m",
     megJegyzes:
       "a starthelyen sok a csipkebokor",
@@ -1693,13 +1696,13 @@ const starthelyTombFull = [
     nehezseg: "++",
     tipusa: "magasstart",
   },
- {
+  {
     id: 92,
     nev: "Nagylóc",
     szintKulombseg: "100",
     startIrany: ["DNY", "NY"],
-   gpsKoordinatak: "48.06039, 19.56913",
-   googleLink: "https://goo.gl/maps/Q9EgFk3TDgyTJfJ4A?coh=178573&entry=tt",
+    gpsKoordinatak: "48.06039, 19.56913",
+    googleLink: "https://goo.gl/maps/Q9EgFk3TDgyTJfJ4A?coh=178573&entry=tt",
     legter: "max 2900m",
     megJegyzes:
       "Szécsény-Nagylóc útról nem túl jó minőségű betonozott út (narancs vonal) vezet a gerinc déli csücskéhez. Gödrös, töredezett, de városi kisautóval is simán járható. A betonút végén bőven van füves terület parkolni. Innen kényelmes, kb. negyed órás séta, jól látható ösvényen (sárga vonal). Starthely: Óriási, füves, nem leakadós, visszaszállni is jócskán van hely. Egyetlen -nem elhanyagolható- problémája, hogy teljesen a hegy tetején van, és nem túl meredek: baromira beerősödik a szél és inkább csak hátra felé tol, de nem emel. Cserébe pont annyira magasak a fák-bokrok a végén, hogy kétséges legyen, hogy megugorhatóak-e :) (én csak úgy mertem megpróbálni, hogy vártam jó nagy befúvásra, hogy jóval a fák előtt kiemeljen; ha mégsem tűnik elégnek a magasság, van hely meggondolni magunkat) Gerinc: NY-DNY szélre jó, ~90-100m szintkülönbséggel. Kb. 2km hosszan lejtőzhető, leszálló végig akad, de figyelni kell azért.",
@@ -1711,13 +1714,13 @@ const starthelyTombFull = [
     nehezseg: "+",
     tipusa: "magasstart",
   },
- {
+  {
     id: 93,
     nev: "Nagyvillam, Visegrad",
     szintKulombseg: "120",
     startIrany: ["E", "ENY"],
-   gpsKoordinatak: "47.79617, 18.99145",
-   googleLink: "https://goo.gl/maps/RHtaFaaLtCLN31Li9?coh=178573&entry=tt",
+    gpsKoordinatak: "47.79617, 18.99145",
+    googleLink: "https://goo.gl/maps/RHtaFaaLtCLN31Li9?coh=178573&entry=tt",
     legter: "TMA5, 2000m. kozelben TMA3, 1050m",
     megJegyzes:
       "parkolni (napijegy 1000Ft) inkabb a Nagyvillam Etteremnel erdemes, innen a legrovidebb gyalog. a bobpalya mellett is fel lehet gyalogolni, a Zsitvay kilatot erintve. startszoge kb. 340-17 fok. nagyon meredek (es vegig fuves), igy gyenge szelben is hamar elemel. a starthely igen turbulens oldalas szelben. a leszallok szinten, barmilyen szelben a domborzati viszonyok es a kornyeken talalhato fasorok, maganyos fak miatt. az emeloter viszonylag kicsi.",
@@ -1729,13 +1732,13 @@ const starthelyTombFull = [
     nehezseg: "+++",
     tipusa: "magasstart",
   },
- {
+  {
     id: 94,
     nev: "Pilisjászfalu",
     szintKulombseg: "80",
     startIrany: ["D", "DNY"],
-   gpsKoordinatak: "47.66019, 18.78942",
-   googleLink: "https://goo.gl/maps/P9T5SJwqYJc9omAw8?coh=178573&entry=tt",
+    gpsKoordinatak: "47.66019, 18.78942",
+    googleLink: "https://goo.gl/maps/P9T5SJwqYJc9omAw8?coh=178573&entry=tt",
     legter: "TMA3, 1050m",
     megJegyzes:
       "",
@@ -1747,13 +1750,13 @@ const starthelyTombFull = [
     nehezseg: "++",
     tipusa: "magasstart",
   },
- {
+  {
     id: 95,
     nev: "Rád, Koporsó-hegy - DNY",
     szintKulombseg: "100",
     startIrany: ["DNY"],
-   gpsKoordinatak: "47.80114, 19.22511",
-   googleLink: "https://goo.gl/maps/Qr24QEzHxTyKRPrGA?coh=178573&entry=tt",
+    gpsKoordinatak: "47.80114, 19.22511",
+    googleLink: "https://goo.gl/maps/Qr24QEzHxTyKRPrGA?coh=178573&entry=tt",
     legter: "G23 es E-ra TMA5: 2000m",
     megJegyzes:
       "",
@@ -1765,13 +1768,13 @@ const starthelyTombFull = [
     nehezseg: "++",
     tipusa: "magasstart",
   },
- {
+  {
     id: 97,
     nev: "Rimóc",
     szintKulombseg: "80",
     startIrany: ["NY"],
-   gpsKoordinatak: "48.04099, 19.55022",
-   googleLink: "https://goo.gl/maps/4jGu3iHxN3eWoNXC8?coh=178573&entry=tt",
+    gpsKoordinatak: "48.04099, 19.55022",
+    googleLink: "https://goo.gl/maps/4jGu3iHxN3eWoNXC8?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "A starthely kényelmes, kb. 30m széles kezelt füves terület, az ernyő kiterítéséhez bőven elegendő hellyel, visszaszállásra is alkalmas, kétoldalt cserjés, bokros sávokkal. Szalagok és szélzsák is segít a szélirány meghatározásában.",
@@ -1783,13 +1786,13 @@ const starthelyTombFull = [
     nehezseg: "+",
     tipusa: "magasstart",
   },
- {
+  {
     id: 98,
     nev: "Szekszárd I. - E, EK",
     szintKulombseg: "140",
     startIrany: ["E", "EK"],
-   gpsKoordinatak: "46.37183, 18.68317",
-   googleLink: "https://goo.gl/maps/euzBdskrywiyb8mC6?coh=178573&entry=tt",
+    gpsKoordinatak: "46.37183, 18.68317",
+    googleLink: "https://goo.gl/maps/euzBdskrywiyb8mC6?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
       "A hatos út déli oldalán található. Kicsi az emelőtér, ha lemerülsz nívó alá rögtön indulj a leszállóba, amit a 6os út tuloldanlán találsz, a Siófoki elágazásnál",
@@ -1801,13 +1804,13 @@ const starthelyTombFull = [
     nehezseg: "+",
     tipusa: "magasstart",
   },
- {
+  {
     id: 99,
     nev: "Szekszárd II. - ENY",
     szintKulombseg: "120",
     startIrany: ["ENY"],
-   gpsKoordinatak: "46.37023, 18.67253",
-   googleLink: "https://goo.gl/maps/y6mnpBq5N7rPGftH6?coh=178573&entry=tt",
+    gpsKoordinatak: "46.37023, 18.67253",
+    googleLink: "https://goo.gl/maps/y6mnpBq5N7rPGftH6?coh=178573&entry=tt",
     legter: "Reptéri közelben dropzone",
     megJegyzes:
       "A hegygerinc végén található, a starthelytől keletre van a gerinc, nyugatra pedig egy völgy, amiben felgyorsul a szél, ezért kissé turbulens. A hegy kb még 50 méterrel magasabb. elég nagy az emelőtér, leszálló pedig alatt, a 6os út mindkét oldalán található",
@@ -1819,12 +1822,12 @@ const starthelyTombFull = [
     nehezseg: "+",
     tipusa: "magasstart",
   },
- {
+  {
     id: 100,
     nev: "Tolcsva, Erdohorvati",
     szintKulombseg: "200",
     startIrany: ["D", "DNY"],
-   gpsKoordinatak: "48.30144260609925, 21.459805230298898",
+    gpsKoordinatak: "48.30144260609925, 21.459805230298898",
     googleLink: "https://goo.gl/maps/xrAhmkAgCQ3sMX496",
     legter: "Kassa TMA2: 305m AGL",
     megJegyzes:
@@ -1869,16 +1872,16 @@ function loadTableContent(ev) {
 
 //Megnézi, hogy melyik start-szélirány lett-maradt aktív a kattintás hatására
 function getIranyValasztottak() {
-    szelIranyValasztott = [];
-    for (i = 0; i < szelIranyInputok.length; i++) {
-      if (szelIranyInputok[i].checked) {
-        szelIranyValasztott.push(szelIranyInputok[i].defaultValue);
-      }
+  szelIranyValasztott = [];
+  for (i = 0; i < szelIranyInputok.length; i++) {
+    if (szelIranyInputok[i].checked) {
+      szelIranyValasztott.push(szelIranyInputok[i].defaultValue);
     }
-    loadTableContent();
+  }
+  loadTableContent();
 }
 
-function inputTorles(eventke) { 
+function inputTorles(eventke) {
   eventke.preventDefault();
   for (i = 0; i < szelIranyInputok.length; i++) {
     szelIranyInputok[i].checked = false;
@@ -1886,7 +1889,7 @@ function inputTorles(eventke) {
   getIranyValasztottak();
 }
 
-function inputKijeloles(eventke) { 
+function inputKijeloles(eventke) {
   eventke.preventDefault();
   for (i = 0; i < szelIranyInputok.length; i++) {
     szelIranyInputok[i].checked = true;
@@ -1896,7 +1899,7 @@ function inputKijeloles(eventke) {
 
 torlesGombHelye.addEventListener("click", inputTorles, false);
 kijelolGombHelye.addEventListener("click", inputKijeloles, false);
-//Futatási terület____________________________________________
+//Futtatási terület____________________________________________
 //_____*****************************************______________
 
 //legyujti a kijelolt-bejelölt start-szél irányokat
@@ -1907,10 +1910,41 @@ loadTableContent();
 
 /*melyik inputelem lett bejelölve?  eventlisener elhelyezése az imputokra a statusz szerinti választásnál*/
 melyikInput.forEach((elem) =>
-  elem.addEventListener("click", loadTableContent, false)  
+  elem.addEventListener("click", loadTableContent, false)
 );
 
 //start-szél iranyvalaszó input eseményfigyelés függvény indítása eseményfigyeléssel
 szelIranyInputok.forEach((elem) =>
   elem.addEventListener("change", getIranyValasztottak, false)
 );
+
+
+// searchbar funkcionalitás_________________________________
+
+searchbar.addEventListener('input', search, false);
+
+function loadSearchContent(searchBarTomb) {
+  pozEredmeny.innerHTML = "";
+  for (let i = 0; i < searchBarTomb.length; i++) {
+      addSearchResoult(searchBarTomb[i], "osszes");
+    
+  }
+}
+
+
+function search() {
+  document.getElementById("osszes").checked = false;
+  document.getElementById("tiltott").checked = false;
+  document.getElementById("tisztazatlan").checked = false;
+  document.getElementById("engedelyezett").checked = false;
+  let keresesKivalasztottTomb = [];
+  for (const keresettElem of starthelyTombFull) {
+    if (keresettElem.nev.toLowerCase().includes(searchbar.value)) {
+      keresesKivalasztottTomb.push(keresettElem);
+    }
+  }
+  
+  loadSearchContent(keresesKivalasztottTomb);
+}
+
+//searchbar funkcionalitás vége__________________
