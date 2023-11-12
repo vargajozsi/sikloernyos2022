@@ -12,6 +12,7 @@ const szelIranyInputok = document.querySelectorAll(
 );
 let szelIranyValasztott = [];
 const torlesGombHelye = document.getElementById("osszesTorleseGomb");
+const kijelolGombHelye = document.getElementById("osszesKijelolGomb");
 
 // starthelyegyedek
 const starthelyTombFull = [
@@ -1885,8 +1886,16 @@ function inputTorles(eventke) {
   getIranyValasztottak();
 }
 
-torlesGombHelye.addEventListener("click", inputTorles, false);
+function inputKijeloles(eventke) { 
+  eventke.preventDefault();
+  for (i = 0; i < szelIranyInputok.length; i++) {
+    szelIranyInputok[i].checked = true;
+  }
+  getIranyValasztottak();
+}
 
+torlesGombHelye.addEventListener("click", inputTorles, false);
+kijelolGombHelye.addEventListener("click", inputKijeloles, false);
 //Futatási terület____________________________________________
 //_____*****************************************______________
 
