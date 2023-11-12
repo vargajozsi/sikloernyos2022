@@ -1933,17 +1933,19 @@ function loadSearchContent(searchBarTomb) {
 
 
 function search() {
+  // radiobuttonok kiiktatása
   document.getElementById("osszes").checked = false;
   document.getElementById("tiltott").checked = false;
   document.getElementById("tisztazatlan").checked = false;
   document.getElementById("engedelyezett").checked = false;
   let keresesKivalasztottTomb = [];
+  // a keresőmező értékének keresése az adatbázisból és a találatok bepakolása a keresKiválasztottTömbbe
   for (const keresettElem of starthelyTombFull) {
-    if (keresettElem.nev.toLowerCase().includes(searchbar.value)) {
+    if (keresettElem.nev.toLowerCase().includes(searchbar.value.toLowerCase())) {
       keresesKivalasztottTomb.push(keresettElem);
     }
   }
-  
+  // a keresKiválasztottTömbb elemeinek kiiratása a kiirató függvénnyel
   loadSearchContent(keresesKivalasztottTomb);
 }
 
