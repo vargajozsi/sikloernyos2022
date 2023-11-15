@@ -232,20 +232,25 @@ h1 {
 
 h2,
 .abc {
+  
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   font-size: calc(1.5rem + 1vw);
   color: var(--linkelement);
-  font-stretch: expanded;
+  font-stretch: extra-expanded;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  padding: 0.5em;
 }
 
 .abc{
- background-color: var(--black-elements);
+  background-color: var(--black-elements);
   position: sticky;
   top: 100px;
+}
+
+.abc a{
+ padding: 0 0.3em;
+  
 }
 
 h1::first-letter {
