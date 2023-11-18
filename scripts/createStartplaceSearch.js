@@ -115,7 +115,8 @@ const starthelyTombFull = [
     startIrany: ["EK", "K"],
     gpsKoordinatak: "47.55581, 19.00279",
     googleLink: "https://goo.gl/maps/39Xt7zqm69zitwsTA?coh=178573&entry=tt",
-    legter: " TMA4, 750m, erdemes a teljes BP TMA-t atnezni tav elott: http://goo.gl/ONXIhm",
+    legter:
+      " TMA4, 750m, erdemes a teljes BP TMA-t atnezni tav elott: http://goo.gl/ONXIhm",
     megJegyzes:
       "Kezelo klub a BSE, 2017.03.31-2021.03.31 kozott. starthelyrend, behajtasi tudnivalok: http://www.bse.hupont.hu/33/hhh-infok facebook postok: https://goo.gl/CUL0Lb es https://goo.gl/m86lb9",
     meteo: "",
@@ -151,7 +152,8 @@ const starthelyTombFull = [
     startIrany: ["DNY"],
     gpsKoordinatak: "46.09730, 18.12716",
     googleLink: "https://goo.gl/maps/HxQ9NSQroTAnKBxe7?coh=178573&entry=tt",
-    legter: "Legter: Pecs-Pogany TIZ-ben fekszik a starthely, max 2900m. repules elott bejelentkezes: 36/72/450-619 Mobil: 36/30/560-9325 - eleg valakinek a tarsosagbol napi 1x szolni, hogy tudjanak rolunk es akkor be lehet repulni. bovebben: http://www.airportpecs.hu/?ShowPage=41",
+    legter:
+      "Legter: Pecs-Pogany TIZ-ben fekszik a starthely, max 2900m. repules elott bejelentkezes: 36/72/450-619 Mobil: 36/30/560-9325 - eleg valakinek a tarsosagbol napi 1x szolni, hogy tudjanak rolunk es akkor be lehet repulni. bovebben: http://www.airportpecs.hu/?ShowPage=41",
     megJegyzes:
       "2001 óta van megállapodás szerinti engedély. 2008-ra ugyan még folyamatban van a kérelem, de remélhetőleg nem lesz gond... A Jakabhegy a környék egyik legtöbbet látogatott starthelye. A Kővágószőlős északi végében lévő Jakabhegyen még valamikor a nyolcvanas években alakítottak ki starthelyet az akkor virágkorát élő Pécsi Sárkányrepülő Klub pilótái, az uránbánya hozzájárulásával. A starthely egy kiszögellésen kialakított tisztás. Elegendő hely van akár két ernyő kiterítéséhez is, de egyszerre csak egy tud elstartolni. Körben fák övezik, de dél, délnyugat felé kellően nyitott. A kezdőket néha megrettenti a starthely végén lévő 20 méteres szakadék. 2001-ben a starthelyalapból a Pécsi SRK és a BlueSky közösen rendbehozta a starthelyet. Azóta geoháló van lefektetve az erózió ellen, de jövő tavasszal újból rendbe kell hozni a területet. A hegyen déli, délnyugati szélben lehet repülni. Időnként enyhe délkeleti szélben is lehet repülni. A starthely a lejtő közepén helyezkedik el, a lejtő kb. 1 - 1,5 kilométer hosszú. Lejtőzésre kiválóan alkalmas. A starthelytől északra kb. 5 kilométerre található Orfű, ide akár +500 méterről át lehet repülni és élvezni a tó és a völgy látványát. 2005-ben Papp László 105 kilométer repült Jakabhegyről Balatonra, ez az eddigi legnagyobb táv Jakabhegyről. Gratulálunk Laci! A hivatalos leszálló a starthelytől nyugatra van, egy elég nagy rét. Ide a szintkülönbség csak 190 méter, tehát érdemes figyelni mert alacsonyról vagy erős nyugatias szélben már nem biztos hogy kiér a pilóta. A starthely alatt van még egy leszálló, a nyárfás. Ez kicsi és bent van egy domb takarásában, tehát kicsit turbulens lehet, de könyebben elérhető. A starthelyet a hegy mögül lehet megközelíteni, a felfelé vezető út nagyon szar minőségü, de magasabb autóval járható!",
     meteo: "",
@@ -206,8 +208,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.79513, 19.97316",
     googleLink: "https://goo.gl/maps/m9TTH5T5ddUKxyaZ6?coh=178573&entry=tt",
     legter: "LH-SG30, LHGY, 2900m",
-    megJegyzes:
-      "ld. Sárhegy DK K",
+    megJegyzes: "ld. Sárhegy DK K",
     meteo: "",
     video: "Sarhegy2.mov",
     starthelyKep: "Sarhegy2.jpg",
@@ -259,7 +260,8 @@ const starthelyTombFull = [
     startIrany: ["DK", "D", "DNY", "ENY"],
     gpsKoordinatak: "45.85533, 18.41029",
     googleLink: "https://goo.gl/maps/bkSX4PcerWse6Y8a6?coh=178573&entry=tt",
-    legter: "Pecs-Pogany TIZ-ben fekszik a starthely, max 2900m. repules elott bejelentkezes: 36/72/450-619 Mobil: 36/30/560-9325 - eleg valakinek a tarsosagbol napi 1x szolni, hogy tudjanak rolunk es akkor be lehet repulni. bovebben: http://www.airportpecs.hu/?ShowPage=41",
+    legter:
+      "Pecs-Pogany TIZ-ben fekszik a starthely, max 2900m. repules elott bejelentkezes: 36/72/450-619 Mobil: 36/30/560-9325 - eleg valakinek a tarsosagbol napi 1x szolni, hogy tudjanak rolunk es akkor be lehet repulni. bovebben: http://www.airportpecs.hu/?ShowPage=41",
     megJegyzes:
       "infok, kotelezo reg: https://blue-sky.hu regisztracio majd partolo/rendes tagsag (2000/3600 Ft) atutalasa utan a hozzaferest engedelyezik es foglalhato Szarsomlyo. Parkolo a Szoborparknal, utana csak gyalog lehet megmaszni a hegyet a koves, bokros osvenyen, kb 40p alatt (1,9km). hivatalos leszallo jelenleg nincs, tobb terulet akad, amit hasznalni szoktak/lehet lottem egy korpanoramat: https://goo.gl/9OoGVV",
     meteo: "",
@@ -316,8 +318,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.61913, 18.40824",
     googleLink: "https://goo.gl/maps/aEPmJf37uzVPvXH96?coh=178573&entry=tt",
     legter: "TMA1, 2300m",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "vertesszolos.mov",
     starthelyKep: "vertesszolos.jpg",
@@ -334,8 +335,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.64690, 18.25863",
     googleLink: "https://goo.gl/maps/54wuqN4hXCiw665K6?coh=178573&entry=tt",
     legter: "TMA1, 2300m hataran, Per TIZ 2900m",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "asszonytavi.mov",
     starthelyKep: "asszonytavi.jpg",
@@ -406,8 +406,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.70641, 18.22367",
     googleLink: "https://goo.gl/maps/2K8HyKzwtaHrYWnZ8?coh=178573&entry=tt",
     legter: "TMA2/A 1675m hataran",
-    megJegyzes:
-      "rádió 5.13 ",
+    megJegyzes: "rádió 5.13 ",
     meteo: "",
     video: "billegpuszta.mov",
     starthelyKep: "billegpuszta.jpg",
@@ -424,8 +423,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.69104, 18.12639",
     googleLink: "https://goo.gl/maps/Z9ZhCW9MHuY1iY8W6?coh=178573&entry=tt",
     legter: "max 2900m",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "csempuszta.mov",
     starthelyKep: "csempuszta.jpg",
@@ -460,8 +458,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "46.89553, 18.91176",
     googleLink: "https://goo.gl/maps/Q8tTCDJKXjkuHPGS6?coh=178573&entry=tt",
     legter: "2900m",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "dunaujvaros.mov",
     starthelyKep: "dunaujvaros.jpg",
@@ -478,8 +475,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.96514, 19.21811",
     googleLink: "https://goo.gl/maps/XUGYFP7jzEDi9WAT6?coh=178573&entry=tt",
     legter: "TMA5, 2000m",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "ersekvadkert.mov",
     starthelyKep: "ersekvadkert.jpg",
@@ -496,8 +492,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.56828, 19.34648",
     googleLink: "https://goo.gl/maps/a4CxsKqBRbq5SM2V9?coh=178573&entry=tt",
     legter: "TMA6, 600m",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "godollo.mov",
     starthelyKep: "godollo.jpg",
@@ -532,8 +527,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.68037, 19.64995",
     googleLink: "https://goo.gl/maps/LM4vra3p7Txn1xmd8?coh=178573&entry=tt",
     legter: "LH-SG22: 900m, delre G21: 750m",
-    megJegyzes:
-      "rövid csőrlőpálya, kb. 200m magasságig gyakorlásra jó",
+    megJegyzes: "rövid csőrlőpálya, kb. 200m magasságig gyakorlásra jó",
     meteo: "",
     video: "kerekharaszt.mov",
     starthelyKep: "kerekharaszt.jpg",
@@ -550,8 +544,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.85089, 19.66029",
     googleLink: "https://goo.gl/maps/GG1JgsqzUyVFh9PB9?coh=178573&entry=tt",
     legter: "LHSG30, max 2900m",
-    megJegyzes:
-      "nem hasznalt csorolopalya",
+    megJegyzes: "nem hasznalt csorolopalya",
     meteo: "",
     video: "jobbagyi.mov",
     starthelyKep: "jobbagyi.jpg",
@@ -586,8 +579,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.70016, 19.55275",
     googleLink: "https://goo.gl/maps/fVAX4PHHQPR1d4447?coh=178573&entry=tt",
     legter: "LH-SG22: 900m, delre G21: 750m",
-    megJegyzes:
-      "lejtős pálya",
+    megJegyzes: "lejtős pálya",
     meteo: "",
     video: "kartal.mov",
     starthelyKep: "kartal.jpg",
@@ -604,8 +596,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.50102, 17.98380",
     googleLink: "https://goo.gl/maps/ZXHL4RMJAqUKZT6VA?coh=178573&entry=tt",
     legter: "Per TIZ 2900m",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "kisber.mov",
     starthelyKep: "kisber.jpg",
@@ -640,8 +631,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.39831, 20.78750",
     googleLink: "https://goo.gl/maps/rn5UGeE7n4WvoBn78?coh=178573&entry=tt",
     legter: "LH-TRA23, max 2900m",
-    megJegyzes:
-      "Felhout SE uzemelteti",
+    megJegyzes: "Felhout SE uzemelteti",
     meteo: "",
     video: "kunmadaras.mov",
     starthelyKep: "kunmadaras.jpg",
@@ -658,8 +648,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.57944, 16.69552",
     googleLink: "https://goo.gl/maps/DvBs8PruQ3y7t7mx7?coh=178573&entry=tt",
     legter: " max 2900m",
-    megJegyzes:
-      " Nyerges Akos uzemelteti, legordulo csorlovel",
+    megJegyzes: " Nyerges Akos uzemelteti, legordulo csorlovel",
     meteo: "",
     video: "nagycenk.mov",
     starthelyKep: "nagycenk.jpg",
@@ -712,8 +701,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "46.53772, 20.66283",
     googleLink: "https://goo.gl/maps/98FmMQQVLMBYFvCj7?coh=178573&entry=tt",
     legter: "na",
-    megJegyzes:
-      "ritkán használt",
+    megJegyzes: "ritkán használt",
     meteo: "",
     video: "oroshaza.mov",
     starthelyKep: "oroshaza.jpg",
@@ -766,8 +754,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "46.25081, 20.08910",
     googleLink: "https://goo.gl/maps/Bxz8H8pRE21v5mz36?coh=178573&entry=tt",
     legter: "Szeged TIZ PMR: 6.16",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "szeged.mov",
     starthelyKep: "szeged.jpg",
@@ -784,8 +771,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "46.60732, 20.31987",
     googleLink: "https://goo.gl/maps/f7QYWkBVJUZZHWch6?coh=178573&entry=tt",
     legter: "Kecskemet MTMA2, class C",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "Szentes.mov",
     starthelyKep: "szentes.jpg",
@@ -838,8 +824,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.75324, 19.19519",
     googleLink: "https://goo.gl/maps/RnyCMpRus6vHJ1577?coh=178573&entry=tt",
     legter: "G22, 900m, kozelben R32 (szodligetnel) es D29 (loter, 1100m)",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "vaducka.mov",
     starthelyKep: "vaducka.jpg",
@@ -856,8 +841,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "46.88484, 16.78916",
     googleLink: "https://goo.gl/maps/bpBXSA8kDrkzak8GA?coh=178573&entry=tt",
     legter: "Sarmellek CTA / TIZ-2 600m a kozelben",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "zalaegerszeg.mov",
     starthelyKep: "zalaegerszeg.jpg",
@@ -981,9 +965,9 @@ const starthelyTombFull = [
     startIrany: ["E", "EK", "K", "DK", "D", "DNY", "NY", "ENY"],
     gpsKoordinatak: "48.02776, 20.16613",
     googleLink: "https://goo.gl/maps/yQuMw4sVXRbiD21w6?coh=178573&entry=tt",
-    legter: "LH-TRA23E, 1200m Időszakosan korlátozott honvédségi légtér, csak munkaszüneti napokon használható, bár a honvédség jelenleg nem használja a területet. A területet lefedő nagy NATO-gyakorlózónának erre a picike sarkára vonatkozó, folyamatos használhatóságról szóló engedélykérelem folyamatban van.",
-    megJegyzes:
-      "",
+    legter:
+      "LH-TRA23E, 1200m Időszakosan korlátozott honvédségi légtér, csak munkaszüneti napokon használható, bár a honvédség jelenleg nem használja a területet. A területet lefedő nagy NATO-gyakorlózónának erre a picike sarkára vonatkozó, folyamatos használhatóságról szóló engedélykérelem folyamatban van.",
+    megJegyzes: "",
     meteo: "",
     video: "fodemes.mov",
     starthelyKep: "fodemes.jpg",
@@ -1000,8 +984,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.54694, 18.98321",
     googleLink: "https://goo.gl/maps/MqnHdzVhJToTT2A6A?coh=178573&entry=tt",
     legter: "TMA4, 750m",
-    megJegyzes:
-      "tiltott kisdomb tulajdonosi hozzájárulás hiányában",
+    megJegyzes: "tiltott kisdomb tulajdonosi hozzájárulás hiányában",
     meteo: "",
     video: "homokhegy.mov",
     starthelyKep: "homokhegy.jpg",
@@ -1018,8 +1001,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.55642, 18.98798",
     googleLink: "https://goo.gl/maps/mvQKbpY53BQXLd2q9?coh=178573&entry=tt",
     legter: "TMA4, 750m",
-    megJegyzes:
-      "A kornyek tisztitasa megkezdodott. https://www.bse.hupont.hu/",
+    megJegyzes: "A kornyek tisztitasa megkezdodott. https://www.bse.hupont.hu/",
     meteo: "",
     video: "kilencfa.mov",
     starthelyKep: "kilencfa.jpg",
@@ -1036,8 +1018,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.55599, 18.97952",
     googleLink: "https://goo.gl/maps/2qWpv9e4AuP9pw1g6?coh=178573&entry=tt",
     legter: "TMA4, 750m",
-    megJegyzes:
-      "Kezelo klub a BSE ",
+    megJegyzes: "Kezelo klub a BSE ",
     meteo: "",
     video: "voroskovar.mov",
     starthelyKep: "voroskovar.jpg",
@@ -1145,8 +1126,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.86438, 18.98551",
     googleLink: "https://goo.gl/maps/MxyDUg7J9yr3mBRK6?coh=178573&entry=tt",
     legter: "na",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "klokihegy.mov",
     starthelyKep: "klokihegy.jpg",
@@ -1163,8 +1143,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.03779, 17.77107",
     googleLink: "https://goo.gl/maps/MWvNYSe4u7cQSRsb6?coh=178573&entry=tt",
     legter: "na",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "kovesgyurupuszta.mov",
     starthelyKep: "kovesgyurupuszta.jpg",
@@ -1181,8 +1160,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.62250, 18.69452",
     googleLink: "https://goo.gl/maps/NWLc9U6o4fhAL9F96?coh=178573&entry=tt",
     legter: "TMA3, 1050m. kozelben G10, 1350m es TMA2 2000m",
-    megJegyzes:
-      "Natura 2000, TV engedelyezett",
+    megJegyzes: "Natura 2000, TV engedelyezett",
     meteo: "",
     video: "mariahalom.mov",
     starthelyKep: "mariahalom.jpg",
@@ -1289,8 +1267,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.57027, 18.98333",
     googleLink: "https://goo.gl/maps/wYqYTmiVU9xmWLQZ9?coh=178573&entry=tt",
     legter: "TMA4, 750m",
-    megJegyzes:
-      "telefonos elérhetőség: 20-777 6829 Kezelo klub a BSE",
+    megJegyzes: "telefonos elérhetőség: 20-777 6829 Kezelo klub a BSE",
     meteo: "",
     video: "csucshegy.mov",
     starthelyKep: "csucshegy.jpg",
@@ -1414,9 +1391,9 @@ const starthelyTombFull = [
     startIrany: ["DNY", "NY"],
     gpsKoordinatak: "48.19819, 20.70167",
     googleLink: "https://goo.gl/maps/C3oQRJRwCnUUqd1v8?coh=178573&entry=tt",
-    legter: "nincs közelben LHR12 Sajóbábony LHB32 Bükk LHSDZLHMC/Miskolc Drop Zone légtér",
-    megJegyzes:
-      "",
+    legter:
+      "nincs közelben LHR12 Sajóbábony LHB32 Bükk LHSDZLHMC/Miskolc Drop Zone légtér",
+    megJegyzes: "",
     meteo: "",
     video: "sajokapolna.mov",
     starthelyKep: "sajokapolna.jpg",
@@ -1432,7 +1409,8 @@ const starthelyTombFull = [
     startIrany: ["DK", "D", "DNY"],
     gpsKoordinatak: "45.88381, 18.24769",
     googleLink: "https://goo.gl/maps/4nnxVRUhNKKbia5NA?coh=178573&entry=tt",
-    legter: "Pecs-Pogany TIZ-ben fekszik a starthely, max 2900m. repules elott bejelentkezes: 36/72/450-619 Mobil: 36/30/560-9325 - eleg valakinek a tarsosagbol napi 1x szolni, hogy tudjanak rolunk es akkor be lehet repulni.",
+    legter:
+      "Pecs-Pogany TIZ-ben fekszik a starthely, max 2900m. repules elott bejelentkezes: 36/72/450-619 Mobil: 36/30/560-9325 - eleg valakinek a tarsosagbol napi 1x szolni, hogy tudjanak rolunk es akkor be lehet repulni.",
     megJegyzes:
       "Autóval nem közelíthető meg, csak gyalog, de kb. 20-25 perc könnyű sétával elérhető a starthely. Ritkábban használjuk ezt a starthelyet, az alacsony szintkülönbség és a lejtő hiánya miatt. Leggyakrabban akkor, ha Jakabhegyen vagy Szársomlyón túl erős a szél. A starthely a jakabhegyi leszálló magasságában van. Ideális hely kezdők oktatására, első magasstartokra. A starthely a hegy oldalában lévő kőfejtő felett található. A starthely előtti lejtő nem túl nagy, de ha sikerül kiemelkedni, akkor keleti irányban egészen Máriagyűdig lejtőzhető a Villányi hegység. Leszálló a főút mellett van, vagy a főút túloldalán a parlagon hagyott szántóföldek is használhatók. Pécstől dél felé kell indulni az 58-as főúton Siklós, Harkány felé. A Villányi hegységet elérve Siklós irányt kövessük. Az elágazás után rögtön le kell fordulni első kis utcán a kertesházak közé. Az út végén egy kőfejtő van. Itt lehet parkolni. Innen kell nekiindulni a hegynek. Két placc van, az egyik amit elöször elérsz a D, DK és DNy irányokra jó, s egy kicsit hátrébb van a Nyugati starthely.",
     meteo: "",
@@ -1505,8 +1483,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.88909, 19.41425",
     googleLink: "https://goo.gl/maps/XbHG3pYXxwEm3ta77?coh=178573&entry=tt",
     legter: "TMA5, 2000m hataran",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "szanda.mov",
     starthelyKep: "szanda.jpg",
@@ -1523,8 +1500,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.85805, 18.86420",
     googleLink: "https://goo.gl/maps/JQUDnVaAUDfycRhY9?coh=178573&entry=tt",
     legter: "TMA5, 2000m, kozelben D34",
-    megJegyzes:
-      "A terulet: Csak-hegy andezitbanya, Marianosztra hataraban",
+    megJegyzes: "A terulet: Csak-hegy andezitbanya, Marianosztra hataraban",
     meteo: "",
     video: "csakhegy.mov",
     starthelyKep: "csakhegy.jpg",
@@ -1631,8 +1607,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.87581, 19.03699",
     googleLink: "https://goo.gl/maps/2AyMn1W7bj8y8WJ3A?coh=178573&entry=tt",
     legter: " TMA5, 2000m, kozelben D34",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "kohegy.mov",
     starthelyKep: "kohegy.jpg",
@@ -1668,8 +1643,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "48.20213, 21.13885",
     googleLink: "https://goo.gl/maps/YXcbMX1DFpNo2vSa8?coh=178573&entry=tt",
     legter: "Kassa TMA2: 305m AGL",
-    megJegyzes:
-      "Magas start helyett inkább tanulódomb?",
+    megJegyzes: "Magas start helyett inkább tanulódomb?",
     meteo: "",
     video: "monok.mov",
     starthelyKep: "monok.jpg",
@@ -1686,8 +1660,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.89706, 19.75081",
     googleLink: "https://goo.gl/maps/S3gb4eFdVn9qNAbk8?coh=178573&entry=tt",
     legter: "LH-SG30, 2900m",
-    megJegyzes:
-      "a starthelyen sok a csipkebokor",
+    megJegyzes: "a starthelyen sok a csipkebokor",
     meteo: "",
     video: "muzsla.mov",
     starthelyKep: "muzsla.jpg",
@@ -1740,8 +1713,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.66019, 18.78942",
     googleLink: "https://goo.gl/maps/P9T5SJwqYJc9omAw8?coh=178573&entry=tt",
     legter: "TMA3, 1050m",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "pilisjaszfalu.mov",
     starthelyKep: "pilisjaszfalu.jpg",
@@ -1758,8 +1730,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "47.80114, 19.22511",
     googleLink: "https://goo.gl/maps/Qr24QEzHxTyKRPrGA?coh=178573&entry=tt",
     legter: "G23 es E-ra TMA5: 2000m",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "rad.mov",
     starthelyKep: "rad.jpg",
@@ -1830,8 +1801,7 @@ const starthelyTombFull = [
     gpsKoordinatak: "48.30144, 21.45980",
     googleLink: "https://goo.gl/maps/xrAhmkAgCQ3sMX496",
     legter: "Kassa TMA2: 305m AGL",
-    megJegyzes:
-      "",
+    megJegyzes: "",
     meteo: "",
     video: "tolcsva.mov",
     starthelyKep: "tolcsva.jpg",
@@ -1839,8 +1809,7 @@ const starthelyTombFull = [
     indicator: "tisztazatlan",
     nehezseg: "+",
     tipusa: "magasstart",
-  }
-
+  },
 ];
 
 const openWeatherKeys = "c4a4e45630e841072bf9ef16bb89e412";
@@ -1862,21 +1831,24 @@ const getForecastOpenWs = async (latitudes, longitudes) => {
   }
 };
 
-
 // starthely táblázat létrehozása starthelyelemek kiíratása
 function addSearchResoult(starthelyParam, statusParam) {
   if (statusParam === starthelyParam.indicator || statusParam === "osszes") {
-    const egySzelLatitude = starthelyParam.gpsKoordinatak.substring(0, 8);
-    const egySzelLongitude = starthelyParam.gpsKoordinatak.substring(10, 18);
-    getForecastOpenWs(egySzelLatitude, egySzelLongitude)
-  .then((forecast) => {
-    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev} - jelenlegi szélirány: <span class="szelIranySpan" style="transform: rotate(${forecast.wind.deg -270}deg);">&#10165;</span> ${Math.round(forecast.wind.speed) * 3.6} km/h</td></tr><tr><td>Szintkülönbség: ${starthelyParam.szintKulombseg} m</td></tr><tr><td>Startirány: ${starthelyParam.startIrany}</td></tr><tr><td>Koordináták: <a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>Légterek: ${starthelyParam.legter}</td></tr><tr><td>Státusz: ${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
-  })
-  .catch((e) => {
-    console.log("na mi a fasz", e, starthelyParam);
-  });
+    // az openweatherforecast letiltott ezért kivettem
+
+    //   const egySzelLatitude = starthelyParam.gpsKoordinatak.substring(0, 8);
+    //   const egySzelLongitude = starthelyParam.gpsKoordinatak.substring(10, 18);
+    //   getForecastOpenWs(egySzelLatitude, egySzelLongitude)
+    // .then((forecast) => {
+    //   pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev} - jelenlegi szélirány: <span class="szelIranySpan" style="transform: rotate(${forecast.wind.deg -270}deg);">&#10165;</span> ${Math.round(forecast.wind.speed) * 3.6} km/h</td></tr><tr><td>Szintkülönbség: ${starthelyParam.szintKulombseg} m</td></tr><tr><td>Startirány: ${starthelyParam.startIrany}</td></tr><tr><td>Koordináták: <a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>Légterek: ${starthelyParam.legter}</td></tr><tr><td>Státusz: ${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
+    // })
+    // .catch((e) => {
+    //   console.log("na mi a fasz", e, starthelyParam);
+    // });
+    // az openweatherforecast letiltott ezért kivettem vége
+
+    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev} - jelenlegi szélirány: &#9785;</td></tr><tr><td>Szintkülönbség: ${starthelyParam.szintKulombseg} m</td></tr><tr><td>Startirány: ${starthelyParam.startIrany}</td></tr><tr><td>Koordináták: <a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>Légterek: ${starthelyParam.legter}</td></tr><tr><td>Státusz: ${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
   }
-  
 }
 
 //az ősszes strthely kiválasztása kiiratáshoz
