@@ -32,7 +32,7 @@ const starthelyTombFull = [
     meteo: "",
     video: "Csolnok.mov",
     starthelyKep: "Csolnok.jpg",
-    statusA: "engedályezett",
+    statusA: "engedélyezett",
     indicator: "engedelyezett",
     nehezseg: "++",
     tipusa: "magasstart",
@@ -149,7 +149,7 @@ const starthelyTombFull = [
     nev: "Jakabhegy, Kővágószőlős",
     szintKulombseg: "190",
     startIrany: ["DNY"],
-    gpsKoordinatak: "46.0973, 18.12716",
+    gpsKoordinatak: "46.09730, 18.12716",
     googleLink: "https://goo.gl/maps/HxQ9NSQroTAnKBxe7?coh=178573&entry=tt",
     legter: "Legter: Pecs-Pogany TIZ-ben fekszik a starthely, max 2900m. repules elott bejelentkezes: 36/72/450-619 Mobil: 36/30/560-9325 - eleg valakinek a tarsosagbol napi 1x szolni, hogy tudjanak rolunk es akkor be lehet repulni. bovebben: http://www.airportpecs.hu/?ShowPage=41",
     megJegyzes:
@@ -221,7 +221,7 @@ const starthelyTombFull = [
     nev: "Sárhegy NY DNY",
     szintKulombseg: "468",
     startIrany: ["DNY", "NY"],
-    gpsKoordinatak: "47.79258, 19.968",
+    gpsKoordinatak: "47.79258, 19.96800",
     googleLink: "https://goo.gl/maps/11We3EwNVBeTrFoK6?coh=178573&entry=tt",
     legter: "LH-SG30, LHGY, 2900m",
     megJegyzes:
@@ -331,7 +331,7 @@ const starthelyTombFull = [
     nev: "Asszony tavi csőrlőpálya",
     szintKulombseg: "0",
     startIrany: ["DK"],
-    gpsKoordinatak: "47.6469, 18.25863",
+    gpsKoordinatak: "47.64690, 18.25863",
     googleLink: "https://goo.gl/maps/54wuqN4hXCiw665K6?coh=178573&entry=tt",
     legter: "TMA1, 2300m hataran, Per TIZ 2900m",
     megJegyzes:
@@ -385,7 +385,7 @@ const starthelyTombFull = [
     nev: "Békéscsaba reptér csőrlőpálya",
     szintKulombseg: "0",
     startIrany: ["K", "NY"],
-    gpsKoordinatak: "46.6794, 21.14758",
+    gpsKoordinatak: "46.67940, 21.14758",
     googleLink: "https://goo.gl/maps/dAmupMYfnnVof9df8?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
@@ -403,7 +403,7 @@ const starthelyTombFull = [
     nev: "Billegpuszta",
     szintKulombseg: "0",
     startIrany: ["DK", "ENY"],
-    gpsKoordinatak: "47.70641932181463, 18.22367802456713",
+    gpsKoordinatak: "47.70641, 18.22367",
     googleLink: "https://goo.gl/maps/2K8HyKzwtaHrYWnZ8?coh=178573&entry=tt",
     legter: "TMA2/A 1675m hataran",
     megJegyzes:
@@ -601,7 +601,7 @@ const starthelyTombFull = [
     nev: "Kisbér Áaszár",
     szintKulombseg: "0",
     startIrany: ["DK", "ENY"],
-    gpsKoordinatak: "47.50102, 17.9838",
+    gpsKoordinatak: "47.50102, 17.98380",
     googleLink: "https://goo.gl/maps/ZXHL4RMJAqUKZT6VA?coh=178573&entry=tt",
     legter: "Per TIZ 2900m",
     megJegyzes:
@@ -637,7 +637,7 @@ const starthelyTombFull = [
     nev: "Kunmadaras",
     szintKulombseg: "0",
     startIrany: ["EK", "DNY"],
-    gpsKoordinatak: "47.39831, 20.7875",
+    gpsKoordinatak: "47.39831, 20.78750",
     googleLink: "https://goo.gl/maps/rn5UGeE7n4WvoBn78?coh=178573&entry=tt",
     legter: "LH-TRA23, max 2900m",
     megJegyzes:
@@ -763,7 +763,7 @@ const starthelyTombFull = [
     nev: "Szegedi reptér",
     szintKulombseg: "0",
     startIrany: ["E", "EK", "K", "DK", "D", "DNY", "NY", "ENY"],
-    gpsKoordinatak: "46.25081, 20.0891",
+    gpsKoordinatak: "46.25081, 20.08910",
     googleLink: "https://goo.gl/maps/Bxz8H8pRE21v5mz36?coh=178573&entry=tt",
     legter: "Szeged TIZ PMR: 6.16",
     megJegyzes:
@@ -1142,7 +1142,7 @@ const starthelyTombFull = [
     nev: "Klöki hegy Szokolya tanulódomb",
     szintKulombseg: "20",
     startIrany: ["EK"],
-    gpsKoordinatak: "47.864386666277674, 18.985516274242062",
+    gpsKoordinatak: "47.86438, 18.98551",
     googleLink: "https://goo.gl/maps/MxyDUg7J9yr3mBRK6?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
@@ -1178,7 +1178,7 @@ const starthelyTombFull = [
     nev: "Máriahalom tanulódomb, Gyermely",
     szintKulombseg: "60",
     startIrany: ["DNY"],
-    gpsKoordinatak: "47.6225, 18.69452",
+    gpsKoordinatak: "47.62250, 18.69452",
     googleLink: "https://goo.gl/maps/NWLc9U6o4fhAL9F96?coh=178573&entry=tt",
     legter: "TMA3, 1050m. kozelben G10, 1350m es TMA2 2000m",
     megJegyzes:
@@ -1214,7 +1214,7 @@ const starthelyTombFull = [
     nev: "Páty tanulódomb",
     szintKulombseg: "25",
     startIrany: ["NY", "ENY"],
-    gpsKoordinatak: "47.5015, 18.84567",
+    gpsKoordinatak: "47.50150, 18.84567",
     googleLink: "https://goo.gl/maps/L4fZHvW1V2Rkk5PD7?coh=178573&entry=tt",
     legter: "G3/V: 1350m AMSL",
     megJegyzes:
@@ -1232,7 +1232,7 @@ const starthelyTombFull = [
     nev: "Szana Lofo-berc, Nagyvisnyo tanulódomb",
     szintKulombseg: "40",
     startIrany: ["K", "DK", "D", "DNY"],
-    gpsKoordinatak: "48.13661, 20.4068",
+    gpsKoordinatak: "48.13661, 20.40680",
     googleLink: "https://goo.gl/maps/tMrmCf4KRiAVPFCn8?coh=178573&entry=tt",
     legter: "na",
     megJegyzes:
@@ -1358,7 +1358,7 @@ const starthelyTombFull = [
     nev: "Nagy-Eged hegy DNY, Eger",
     szintKulombseg: "235",
     startIrany: ["DNY"],
-    gpsKoordinatak: "47.9281, 20.4116",
+    gpsKoordinatak: "47.92810, 20.41160",
     googleLink: "https://goo.gl/maps/MQVzbjTpJDef7Yrp9?coh=178573&entry=tt",
     legter: "TRA-23E / TRA-23D, 2900m",
     megJegyzes:
@@ -1376,7 +1376,7 @@ const starthelyTombFull = [
     nev: "Nagy-Eged hegy ENY NY",
     szintKulombseg: "235",
     startIrany: ["NY", "ENY"],
-    gpsKoordinatak: "47.92919, 20.4116",
+    gpsKoordinatak: "47.92919, 20.41160",
     googleLink: "https://goo.gl/maps/TCZm4EirxNHgLBuLA?coh=178573&entry=tt",
     legter: "TRA-23E / TRA-23D, 2900m",
     megJegyzes:
@@ -1466,7 +1466,7 @@ const starthelyTombFull = [
     nev: "Verőce, Borbély-hegy",
     szintKulombseg: "",
     startIrany: ["DNY"],
-    gpsKoordinatak: "47.836427308291995, 19.04332028130655",
+    gpsKoordinatak: "47.83642, 19.04332",
     googleLink: "https://goo.gl/maps/hZMkQJ72v5Lbqc1LA?coh=178573&entry=tt",
     legter: "TMA5, 2000m, kozelben D34",
     megJegyzes:
@@ -1520,7 +1520,7 @@ const starthelyTombFull = [
     nev: "Csakhegy",
     szintKulombseg: "90",
     startIrany: ["E", "EK", "ENY"],
-    gpsKoordinatak: "47.85805, 18.8642",
+    gpsKoordinatak: "47.85805, 18.86420",
     googleLink: "https://goo.gl/maps/JQUDnVaAUDfycRhY9?coh=178573&entry=tt",
     legter: "TMA5, 2000m, kozelben D34",
     megJegyzes:
@@ -1574,7 +1574,7 @@ const starthelyTombFull = [
     nev: "HHH, Költők padja ",
     szintKulombseg: "120",
     startIrany: ["E"],
-    gpsKoordinatak: "47.576, 18.96761",
+    gpsKoordinatak: "47.57600, 18.96761",
     googleLink: "https://goo.gl/maps/i9n9VcwG2drqpuNc6?coh=178573&entry=tt",
     legter: "TMA4, 750m",
     megJegyzes:
@@ -1827,7 +1827,7 @@ const starthelyTombFull = [
     nev: "Tolcsva, Erdohorvati",
     szintKulombseg: "200",
     startIrany: ["D", "DNY"],
-    gpsKoordinatak: "48.30144260609925, 21.459805230298898",
+    gpsKoordinatak: "48.30144, 21.45980",
     googleLink: "https://goo.gl/maps/xrAhmkAgCQ3sMX496",
     legter: "Kassa TMA2: 305m AGL",
     megJegyzes:
@@ -1839,17 +1839,44 @@ const starthelyTombFull = [
     indicator: "tisztazatlan",
     nehezseg: "+",
     tipusa: "magasstart",
-  },
-
-
+  }
 
 ];
+
+const openWeatherKeys = "c4a4e45630e841072bf9ef16bb89e412";
+const weatherUrls = "https://api.openweathermap.org/data/2.5/weather";
+
+const getForecastOpenWs = async (latitudes, longitudes) => {
+  //hőmérséklet koordináták alapján
+  const urlToFetch = `${weatherUrls}?lat=${latitudes}&lon=${longitudes}&units=metric&lang=hu&APPID=${openWeatherKeys}`;
+
+  try {
+    const response = await fetch(urlToFetch);
+    if (response.ok) {
+      const jsonResponse = await response.json();
+      //log(jsonResponse);
+      return jsonResponse;
+    } else throw new Error("something went wrong...");
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
 
 // starthely táblázat létrehozása starthelyelemek kiíratása
 function addSearchResoult(starthelyParam, statusParam) {
   if (statusParam === starthelyParam.indicator || statusParam === "osszes") {
-    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev}</td></tr><tr><td>${starthelyParam.szintKulombseg}</td></tr><tr><td>${starthelyParam.startIrany}</td></tr><tr><td><a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>${starthelyParam.legter}</td></tr><tr><td>${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
+    const egySzelLatitude = starthelyParam.gpsKoordinatak.substring(0, 8);
+    const egySzelLongitude = starthelyParam.gpsKoordinatak.substring(10, 18);
+    getForecastOpenWs(egySzelLatitude, egySzelLongitude)
+  .then((forecast) => {
+    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev} - jelenlegi szélirány: <span class="szelIranySpan" style="transform: rotate(${forecast.wind.deg -270}deg);">&#10165;</span> ${Math.round(forecast.wind.speed) * 3.6} km/h</td></tr><tr><td>Szintkülönbség: ${starthelyParam.szintKulombseg} m</td></tr><tr><td>Startirány: ${starthelyParam.startIrany}</td></tr><tr><td>Koordináták: <a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>Légterek: ${starthelyParam.legter}</td></tr><tr><td>Státusz: ${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
+  })
+  .catch((e) => {
+    console.log("na mi a fasz", e, starthelyParam);
+  });
   }
+  
 }
 
 //az ősszes strthely kiválasztása kiiratáshoz
@@ -1906,7 +1933,7 @@ kijelolGombHelye.addEventListener("click", inputKijeloles, false);
 getIranyValasztottak();
 
 //először kiiratja a teljes táblát argumentum nélkül
-loadTableContent();
+// loadTableContent();
 
 /*melyik inputelem lett bejelölve?  eventlisener elhelyezése az imputokra a statusz szerinti választásnál*/
 melyikInput.forEach((elem) =>
@@ -1918,19 +1945,16 @@ szelIranyInputok.forEach((elem) =>
   elem.addEventListener("change", getIranyValasztottak, false)
 );
 
-
 // searchbar funkcionalitás_________________________________
 
-searchbar.addEventListener('input', search, false);
+searchbar.addEventListener("input", search, false);
 
 function loadSearchContent(searchBarTomb) {
   pozEredmeny.innerHTML = "";
   for (let i = 0; i < searchBarTomb.length; i++) {
-      addSearchResoult(searchBarTomb[i], "osszes");
-    
+    addSearchResoult(searchBarTomb[i], "osszes");
   }
 }
-
 
 function search() {
   // radiobuttonok kiiktatása
@@ -1941,7 +1965,9 @@ function search() {
   let keresesKivalasztottTomb = [];
   // a keresőmező értékének keresése az adatbázisból és a találatok bepakolása a keresKiválasztottTömbbe
   for (const keresettElem of starthelyTombFull) {
-    if (keresettElem.nev.toLowerCase().includes(searchbar.value.toLowerCase())) {
+    if (
+      keresettElem.nev.toLowerCase().includes(searchbar.value.toLowerCase())
+    ) {
       keresesKivalasztottTomb.push(keresettElem);
     }
   }

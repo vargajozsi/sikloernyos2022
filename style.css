@@ -67,6 +67,7 @@ p {
 
 .none {
   all: unset;
+  color: var(--white-elements);
 }
 
 .noliststyle {
@@ -285,7 +286,7 @@ i[forditas]:hover::after {
   padding: 3rem;
   background-color: var(--black-elements);
   color: rgb(255, 255, 255);
-  font-size: calc(0.8rem + 1vw);
+  font-size: calc(1rem + 1vw);
   font-family: "Source Sans Pro", sans-serif;
   text-align: left;
 }
@@ -504,6 +505,10 @@ padding: 2rem 0;
   border-radius: 0.5rem;
 }
 
+.szelIranySpan {
+  display: inline-block;
+  font-size: larger;  
+}
 
 
 .tisztazatlan tbody:nth-child(1) > tr:nth-child(1) {
@@ -1227,6 +1232,10 @@ article {
   list-style: none;
 }
 
+.gyartoLi ul li p {
+  color: var(--white-elements);
+}
+
 
 /*-------the end of Sikloernyo gyarto cegek specifed style elements*/
 
@@ -1354,6 +1363,11 @@ iframe {
 
 /* end of main */
 /* Responsives for smaller devices*/
+@media (pointer: coarse) {
+  .wrapper{
+background-attachment: initial;}
+}
+
 
 @media only screen and (max-width: 1150px) {
   .wrapper-klubs {
