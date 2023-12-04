@@ -427,7 +427,6 @@ div.tabla-starthely > a {
 }
 
 table, td, tr {
-  min-width: 95vw;
   border: 1px solid hsla(0, 21%, 64%, 0.432);
   border-collapse: collapse;
   padding: 0.5rem;
@@ -1024,11 +1023,16 @@ article {
   text-align: left;
 }
 
-.szovegeles ol {
+.szovegeles ol, .cikkekUl {
   margin-left: 5rem;
   list-style-type: decimal;
   font-size: clamp(1.5rem, 1.5vw, 2rem);
 }
+
+.cikkekUl {
+  list-style-type: inherit;
+}
+
 
 .szovegeles p {
   color: var(--white-elements);

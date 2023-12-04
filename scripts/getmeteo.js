@@ -42,7 +42,6 @@ let lat, long, indexVaros, varosPeldany;
 const getForecastOpenW = async (latitude, longitude) => {
     //hőmérséklet koordináták alapján
     const urlToFetch = `${weatherUrl}?lat=${latitude}&lon=${longitude}&units=metric&lang=hu&APPID=${openWeatherKey}`;
-
     try {
         const response = await fetch(urlToFetch);
         if (response.ok) {

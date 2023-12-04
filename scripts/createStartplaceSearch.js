@@ -1847,7 +1847,7 @@ function addSearchResoult(starthelyParam, statusParam) {
     // });
     // az openweatherforecast letiltott ezért kivettem vége
 
-    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev} - jelenlegi szélirány: &#9785;</td></tr><tr><td>Szintkülönbség: ${starthelyParam.szintKulombseg} m</td></tr><tr><td>Startirány: ${starthelyParam.startIrany}</td></tr><tr><td>Koordináták: <a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>Légterek: ${starthelyParam.legter}</td></tr><tr><td>Státusz: ${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
+    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev} - jelenlegi szélirány: </td></tr><tr><td>Szintkülönbség: ${starthelyParam.szintKulombseg} m</td></tr><tr><td>Startirány: ${starthelyParam.startIrany}</td></tr><tr><td>Koordináták: <a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>Légterek: ${starthelyParam.legter}</td></tr><tr><td>Státusz: ${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
   }
 }
 
