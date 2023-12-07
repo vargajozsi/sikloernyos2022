@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="hu">
+<!-- Ver. 1.1 -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Siklóernyőzés, siklóernyős hírek, hírek, érdekességek" />
+  <meta property="og:title" content="sikloernyosklub.hu" />
+  <meta property="og:url" content="https://www.sikloernyosklub.hu/" />
+  <meta property="og:image" content="https://www.sikloernyosklub.hu/media/sikloernyosklub.jpg" />
+  <meta property="og:site_name" content="sikloernyosklub.hu" />
+  <meta property="og:description" content="sikloernyosklub.hu" />
+  <meta name="DC.coverage" content="Hungary" />
+  <meta name="DC.description" content="sikloernyosklub.hu" />
+  <meta name="DC.format" content="text/html" />
+  <meta name="DC.identifier" content="https://www.sikloernyosklub.hu" />
+  <meta name="DC.publisher" content="sikloernyosklub.hu" />
+  <meta name="keywords" content="Siklóernyőzés, siklóernyős hírek, hírek, érdekességek" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--iconok-->
+  <link rel="apple-touch-icon" sizes="57x57" href="./media/icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./media/icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./media/icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./media/icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./media/icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./media/icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./media/icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./media/icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./media/icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./media/icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./media/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./media/icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./media/icon/favicon-16x16.png">
+  <link rel="manifest" href="./media/icon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./media/icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!--iconok vege-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Siklóernyős hírek | események</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BFB11JF5N7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-BFB11JF5N7");
+  </script>
+</head>
+
+<body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"
+      aria-hidden="true"></i></button>
+
+  <script src="./scripts/top.js"></script>
+  <!--beginn of navigation-->
+  <header>
+    <nav class="navbar">
+      <div class="branding">
+        <h2>
+          <a href="index.html" class="sikloernyosklub-logo"><img class="klublogo"
+              src="media/sikloernyosklub-logo_sz.png" alt="sikloernyos klub logo" /></a>
+        </h2>
+      </div>
+
+      <div>
+        <label for="imput-hamburger" class="hamburger"></label>
+        <input type="checkbox" id="imput-hamburger" hidden />
+        <ul class="menu">
+          <li>
+            <a href="index.html" class="menu-link">Siklóernyős Klubok</a>
+          </li>
+          <li>
+            <a href="sikloernyozesrol.html" class="menu-link">Siklóernyőzésről</a>
+          </li>
+          <li class="has-dropdown" style="display: none;">
+            <a class="menu-link" href="#">Siklóernyőzés<span class="arrow">˅</span>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="sikloernyozesrol.html" class="menu-link">Siklóernyőzésről</a>
+              </li>
+              <li>
+                <a href="#" class="menu-link" style="display: none;">Siklóernyős Felszerelések</a>
+              </li>
+              <li>
+                <a href="#" class="menu-link" style="display: none;">Siklóernyős Tanfolyamok</a>
+              </li>
+
+              <li><a href="#" class="menu-link" style="display: none;">Siklóernyős Oktatók</a></li>
+              <li><a href="#" class="menu-link" style="display: none;">Tananyagok</a></li>
+              <li><a href="#" class="menu-link" style="display: none;">K.S.P.</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="starthelyek.html" class="menu-link">Starthelyek
+              <!-- <span class="arrow">˅</span>-->
+            </a>
+          </li>
+          <li class="has-dropdown" style="display: none;">
+            <a href="#" class="menu-link">Tandemrepülés<span class="arrow">˅</span></a>
+            <ul class="submenu">
+              <li>
+                <a href="#" class="menu-link" class="menu-link">Tandemrepülésről Általában</a>
+              </li>
+              <li><a href="#" class="menu-link">Tandempilóták</a></li>
+              <li>
+                <a href="#" class="menu-link">Jelentkezés Tandemrepülésre</a>
+              </li>
+              <li><a href="#" class="menu-link">Ajándékutalvány</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#" class="menu-link">Hasznos<span class="arrow">˅</span></a>
+            <ul class="submenu">
+              <li><a href="legterek.html" class="menu-link">Légterek</a></li>
+              <li><a href="#" class="menu-link" style="display: none;">Túrák</a></li>
+              <li><a href="sikloernyo_gyarto_cegek.html" class="menu-link">Gyártók</a></li>
+              <li><a href="./sikloernyos_szervezetek.html" class="menu-link">Szervezetek</a></li>
+              <li><a href="reporvos.html" class="menu-link">Reporvos</a></li>
+              <li><a href="#" class="menu-link" style="display: none;">Xcontest</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="meterologia.html" class="menu-link">Meteo</a>
+          </li>
+          <li>
+            <a href="sikloernyoshirek.html" class="menu-link">Hírek</a>
+          </li>
+          <div class="menuhider">
+            <div class="menuhiderarrow"></div>
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--end of navigation-->
+  <main>
+    <div class="wrapper">
+      <h1>
+        Siklóernyős hírek
+      </h1>
+      <div class="hirek-kontener">
+
+<!-- belépési pont js hirfolyam kezdete -->
+
+<div class="cikkBelepesiPont"></div>
+
+<!-- belépési pont js hirfolyam Vége -->
+        <article>
+          <div class="hir-cime">
+            <h2>A Dudek cég új, Disco 2023 beülője</h2>
+            <img src="./media/cikkek/dudek/dudek-logo-red.svg" alt="Dudek új beülő Disco 2023">
+          </div>
+          <div class="hir-tartalom">
+            <div class="szovegeles">
+              <p>A Dudek cég piacra dobta a Disco 2023 siklóernyős kezdőknek szánt siklóernyős beülőjét.
+                <br><br>
+                A beülő 4 méretben kapható: S M L XL, amely lehetővé teszi a pontos méretválasztást,
+                Legfontosabb tulajdonságai: </p>
+              <ul class="cikkekUl">
+                <li>kétrészes, rugalmas levegőhab protektor</li>
+                <li>a tartalék ejtőernyős konténer helye a heveder hátulján, a protektor mögött található</li>
+                <li>a heveder nagyon könnyű és körülbelül 2,5 kg M-es méretben</li>
+                <li>az ülésdeszka karbonból készült, ami hozzájárul a kis tömeghez</li>
+                <li>lábtartó felszerelése lehetséges (nem tartozék)</li>
+                <li>különböző színekkel jelölt rögzítési pontok a jobb és bal oldal megkülönböztetésére</li>
+                <li>a beülőheveder alja vastagabb és kopásállóbb szövetből készült</li>
+                <li>nagy hátsó tárolózseb</li>
+                <li>speciális rádiózseb a vállon</li>
+                <li>speciális tépőzár rögzítéshez pl. variométerek,
+                  oldalt zsebek, pl. telefonhoz
+                  kiegészítő zseb a protektor előtt</li>
+                <li>légáteresztő háló az ülés háttámláján</li>
+                <li>állítható mellkaspánt</li>
+                <li>nagy, golyóscsapágyas gyorsítók</li>
+                <li>ivótömlő zseb tömlőnyílással</li>
+              </ul>
+              <br><br>
+              <p>Az előző verzióhoz képest egy jóval könnyebb beülőt láthatunk és a legnagyobb újdonság a felszerelhető lábtartó, amit a hevederek, tartók elrendezésének megváltoztatásai tettek lehetővé.
+
+              </p> 
+              <br>
+              <br>
+              <br><br><br>
+              <table id="hirekTable">
+                <tbody>
+                  <tr>
+                    <td><strong>Delaer név</strong></td>
+                    <td>Ferenc Halasz</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Cím:</strong></td>
+                    <td>1112 Budapest Koerberki U 36/A, Budaors Airport Hungary</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Tel:</strong></td>
+                    <td> <a href="tel:+36309413999"> +36309413999</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>e-mail:</strong></td>
+                    <td><a href="mailto: flyferppg@gmail.com">flyferppg@gmail.com</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Gyártó:</strong></td>
+                    <td><a href="https://dudek.eu/en/" target="_blank" rel="noopener noreferrer">DUDEK</a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <br>
+              <p>
+              <time datetime="2023-03-31 18:00">2023 december 04.</time>
+              </p>
+
+            </div>
+            <img src="./media/cikkek/dudek/Disco-8-1920x1280.png" alt="Dudek Disco 2023 siklóernyős beülő" style="max-width: 40rem;">
+          </div>
+          <div class="hir-hashtag">#Bassano #sikloernyozes #starthely #letiltás
+            #bassanodelgrappa #olaszország</div>
+        </article>
+
+
+
+
+
+        <article>
+          <div class="hir-cime">
+            <h2>Minőségi változások a sikloernyosklub.hu starthelykereső felületén</h2>
+            <img src="./media/sikloernyosklub-logo_sz.png" alt="sikloernyosklub logo">
+          </div>
+          <div class="hir-tartalom">
+            <div class="szovegeles">
+              <p>A sikloernyosklub.hu starthelykereső további funkciókkal bővült<br><br>
+                A magyarországi starthelyek fejlesztése nyomán immár szélirány szerint is kereshetünk starthelyre,
+                illetve a starthely státusza (tiltott, tisztázatlan, engedélyezett) is szürhetünk.
+                Továbbra is könnyen megtalálható a googlés starthelykereső külső hivatkozása a honlapon. A starthelyek
+                státusza változhat, ezeket a változásokat igyekszem lekövetni, de kisebb hibák előfordulhatnak.
+                Amit fontosnak tartok, hogy a biztosan letiltott helyek legyenek markánsan elkülöníthetők a más státuszú
+                starthelyektől.
+                Amennyiben valakinek építő javaslata, képi- videó anyaga lenne a fejlesztéshez és korlátozás nélkül
+                megosztaná velünk, forrásmegjelőléssel küldje el nekem legyen szíves a parapenteleonardo kukac gmailes
+                elérhetőségre.
+                <br><br>
+                A starthelykereső az alábbi linken található: <a
+                  href="https://sikloernyosklub.hu/starthelyek.html#starthelyKereso">Siklóernyős Starthelyek a
+                  siklóernyősklub.hu oldalon</a>
+                <br>
+                <br>
+                <time datetime="2023-05-30 6:45">2023.05.30.</time>
+              </p>
+            </div>
+            <img src="./media/sikloernyosklub-logo_sz.png" alt="PHI nagy logo" style="max-width: 40rem;">
+          </div>
+          <div class="hir-hashtag">#starthelyek #siklóerynős Starthelyek #siklóernyőzés #siklóernyős hírek
+            #sikloernyősklub hírek </div>
+        </article>
+
+        <article>
+          <div class="hir-cime">
+            <h2>A Phi Maestro 2 light alapminősítések sikeresen lezárultak</h2>
+            <img src="./media/phi_logo.png" alt="PHI siklóernyőgyártó logo">
+          </div>
+          <div class="hir-tartalom">
+            <div class="szovegeles">
+              <p>Befejeződtek a PHI (Hannes Papesh) Maestro 2 Light homologizációs vizsgálatai. <br><br>
+                A vizsgák során mindegyik ernyőméret (21, 22, 23, 25) megkapta a DHV "B" kategóriájának megfelelő
+                minősítést.
+                <br><br>
+                További információk a gyártó honlapján: <a href="https://phi-air.com/">phi-air.com</a>
+                <br>
+                <br>
+                <time datetime="2023-04-23 18:00">2023.04.23.</time>
+              </p>
+            </div>
+            <img src="./media/phinagy.png" alt="PHI nagy logo" style="max-width: 40rem;">
+          </div>
+          <div class="hir-hashtag">#PHI #phiSiklóernyő #Siklóernyőgyártó #homologizáció
+            #DHV #vizsga #HannesPapesh #phiMaestro2Light</div>
+        </article>
+
+
+
+
+
+
+
+        <article>
+          <div class="hir-cime">
+            <h2>Bassano siklóernyős starthely felfüggesztése</h2>
+            <img src="./media/cikkek/logo-vivere-il-grappa.png" alt="Bassano starthely Tappeti">
+          </div>
+          <div class="hir-tartalom">
+            <div class="szovegeles">
+              <p>Bassanoban a Tappeti starthely ideiglenesen lezárásra kerül április 17-től
+                megközelítőleg három hét időtartamra. A többi közeli starthely továbbra is változatlanul üzemel.
+                A karbantartás alkalmával a starthely további, mintegy 40%-al kerül kibővítésre a tervek szerint. Az
+                átépítés során a lejtő felülete szöge is optimalizálásra kerül és a bővítés az átjáronál lévő padoknál
+                lehetővé fogja tenni, hogy a siklóernyőket kényelmesebben lehessen előkészíteni startra. Sajnos korábban
+                nem tudtak az üzemeltetők a munkálatoknak nekilátni bürokratikus nehézségek miatt. Írja a "Vivere Il
+                Grappa" szövetkezet
+                <br><br><br>
+              <table id="hirekTable">
+                <tbody>
+                  <tr>
+                    <td><strong>Felszálló régió</strong></td>
+                    <td>Col del Puppolo</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Starthely magassága</strong></td>
+                    <td>830m</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Szélirány</strong></td>
+                    <td>dél - dél/kelet - dél/nyugat</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Visszaszálló</strong></td>
+                    <td>nem</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Ajánlott leszálló</strong></td>
+                    <td>Via Casale Nuovo (Paradiso) m.190</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Gps koordináták</strong></td>
+                    <td>45.8235, 11.76875</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Autóparkoló</strong></td>
+                    <td>igen / 100 m</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Frissítőpont</strong></td>
+                    <td>igen / 100 m</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <br>
+              <time datetime="2023-03-31 18:00">2023 március 30.</time>
+              </p>
+
+            </div>
+            <img src="./media/bassano_tappeti_starthely.webp" alt="Bassano starthely Tappeti" style="max-width: 40rem;"
+              alt="Bassano starthely képen">
+          </div>
+          <div class="hir-hashtag">#Bassano #sikloernyozes #starthely #letiltás
+            #bassanodelgrappa #olaszország</div>
+        </article>
+
+        <article>
+          <div class="hir-cime">
+            <h2>Nyílt levél HFFA Repülés Biztonsági Szolgálatától</h2>
+            <img src="./media/hffa_logo-1.png" style=" filter: invert(100%);" alt="Rebisz Hffa logo">
+          </div>
+          <div class="hir-tartalom">
+            <div class="szovegeles">
+              <p>
+
+                Tisztelt pilóta társaim,
+
+                Néhány szóban szeretnék megosztani veletek egy nagyon fontos dolgot, mely a világ minden pilótája előtt
+                egyformán elsődleges. Ez nem más mint a biztonságos repülés!
+                Hiszen bármennyire is tapasztaltak és ügyesek vagyunk, mégiscsak idegen közegben közlekedünk a
+                levegőben. A természet nem adott nekünk olyan testrészeket amelyekkel fent tudnánk maradni a levegőben.
+                Egyetlen fegyverünk az eszünk! Tehát a világon mindenhol a pilóták arra törekednek, hogy eszüket
+                használva minél többet tudjanak repülni. Ehhez pedig a biztonság szükségeltetik.
+                Tényezők, melyek befolyásolhatják a biztonsági faktort:
+                – a pilóta felkészültsége
+                – az időjárás
+                – környezet tulajdonságai (beleértve az adott hely domborzati tulajdonságait és széljárásait is)
+                – eszköz állapota és repülési tulajdonságai
+                – légtér telítettsége, koordináltsága
+                – pilóta tájékozódottsága
+                – helyzetfelismerési képessége
+                Nem véletlenül van az, hogy adatot gyűjtenek a repülő közösségek mindenről, ami a repülések alatt eltér
+                az előírt biztonságos tevékenységtől.
+                Mert ezeket az adatokat összesítve meg lehet előzni egy csomó balesetet! Nagyon fontos a prevenció! De
+                előrelátni csak akkor lehet, ha látjuk azt, hogy eddig mi történt. Ha nem ismerjük a múltat és a jelent
+                nem tudjuk megváltoztatni a jövőt!
+                Ezért találták ki azt a külön csoportot, aminek az a dolga, hogy adatokat gyűjt, elemez és megállapít
+                tényeket, azokat elküldi a gyártóknak, közösségeknek és így lehetőséget adnak arra, hogy a hibák
+                kijavítódjanak! Ez a repülésbiztonsági szolgálat. REBISZ.
+                Ez a szervezet nem rendőrség, nem azért van, hogy büntessen, felelősöket találjon egy-egy baleset
+                következtében. De Őket keresi meg a rendőrség, légügyi hatóság szakmai tanácsért.
+                A rebiszhez minden súlyosabb baleset eljut, mert a mentő hivatalból értesíti a rendőröket, azok pedig a
+                rebiszhez fordulnak tanácsért.
+                Előzzétek meg az eseményeket, ha van valami baleset, szóljatok Ti a HFFA ügyeletesnek, amilyen gyorsan
+                tudtok, hogy a felsorolt szervek kérdezősködéseire már olyan választ tudjon adni a REBISZ amely megvéd
+                Titeket! A sérülés nélküli balesetek bejelentése, pedig a statisztikát növeli, lehet, hogy saját
+                tapasztalatotok egy hellyel kapcsolatos, vagy egy repülőeszközzel kapcsolatos bejelentésetek megmenti a
+                jövőben valaki életét!
+                Vannak olyan magyar törvények melyek azt írják elő, hogy mindenki köteles bejelenteni az észlelt
+                balesetet, mert ha nem 1 millió Ft-ig bírságolható!
+                Én azért kérem, hogy az alábbi telefonszámon jelentsétek be ha láttok baleseteket, vagy Ti szenvedtek el
+                balesetet, hogy felzárkózzunk az Európai pilótákhoz és megmentsük mások életét, illetve segítsetek abban
+                a gyártóknak, hogy tökéletesíthessék eszközeiket!
+                Szőlő: +36 70 363 11 09 (Csöngess meg aztán tedd le és én visszahívlak, hogy még költséged se legyen!)
+                Köszönöm figyelmeteket és remélem ha úgy adódik hívtok!
+                Tisztelettel:
+                Szöllösi László
+                HFFA - Szabad Repülők Szövetsége
+                <br>
+                <br>
+                <time datetime="2023-03-31 18:00">2023</time>
+              </p>
+
+
+
+            </div>
+            <img src="./media/hffa_logo-1.png" alt="HFFA REBISZ közlemény" style="max-width: 40rem;"
+              alt="Bassano starthely képen">
+          </div>
+          <div class="hir-hashtag">#Hffa #sikloernyozes #Rebisz #bejelentés
+            #esemény #RepülésiEsemény</div>
+        </article>
+
+
+        <article>
+          <div class="hir-cime">
+            <h2>DHV Figyelem! Biztonsági felülvizsgálat mentőernyőkre</h2>
+            <img src="./media/cikkek/DHV/dhv_logo.png" style="background-color: black; padding: 1rem;"
+              alt="charly mentőernyő visszahívás">
+          </div>
+          <div class="hir-tartalom">
+            <div class="szovegeles">
+              <p>A DHV (Német Függőrepülő Szövetség) biztonsági felülvizsgálatot rendelt el minden mentőrendszerhez,
+                mivel néhány alkalommal dokumentáltan történtek súlyos, akár halálos kimenetelű balesetek mentőernyő
+                használata ellenére az elmúlt években. A DHV szigorú vizsgálatok során megállapította, hogy egynél több
+                esetben az egyébként kifogástalan állapotban lévő mentőernyő helytelen működését a következő tényezők
+                okozták:
+              </p>
+              <ol>
+                <li>A mentőernyő és a beülő inkompatibilitása a beülő belső vagy külső konténerével</li>
+                <li>A mentőernyő frontkonténerének helytelen felszerelése.</li>
+                <li>Nyitási folyamat meghiúsulása egyéb akadályoztatottság következtében.</li>
+              </ol>
+              <p>
+                A hatóság által kijelölt személyek kötelesek írásban dokumentálni az ellenőrzést és az esetleges
+                észrevételeket eljuttatni a DHV-hez.
+                Az ellenőrzés az alábbiakat kell hogy magában foglalja:
+                1. Meghatározni a használati utasításban található információk alapján, hogy a heveder és a mentőeszköz
+                alapvetően kompatibilisek-e. A mentőeszköz belső konténerrel ellátott beülőnél határozza meg, hogy a
+                kombinálandó mentőfelszerelést a beülő gyártója jóváhagyta-e? A telepítéshez birtokolja-e a szóban forgó
+                beülőhöz tartozó belső konténert. <br>
+                2. A belső konténeres mentőeszköz beszerelése a beülő külső konténerébe vagy külső külső konténerbe a
+                használati utasítás szerinti. <br>
+                3. Kioldási teszt a heveder és a mentőeszköz leendő felhasználója által. Az aktiválási próbát
+                hevederfelfüggesztésben (szimulátorban) kell végrehajtani a hevederben, repülési helyzetben. A belső
+                konténert teljesen ki kell szabadítani a beülőből és ki kell dobni. Az aktiválási teszt során meg kell
+                állapítani, hogy <br>
+                a) az aktiváló fogantyú könnyen elérhető és könnyen megfogható, <br>
+                b) a belső konténer kihúzható és eldobható-e a beülő tárolójából vagy a külső mentőernyőkonténerből a
+                mentőszerkezet kihúzási irányában. A pilóta ezt könnyen és kis erőfeszítéssel tudja megtenni. <br>
+                c) a kioldó fogantyú, a zsinór és a belső konténer konfigurációja lehetővé teszi a belső konténer egy
+                menetben történő erőteljes kidobását. <br>
+                d) A kioldó fogantyú típusa és a belső konténerrel való kapcsolat hossza végett nem áll fenn annak a
+                veszélye, hogy a mentőeszköz kioldódjon a belső konténerből, például lelógjon vagy belegabalyodjon a
+                tartalék ejtőernyő vezetékeibe.
+              </p><a
+                href="https://www.dhv.de/fileadmin/user_upload/files/2021/Sicherheit_2021/Kompatibilitaetspruefung_Luftaufsichtliche_Verfuegung.pdf">Az
+                eredeti dokumentum, amelyből a nem hivatalos fordítás készült.</a>
+            </div>
+            <img src="./media/cikkek/charlyVisszahivas/charlyRettungsschirm.webp" style="max-width: 40rem;"
+              alt="charly mentőernyő visszahívás">
+          </div>
+          <div class="hir-hashtag">#DHV #mentőernyő #visszahívás #veszély
+          </div>
+        </article>
+
+
+
+
+        <article>
+          <div class="hir-cime">
+            <h2>Figyelem! Biztonsági visszahívás CHARLY mentőernyőkre</h2>
+            <img src="./media/cikkek/charlyVisszahivas/Logo_Charly.jpg" alt="charly mentőernyő visszahívás">
+          </div>
+          <div class="hir-tartalom">
+            <p>Biztonsági közlemény minden Charly mentőszerkezethez
+              A mentőernyőkonténer kioldófogantyú felfüggesztésének felülvizsgálata. <br>
+              Adott esetben felmerülhet a veszélye, hogy a mentőernyő kioldó fogantyú, különösen az integrált rekesszel
+              rendelkező hevedereknél, kioldás után beszorulhat a felfüggesztő hevederekbe úgy, hogy a mentőeszköz
+              nyílása elakad. Ezért a CHARLY kioldó fogantyújának maximális hosszát a mentőeszköz belső konténeréhez 37
+              cm-re korlátozza. A hossz mérésének módja a képen látható.
+              A kioldó fogantyú és a belső konténer közötti kapcsolat hosszát a következő repülés előtt a
+              tulajdonosoknak ellenőrizniük kell.
+              Ha szükséges a mentőfogantyú-konténer kapcsolat lerövidítése, azt szakképzett személyzetnek (a
+              hevedergyártónak vagy az általa megbízott cégeknek) kell elvégeznie, végül kompatibilitási teszttel
+              ellenőrizni kell a működőképességet.
+              Ha kétségei vannak, az érintetteknek fel kell venniük a kapcsolatot a heveder gyártójával a megfelelő
+              hosszúságú fogantyú beszerzése érdekében. <br>
+              <span>Finsterwalder GmbH, HRB 52509 Munich Local Court, General Manager: Dipl.-Ing. Thomas Phone: +49 89
+                8116528, office@finsterwalder-charly.de</span>
+            </p>
+            <img src="./media/cikkek/charlyVisszahivas/charlyRettungsschirm.webp" style="max-width: 40rem;"
+              alt="charly mentőernyő visszahívás">
+          </div>
+          <div class="hir-hashtag">#Charly #mentőernyő #visszahívás #veszély
+          </div>
+        </article>
+
+
+        <article>
+          <div class="hir-cime">
+            <h2>Szomorúan tudatjuk, hogy barátunk, sporttársunk, Varga Norbert a KEMRSE vezető pilótája 2021.10.29-én
+              elhunyt.</h2>
+            <img src="./media/kemrseLogo.png" alt="KEMRSE logo">
+          </div>
+          <div class="hir-tartalom">
+            <p>2021.10.29-én délután Norbi barátunk futás közben rosszul lett és elhunyt. Halálával elvesztettünk egy
+              olyan embert, aki a magyar siklóernyőzésben, a tandem repülésben mérföldkőnek számított. Elvesztettünk egy
+              barátot, egy olyan sporttársat és vezetőt, akire mindig lehetett számítani. Elvesztettünk egy jó embert.
+              Nyugodj békében!</p>
+            <div class="norbi-galeria">
+              <img src="./media/cikkek/VargaNorbert.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert1.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert2.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert3.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert4.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert5.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert6.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert7.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert8.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert9.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert10.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert11.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert12.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert13.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert14.jpg" alt="Varga Norbert KEMRSE ">
+              <img src="./media/cikkek/VargaNorbert15.jpg" alt="Varga Norbert KEMRSE ">
+
+            </div>
+          </div>
+          <div class="hir-hashtag">#Tata #sikloernyozes #KEMRSE #VargaNorbert
+            #elhunyt</div>
+
+        </article>
+
+        <article>
+          <div class="hir-cime">
+            <h2>"A szabadság szerelmesei" Siklóernyőzés Hajdúszoboszlón.</h2>
+            <img src="./media/aeroclub-logo-web.jpg" alt="Siklóernyőzés Hajdúszoboszlón videó">
+          </div>
+          <div class="hir-tartalom">
+            <p>Siklóernyős témájú videót tett közzé a Hajdúszoboszló Televízió. Riportjában az <a
+                href="http://www.hajdufly.hu/ " target='_blank'> Aero Club Hajdúszoboszló </a>tagjait szólaltatta meg a
+              Magyar Köztársaság Kupa előkelő 2. helyezésének kapcsán. A riportból megtudhatjuk, hogy hol tart a
+              hajdúszoboszlói siklóernyőzés és egy kis kedvcsináló is egyben azoknak, akik szeretnének közelebbről
+              megismerkedni a <a href="sikloernyozesrol.html" target="_self"> siklóernyőzéssel</a>.</p><iframe
+              max-width="560" height="auto" src="https://www.youtube.com/embed/DmTiAXNzQEM" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="hir-hashtag">#Hajduszoboszlo #sikloernyozes #HajduszoboszloTelevizio #ASzabadsagSzerelmesei
+            #AeroclubHajduszoboszlo #BudaiKrisztian #TorkosTamas #MKK #FoldiCsaba</div>
+        </article>
+
+
+
+
+      </div>
+  </main>
+  <footer>
+    <div>&copy; Copyright 2021 sikloernyosklub.hu <a href="https://vargajozsef.hu" target="_blank">Varga József</a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="scripts/script.js"></script>
+  <script src="scripts/cikkLoad.js"></script>
+</body>
+
+</html>
