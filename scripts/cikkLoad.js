@@ -45,3 +45,4 @@ class CreateCikk {
 const kkkk = new CreateCikk(articelDatas[0]);
 
 
+
