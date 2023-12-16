@@ -231,8 +231,7 @@ h1 {
   text-shadow: -2px -2px 19px rgb(255, 255, 255), black 3px 3px;
 }
 
-h2,
-.abc {
+h2 {
   
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
@@ -241,17 +240,6 @@ h2,
   font-stretch: extra-expanded;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
-}
-
-.abc{
-  background-color: var(--black-elements);
-  position: sticky;
-  top: 100px;
-}
-
-.abc a{
- padding: 0 0.3em;
-  
 }
 
 h1::first-letter {
@@ -340,7 +328,7 @@ address {
   padding: 0 2em 0 2em;
 }
 
-q {
+ q {
   margin-top: 2rem;
   background-color: rgba(0, 0, 0, 0.6);
   color: rgb(255, 255, 255);
@@ -943,8 +931,11 @@ address {
   width: 100%;
 }
 
-#hirekTable {
+.hirekTable {
+  text-align: center;
   display: table;
+  width: 100%;
+  max-width: 600px;
   margin: auto;
   border-collapse: separate;
   box-sizing: border-box;
@@ -961,7 +952,7 @@ address {
 }
 
 article {
-  margin: 3rem auto 3rem;
+  margin: 5rem auto 5rem;
   max-width: 80%;
   background-color: var(--attetszo-sotet);
   overflow: hidden;
@@ -1008,7 +999,6 @@ article {
   justify-content: flex-start;
   align-content: center;
   align-items: flex-start;
-  margin: 1rem;
   background-color: var(--black-elements);
   border-radius: 0 0 0.5rem 0.5rem;
   color: var(--white-elements);
@@ -1044,6 +1034,7 @@ article {
   margin: 1em;
   font-size: clamp(1.5vw, 4vw, 2rem);
 }
+
 
 .hir-hashtag {
   color: var(--hashtag-elements);
@@ -1608,6 +1599,7 @@ background-attachment: initial;}
 
   /*the begin of hirek specifed style elements for under600*/
 
+  
   .hir-tartalom {
     flex-direction: column;
     align-content: center;
@@ -1635,7 +1627,9 @@ background-attachment: initial;}
     width: 100%;
     height: auto;
   }
-
+  article{
+    max-width: 100%;
+  }
   /*the end of hirek specifed style elements for under600*/
 
   /*-------the begin of meterologi specifed style elements for under600**/
