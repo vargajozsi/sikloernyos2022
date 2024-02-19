@@ -559,8 +559,18 @@ h2,
   }
   
 
+#oldallinkek {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--black-elements);
+  justify-content: space-around;
+}
 
+#oldallinkek a{
+padding: 1rem 0.5rem;
 
+}
 /*-------the begin of clubcard specifed style elements*/
 .clubcard {
   margin: 2rem;
@@ -568,6 +578,10 @@ h2,
   background-color: var(--attetszo-sotet);
   color: var(--white-elements);
   border: 1px dotted var(--linkelement);
+}
+
+.clubcard p {
+  color: var(--white-elements);
 }
 
 .pic-header {
@@ -721,6 +735,14 @@ h2,
   background-repeat: no-repeat;
   background-position: center;
 }
+
+#pic-header-napmadarse {
+  background: url(./media/Klubok/napmadarse.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 #pic-header-Winchflyer {
   background: url(./media/Klubok/winchmaster.jpg);
@@ -1628,7 +1650,7 @@ background-attachment: initial;}
   .google-starthely,
   .tabla-starthely {
     margin: 1rem;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
   }
 
   .wrapper-starthely:only-child a {

@@ -1742,7 +1742,7 @@ const starthelyTombFull = [
   {
     id: 97,
     nev: "Rimóc",
-    szintKulombseg: "80",
+    szintKulombseg: "50",
     startIrany: ["NY"],
     gpsKoordinatak: "48.04099, 19.55022",
     googleLink: "https://goo.gl/maps/4jGu3iHxN3eWoNXC8?coh=178573&entry=tt",
@@ -1755,7 +1755,7 @@ const starthelyTombFull = [
     statusA: "tisztázatlan",
     indicator: "tisztazatlan",
     nehezseg: "+",
-    tipusa: "magasstart",
+    tipusa: "kisdomb",
   },
   {
     id: 98,
@@ -1809,6 +1809,23 @@ const starthelyTombFull = [
     indicator: "tisztazatlan",
     nehezseg: "+",
     tipusa: "magasstart",
+  },
+  {
+    id: 101,
+    nev: "Rimóc, Nagylóc",
+    szintKulombseg: "50",
+    startIrany: ["NY"],
+    gpsKoordinatak: "48.0409504017896, 19.550117383116348",
+    googleLink: "https://maps.app.goo.gl/yMvj67MmYXCbeqU19",
+    legter: "9500 ft AMSL – FL195",
+    megJegyzes: "2023.02.04: Gyetvai Gergely infoi: Nyugati szél (akár enyhén délies vagy északias esetében is kb. 220-320 fok között) esetében jól használható starthely. Ha kellően ráfúj, a gerinc előtt lejtőzni kiválóan alkalmas. A leszállójába, ami egy focipálya méretű nagy kaszáló terület könnyen és biztonságosan ki lehet érni még szélcsendben is (szintkülönbség: -75m). A starthely megközelíthető száraz időben személyautóval a Rimócról, a patak melletti földúton, (a fa híd után balra, 150m = ez a leszálló) innen tovább gyalog kb.10 perc sétával, a terepmotorosok által is használt ösvényen. Nagylóc irányából a vasöntöde mellett induló mezőgazdasági útról, ami kb. 2km, egészen a starthely széléig lehet feljutni, (vízmű állomás mellett közvetlen). A starthely kényelmes, kb. 30m széles kezelt füves terület, az ernyő kiterítéséhez bőven elegendő hellyel, visszaszállásra is alkalmas, kétoldalt cserjés, bokros sávokkal. Szalagok és szélzsák is segít a szélirány meghatározásában.",
+    meteo: "",
+    video: "",
+    starthelyKep: "",
+    statusA: "tisztázatlan",
+    indicator: "tisztazatlan",
+    nehezseg: "+",
+    tipusa: "kisdomb",
   },
 ];
 
