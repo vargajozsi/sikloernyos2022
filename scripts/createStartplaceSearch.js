@@ -1829,9 +1829,11 @@ const starthelyTombFull = [
   },
 ];
 
+
+
 const openWeatherKeys = "c4a4e45630e841072bf9ef16bb89e412";
 const weatherUrls = "https://api.openweathermap.org/data/2.5/weather";
-
+//aktualis szélirány lekérdezőrutin openweatherhez
 const getForecastOpenWs = async (latitudes, longitudes) => {
   //hőmérséklet koordináták alapján
   const urlToFetch = `${weatherUrls}?lat=${latitudes}&lon=${longitudes}&units=metric&lang=hu&APPID=${openWeatherKeys}`;
@@ -1848,23 +1850,25 @@ const getForecastOpenWs = async (latitudes, longitudes) => {
   }
 };
 
+
+for (const i of starthelyTombFull) {
+  let egySzelLatitude = i.gpsKoordinatak.substring(0, 8);
+  let egySzelLongitude = i.gpsKoordinatak.substring(10, 18);
+  getForecastOpenWs(egySzelLatitude, egySzelLongitude).then(forecast => {
+    i.actualDgr = forecast.wind.deg;  
+    console.log = (i.actualDgr);
+});
+
+
+  
+  console.log(i);
+}
+
 // starthely táblázat létrehozása starthelyelemek kiíratása
 function addSearchResoult(starthelyParam, statusParam) {
   if (statusParam === starthelyParam.indicator || statusParam === "osszes") {
-    // az openweatherforecast letiltott ezért kivettem
 
-    //   const egySzelLatitude = starthelyParam.gpsKoordinatak.substring(0, 8);
-    //   const egySzelLongitude = starthelyParam.gpsKoordinatak.substring(10, 18);
-    //   getForecastOpenWs(egySzelLatitude, egySzelLongitude)
-    // .then((forecast) => {
-    //   pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev} - jelenlegi szélirány: <span class="szelIranySpan" style="transform: rotate(${forecast.wind.deg -270}deg);">&#10165;</span> ${Math.round(forecast.wind.speed) * 3.6} km/h</td></tr><tr><td>Szintkülönbség: ${starthelyParam.szintKulombseg} m</td></tr><tr><td>Startirány: ${starthelyParam.startIrany}</td></tr><tr><td>Koordináták: <a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>Légterek: ${starthelyParam.legter}</td></tr><tr><td>Státusz: ${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
-    // })
-    // .catch((e) => {
-    //   console.log("na mi a fasz", e, starthelyParam);
-    // });
-    // az openweatherforecast letiltott ezért kivettem vége
-
-    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev} - jelenlegi szélirány: </td></tr><tr><td>Szintkülönbség: ${starthelyParam.szintKulombseg} m</td></tr><tr><td>Startirány: ${starthelyParam.startIrany}</td></tr><tr><td>Koordináták: <a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>Légterek: ${starthelyParam.legter}</td></tr><tr><td>Státusz: ${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
+    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev} - jelenlegi szélirány: ${starthelyTombFull[0].actualDgr} </td></tr><tr><td>Szintkülönbség: ${starthelyParam.szintKulombseg} m</td></tr><tr><td>Startirány: ${starthelyParam.startIrany}</td></tr><tr><td>Koordináták: <a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>Légterek: ${starthelyParam.legter}</td></tr><tr><td>Státusz: ${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
   }
 }
 
