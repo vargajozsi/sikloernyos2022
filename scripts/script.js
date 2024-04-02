@@ -29,3 +29,16 @@ function sikloArticleToggle(melyik) {
 
 //sikloernyozes menu content end
 
+//klubok xcontest mutat rejt eredménylista eleje
+
+const mutasd = document.querySelector(".mutasdRejtsd")
+mutasd.addEventListener("click", displayList);
+
+function displayList() {
+  for (let i = 11; i <= 33; i++) {
+    document.querySelector("#Klubok > ol").children[i].style.display = "inherit";
+  }  
+  document.querySelector("#Klubok > ol").children[10].style.display = "none";
+}
+
+//klubok xcontest mutat rejt eredménylista vége

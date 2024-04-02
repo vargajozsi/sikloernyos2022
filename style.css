@@ -408,6 +408,10 @@ div.tabla-starthely > a {
   color: var(--linkelement);
 }
 
+.mutasdRejtsd {
+  color: var(--linkelement);
+}
+
 #starthelyKereses {
   display: flex;
   flex-wrap: wrap;
