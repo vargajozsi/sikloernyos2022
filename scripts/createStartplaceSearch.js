@@ -1830,8 +1830,6 @@ const starthelyTombFull = [
   },
 ];
 
-console.log(starthelyTombFull[0]);
-
 const openWeatherKeys = "c4a4e45630e841072bf9ef16bb89e412";
 const weatherUrls = "https://api.openweathermap.org/data/2.5/weather";
 //aktualis szélirány lekérdezőrutin openweatherhez
@@ -1851,21 +1849,10 @@ const getForecastOpenWs = async (latitudes, longitudes) => {
   }
 };
 
-for (const i of starthelyTombFull) {
-  let egySzelLatitude = i.gpsKoordinatak.substring(0, 8);
-  let egySzelLongitude = i.gpsKoordinatak.substring(10, 18);
-  getForecastOpenWs(egySzelLatitude, egySzelLongitude).then((forecast) => {
-    i.actualDgr = forecast.wind.deg;
-    console.log = i.actualDgr;
-  });
-
-  console.log(i);
-}
-
 // starthely táblázat létrehozása starthelyelemek kiíratása
 function addSearchResoult(starthelyParam, statusParam) {
   if (statusParam === starthelyParam.indicator || statusParam === "osszes") {
-    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev} - jelenlegi szélirány: "ismeretlen" </td></tr><tr><td>Szintkülönbség: ${starthelyParam.szintKulombseg} m</td></tr><tr><td>Startirány: ${starthelyParam.startIrany}</td></tr><tr><td>Koordináták: <a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>Légterek: ${starthelyParam.legter}</td></tr><tr><td>Státusz: ${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
+    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev} - jelenlegi szélirány: </td></tr><tr><td>Szintkülönbség: ${starthelyParam.szintKulombseg} m</td></tr><tr><td>Startirány: ${starthelyParam.startIrany}</td></tr><tr><td>Koordináták: <a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>Légterek: ${starthelyParam.legter}</td></tr><tr><td>Státusz: ${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
   }
 }
 
