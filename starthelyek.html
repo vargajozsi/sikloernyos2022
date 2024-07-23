@@ -1,313 +1,564 @@
 <!DOCTYPE html>
 <html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="starthelyek, Siklóernyős starthelyek, hármashatárhegy, csobánc, kevély, szársomlyó, kalocsa"
+    />
+    <meta property="og:title" content="sikloernyosklub.hu" />
+    <meta property="og:url" content="https://www.sikloernyosklub.hu/" />
+    <meta
+      property="og:image"
+      content="https://www.sikloernyosklub.hu/media/sikloernyosklub.jpg"
+    />
+    <meta property="og:site_name" content="sikloernyosklub.hu" />
+    <meta property="og:description" content="sikloernyosklub.hu" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="description"
-    content="starthelyek, Siklóernyős starthelyek, hármashatárhegy, csobánc, kevély, szársomlyó, kalocsa" />
-  <meta property="og:title" content="sikloernyosklub.hu" />
-  <meta property="og:url" content="https://www.sikloernyosklub.hu/" />
-  <meta property="og:image" content="https://www.sikloernyosklub.hu/media/sikloernyosklub.jpg" />
-  <meta property="og:site_name" content="sikloernyosklub.hu" />
-  <meta property="og:description" content="sikloernyosklub.hu" />
+    <meta name="DC.coverage" content="Hungary" />
+    <meta name="DC.description" content="sikloernyosklub.hu" />
+    <meta name="DC.format" content="text/html" />
+    <meta name="DC.identifier" content="https://www.sikloernyosklub.hu" />
+    <meta name="DC.publisher" content="sikloernyosklub.hu" />
+    <meta
+      name="keywords"
+      content="starthelyek, Siklóernyős starthelyek, hármashatárhegy, csobánc, kevély, szársomlyó, kalocsa"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--iconok-->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./media/icon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./media/icon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./media/icon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./media/icon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./media/icon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./media/icon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./media/icon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./media/icon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./media/icon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./media/icon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./media/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./media/icon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./media/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./media/icon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./media/icon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!--iconok vege-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Siklóernyős starthelyek | leszálló</title>
 
-  <meta name="DC.coverage" content="Hungary" />
-  <meta name="DC.description" content="sikloernyosklub.hu" />
-  <meta name="DC.format" content="text/html" />
-  <meta name="DC.identifier" content="https://www.sikloernyosklub.hu" />
-  <meta name="DC.publisher" content="sikloernyosklub.hu" />
-  <meta name="keywords"
-    content="starthelyek, Siklóernyős starthelyek, hármashatárhegy, csobánc, kevély, szársomlyó, kalocsa" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--iconok-->
-  <link rel="apple-touch-icon" sizes="57x57" href="./media/icon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./media/icon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./media/icon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./media/icon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./media/icon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./media/icon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./media/icon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./media/icon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./media/icon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="./media/icon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./media/icon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./media/icon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./media/icon/favicon-16x16.png">
-  <link rel="manifest" href="./media/icon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="./media/icon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <!--iconok vege-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-  <link rel="stylesheet" href="style.css" />
-  <title>Siklóernyős starthelyek | leszálló</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BFB11JF5N7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BFB11JF5N7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+      gtag("config", "G-BFB11JF5N7");
+    </script>
+  </head>
 
-    gtag("config", "G-BFB11JF5N7");
-  </script>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
 
-</head>
+    <script src="./scripts/top.js"></script>
+    <!--beginn of navigation-->
+    <header>
+      <nav class="navbar">
+        <div class="branding">
+          <h2>
+            <a href="index.html" class="sikloernyosklub-logo"
+              ><img
+                class="klublogo"
+                src="media/sikloernyosklub-logo_sz.png"
+                alt="sikloernyos klub logo"
+            /></a>
+          </h2>
+        </div>
 
-<body>
+        <div>
+          <label for="imput-hamburger" class="hamburger"></label>
+          <input type="checkbox" id="imput-hamburger" hidden />
+          <ul class="menu">
+            <li>
+              <a href="index.html" class="menu-link">Siklóernyős Klubok</a>
+            </li>
+            <li>
+              <a href="sikloernyozesrol.html" class="menu-link"
+                >Siklóernyőzésről</a
+              >
+            </li>
+            <li class="has-dropdown" style="display: none">
+              <a class="menu-link" href="#"
+                >Siklóernyőzés<span class="arrow">˅</span>
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="sikloernyozesrol.html" class="menu-link"
+                    >Siklóernyőzésről</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="menu-link" style="display: none"
+                    >Siklóernyős Felszerelések</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="menu-link" style="display: none"
+                    >Siklóernyős Tanfolyamok</a
+                  >
+                </li>
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"
-      aria-hidden="true"></i></button>
+                <li>
+                  <a href="#" class="menu-link" style="display: none"
+                    >Siklóernyős Oktatók</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="menu-link" style="display: none"
+                    >Tananyagok</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="menu-link" style="display: none">K.S.P.</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="starthelyek.html" class="menu-link"
+                >Starthelyek
+                <!-- <span class="arrow">˅</span>-->
+              </a>
+            </li>
+            <li class="has-dropdown" style="display: none">
+              <a href="#" class="menu-link"
+                >Tandemrepülés<span class="arrow">˅</span></a
+              >
+              <ul class="submenu">
+                <li>
+                  <a href="#" class="menu-link" class="menu-link"
+                    >Tandemrepülésről Általában</a
+                  >
+                </li>
+                <li><a href="#" class="menu-link">Tandempilóták</a></li>
+                <li>
+                  <a href="#" class="menu-link">Jelentkezés Tandemrepülésre</a>
+                </li>
+                <li><a href="#" class="menu-link">Ajándékutalvány</a></li>
+              </ul>
+            </li>
 
-  <script src="./scripts/top.js"></script>
-  <!--beginn of navigation-->
-  <header>
-    <nav class="navbar">
-      <div class="branding">
-        <h2>
-          <a href="index.html" class="sikloernyosklub-logo"><img class="klublogo"
-              src="media/sikloernyosklub-logo_sz.png" alt="sikloernyos klub logo" /></a>
-        </h2>
+            <li class="has-dropdown">
+              <a href="#" class="menu-link"
+                >Hasznos<span class="arrow">˅</span></a
+              >
+              <ul class="submenu">
+                <li><a href="legterek.html" class="menu-link">Légterek</a></li>
+                <li>
+                  <a href="#" class="menu-link" style="display: none">Túrák</a>
+                </li>
+                <li>
+                  <a href="sikloernyo_gyarto_cegek.html" class="menu-link"
+                    >Gyártók</a
+                  >
+                </li>
+                <li>
+                  <a href="./sikloernyos_szervezetek.html" class="menu-link"
+                    >Szervezetek</a
+                  >
+                </li>
+                <li><a href="reporvos.html" class="menu-link">Reporvos</a></li>
+                <li>
+                  <a href="#" class="menu-link" style="display: none"
+                    >Xcontest</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="meterologia.html" class="menu-link">Meteo</a>
+            </li>
+            <li>
+              <a href="sikloernyoshirek.html" class="menu-link">Hírek</a>
+            </li>
+            <div class="menuhider">
+              <div class="menuhiderarrow"></div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--end of navigation-->
+    <main class="wrapper">
+      <section id="oldallinkek">
+        <a href="./starthelyek.html">Siklóernyős Starthelyek</a>
+        <a href="./sikloernyozesrol.html">Siklóernyőzés</a>
+        <a href="./legterek.html">Légterek</a>
+        <a href="./reporvos.html">Reporvos</a>
+        <a href="./meterologia.html">Siklóernyős Meteorológia</a>
+        <a href="./sikloernyo_gyarto_cegek.html">Siklóernyő Gyártók</a>
+      </section>
+
+      <div id="holfuyiframe">
+        <iframe
+          frameborder="0"
+          marginheight="1"
+          marginwidth="1"
+          scrolling="no"
+          src="https://widget.holfuy.com/?station=271&su=km/h&t=C&lang=hu&mode=mini"
+          style="width: 180px; height: 120px"
+        ></iframe>
+        <iframe
+          frameborder="0"
+          marginheight="1"
+          marginwidth="1"
+          scrolling="no"
+          src="https://widget.holfuy.com/?station=285&su=km/h&t=C&lang=hu&mode=mini"
+          style="width: 180px; height: 120px"
+        ></iframe>
+        <iframe
+          frameborder="0"
+          marginheight="1"
+          marginwidth="1"
+          scrolling="no"
+          src="https://widget.holfuy.com/?station=460&su=km/h&t=C&lang=hu&mode=mini"
+          style="width: 180px; height: 120px"
+        ></iframe>
+        <iframe
+          frameborder="0"
+          marginheight="1"
+          marginwidth="1"
+          scrolling="no"
+          src="https://widget.holfuy.com/?station=506&su=km/h&t=C&lang=hu&mode=mini"
+          style="width: 180px; height: 120px"
+        ></iframe>
+        <iframe
+          frameborder="0"
+          marginheight="1"
+          marginwidth="1"
+          scrolling="no"
+          src="https://widget.holfuy.com/?station=606&su=km/h&t=C&lang=hu&mode=mini"
+          style="width: 180px; height: 120px"
+        ></iframe>
+        <iframe
+          frameborder="0"
+          marginheight="1"
+          marginwidth="1"
+          scrolling="no"
+          src="https://widget.holfuy.com/?station=634&su=km/h&t=C&lang=hu&mode=mini"
+          style="width: 180px; height: 120px"
+        ></iframe>
+        <iframe
+          frameborder="0"
+          marginheight="1"
+          marginwidth="1"
+          scrolling="no"
+          src="https://widget.holfuy.com/?station=765&su=km/h&t=C&lang=hu&mode=mini"
+          style="width: 180px; height: 120px"
+        ></iframe>
+        <iframe
+          frameborder="0"
+          marginheight="1"
+          marginwidth="1"
+          scrolling="no"
+          src="https://widget.holfuy.com/?station=1211&su=km/h&t=C&lang=hu&mode=mini"
+          style="width: 180px; height: 120px"
+        ></iframe>
+        <iframe
+          frameborder="0"
+          marginheight="1"
+          marginwidth="1"
+          scrolling="no"
+          src="https://widget.holfuy.com/?station=143&su=km/h&t=C&lang=hu&mode=mini"
+          style="width: 180px; height: 120px"
+        ></iframe>
+        <iframe
+          frameborder="0"
+          marginheight="1"
+          marginwidth="1"
+          scrolling="no"
+          src="https://widget.holfuy.com/?station=1590&su=km/h&t=C&lang=hu&mode=mini"
+          style="width: 180px; height: 120px"
+        ></iframe>
+      </div>
+      <!--Linkek kezdete-->
+      <div class="wrapper-starthely">
+        <div class="tabla-starthely">
+          <a href="#starthelyKereso">Starthely keresés szélirány szerint</a>
+        </div>
+        <div class="google-starthely">
+          <a href="#starthelyekGoogleMaps">Google térkép starthelyek</a>
+        </div>
+      </div>
+      <!--Linkek Vége-->
+
+      <!--Starthelykereső kezdet-->
+
+      <h2 id="starthelyKereso">Starthelykereső</h2>
+      <br />
+      <div class="starthelyKeresoWrapper">
+        <form class="startHelyValasztoForm">
+          <fieldset>
+            <legend>Válassz a keresendők közül</legend>
+            <div>
+              <label>
+                <input
+                  type="checkbox"
+                  id="eszak"
+                  name="startirany"
+                  value="E"
+                  checked
+                />
+                Észak
+              </label>
+            </div>
+            <div>
+              <label>
+                <input
+                  type="checkbox"
+                  id="eszakKelet"
+                  name="startirany"
+                  value="EK"
+                  checked
+                />
+                Északkelet
+              </label>
+            </div>
+            <div>
+              <label>
+                <input
+                  type="checkbox"
+                  id="kelet"
+                  name="startirany"
+                  value="K"
+                  checked
+                />
+                Kelet
+              </label>
+            </div>
+            <div>
+              <label>
+                <input
+                  type="checkbox"
+                  id="delKelet"
+                  name="startirany"
+                  value="DK"
+                  checked
+                />
+                Délkelet
+              </label>
+            </div>
+            <div>
+              <label>
+                <input
+                  type="checkbox"
+                  id="del"
+                  name="startirany"
+                  value="D"
+                  checked
+                />
+                Dél
+              </label>
+            </div>
+            <div>
+              <label>
+                <input
+                  type="checkbox"
+                  id="delNyugat"
+                  name="startirany"
+                  value="DNY"
+                  checked
+                />
+                Délnyugat
+              </label>
+            </div>
+            <div>
+              <label>
+                <input
+                  type="checkbox"
+                  id="nyugat"
+                  name="startirany"
+                  value="NY"
+                  checked
+                />
+                Nyugat
+              </label>
+            </div>
+            <div>
+              <label>
+                <input
+                  type="checkbox"
+                  id="eszakNyugat"
+                  name="startirany"
+                  value="ENY"
+                  checked
+                />
+                Északnyugat
+              </label>
+            </div>
+            <button id="osszesTorleseGomb">összes törlése</button
+            ><button style="margin-left: 1rem" id="osszesKijelolGomb">
+              összes kijelöl
+            </button>
+          </fieldset>
+        </form>
+        <form action="#" class="startHelyStatusForm">
+          <fieldset id="statusLegendId">
+            <legend>Starthely Státusza</legend>
+            <input
+              type="radio"
+              id="osszes"
+              name="startirany"
+              value="osszes"
+              checked
+            />
+            <label for="osszes">Összes</label><br />
+            <input
+              type="radio"
+              id="tiltott"
+              name="startirany"
+              value="tiltott"
+            />
+            <label for="tiltott">Tiltott</label><br />
+            <input
+              type="radio"
+              id="engedelyezett"
+              name="startirany"
+              value="engedelyezett"
+            />
+            <label for="engedelyezett">Engedélyezett</label><br />
+            <input
+              type="radio"
+              id="tisztazatlan"
+              name="startirany"
+              value="tisztazatlan"
+            />
+            <label for="tisztazatlan">Tisztázatlan</label>
+          </fieldset>
+        </form>
+        <br />
       </div>
 
+      <!--Serchbar begin -->
+
+      <section class="searchbar">
+        <div class="formdiv">
+          <form action="./starthelyek.html" class="formClass">
+            <label for="formname"
+              ><span>Szöveges kereső</span> (Ékezet érzékeny)</label
+            ><br />
+            <input
+              class="inputClass"
+              type="text"
+              id="formname"
+              name="formname"
+              onfocus="this.value=''"
+            /><br />
+          </form>
+        </div>
+      </section>
+
+      <!--Serchbar end -->
+
+      <!-- ide jönnek a starthelyek sorai -->
+      <div id="starthelyKereses"></div>
+
+      <!--Starthelykereső vége-->
+
+      <!--Google starthelyek kezdete-->
+      <h2 class="bevezető tartalom" id="starthelyekGoogleMaps">
+        Magyar Starthelyek Google Maps
+      </h2>
+
+      <!-- todo: google maps iframet kicserélni apira ha van már apikey  -->
+
+      <iframe
+        class="ogniframe"
+        src="https://www.google.com/maps/d/embed?mid=1AP2TbiVYt4Sxde1oQPODilAXGaA"
+      ></iframe>
+
+      <!--Google starthelyek vége-->
+    </main>
+    <footer>
       <div>
-        <label for="imput-hamburger" class="hamburger"></label>
-        <input type="checkbox" id="imput-hamburger" hidden />
-        <ul class="menu">
-          <li>
-            <a href="index.html" class="menu-link">Siklóernyős Klubok</a>
-          </li>
-          <li>
-            <a href="sikloernyozesrol.html" class="menu-link">Siklóernyőzésről</a>
-          </li>
-          <li class="has-dropdown" style="display: none;">
-            <a class="menu-link" href="#">Siklóernyőzés<span class="arrow">˅</span>
-            </a>
-            <ul class="submenu">
-              <li>
-                <a href="sikloernyozesrol.html" class="menu-link">Siklóernyőzésről</a>
-              </li>
-              <li>
-                <a href="#" class="menu-link" style="display: none;">Siklóernyős Felszerelések</a>
-              </li>
-              <li>
-                <a href="#" class="menu-link" style="display: none;">Siklóernyős Tanfolyamok</a>
-              </li>
-
-              <li><a href="#" class="menu-link" style="display: none;">Siklóernyős Oktatók</a></li>
-              <li><a href="#" class="menu-link" style="display: none;">Tananyagok</a></li>
-              <li><a href="#" class="menu-link" style="display: none;">K.S.P.</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="starthelyek.html" class="menu-link">Starthelyek
-              <!-- <span class="arrow">˅</span>-->
-            </a>
-          </li>
-          <li class="has-dropdown" style="display: none;">
-            <a href="#" class="menu-link">Tandemrepülés<span class="arrow">˅</span></a>
-            <ul class="submenu">
-              <li>
-                <a href="#" class="menu-link" class="menu-link">Tandemrepülésről Általában</a>
-              </li>
-              <li><a href="#" class="menu-link">Tandempilóták</a></li>
-              <li>
-                <a href="#" class="menu-link">Jelentkezés Tandemrepülésre</a>
-              </li>
-              <li><a href="#" class="menu-link">Ajándékutalvány</a></li>
-            </ul>
-          </li>
-
-          <li class="has-dropdown">
-            <a href="#" class="menu-link">Hasznos<span class="arrow">˅</span></a>
-            <ul class="submenu">
-              <li><a href="legterek.html" class="menu-link">Légterek</a></li>
-              <li><a href="#" class="menu-link" style="display: none;">Túrák</a></li>
-              <li><a href="sikloernyo_gyarto_cegek.html" class="menu-link">Gyártók</a></li>
-              <li><a href="./sikloernyos_szervezetek.html" class="menu-link">Szervezetek</a></li>
-              <li><a href="reporvos.html" class="menu-link">Reporvos</a></li>
-              <li><a href="#" class="menu-link" style="display: none;">Xcontest</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="meterologia.html" class="menu-link">Meteo</a>
-          </li>
-          <li>
-            <a href="sikloernyoshirek.html" class="menu-link">Hírek</a>
-          </li>
-          <div class="menuhider">
-            <div class="menuhiderarrow"></div>
-          </div>
-        </ul>
+        &copy; Copyright 2021 sikloernyosklub.hu
+        <a href="https://vargajozsef.hu" target="_blank">Varga József</a>
       </div>
-    </nav>
-  </header>
-  <!--end of navigation-->
-  <main class="wrapper">
-    
-    <section id="oldallinkek">
-      <a href="./starthelyek.html">Siklóernyős Starthelyek</a>
-      <a href="./sikloernyozesrol.html">Siklóernyőzés</a>
-      <a href="./legterek.html">Légterek</a>
-      <a href="./reporvos.html">Reporvos</a>
-      <a href="./meterologia.html">Siklóernyős Meteorológia</a>
-      <a href="./sikloernyo_gyarto_cegek.html">Siklóernyő Gyártók</a>
-    </section>
-
-    <div id="holfuyiframe">
-      <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no"
-        src="https://widget.holfuy.com/?station=271&su=km/h&t=C&lang=hu&mode=mini"
-        style="width:180px; height:120px;"></iframe>
-      <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no"
-        src="https://widget.holfuy.com/?station=285&su=km/h&t=C&lang=hu&mode=mini"
-        style="width:180px; height:120px;"></iframe>
-      <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no"
-        src="https://widget.holfuy.com/?station=460&su=km/h&t=C&lang=hu&mode=mini"
-        style="width:180px; height:120px;"></iframe>
-      <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no"
-        src="https://widget.holfuy.com/?station=506&su=km/h&t=C&lang=hu&mode=mini"
-        style="width:180px; height:120px;"></iframe>
-      <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no"
-        src="https://widget.holfuy.com/?station=606&su=km/h&t=C&lang=hu&mode=mini"
-        style="width:180px; height:120px;"></iframe>
-      <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no"
-        src="https://widget.holfuy.com/?station=634&su=km/h&t=C&lang=hu&mode=mini"
-        style="width:180px; height:120px;"></iframe>
-      <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no"
-        src="https://widget.holfuy.com/?station=765&su=km/h&t=C&lang=hu&mode=mini"
-        style="width:180px; height:120px;"></iframe>
-      <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no"
-        src="https://widget.holfuy.com/?station=1211&su=km/h&t=C&lang=hu&mode=mini"
-        style="width:180px; height:120px;"></iframe>
-      <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no"
-        src="https://widget.holfuy.com/?station=143&su=km/h&t=C&lang=hu&mode=mini"
-        style="width:180px; height:120px;"></iframe>
-      <iframe frameborder="0" marginheight="1" marginwidth="1" scrolling="no"
-        src="https://widget.holfuy.com/?station=1590&su=km/h&t=C&lang=hu&mode=mini"
-        style="width:180px; height:120px;"></iframe>
-
-    </div>
-    <!--Linkek kezdete-->
-    <div class="wrapper-starthely">
-      <div class="tabla-starthely"><a href="#starthelyKereso">Starthely keresés szélirány szerint</a></div>
-      <div class="google-starthely"><a href="#starthelyekGoogleMaps">Google térkép starthelyek</a></div>
-
-    </div>
-    <!--Linkek Vége-->
-
-    <!--Starthelykereső kezdet-->
-
-    <h2 id="starthelyKereso">Starthelykereső</h2>
-    <br>
-    <div class="starthelyKeresoWrapper">
-      <form class="startHelyValasztoForm">
-        <fieldset>
-          <legend>Válassz a keresendők közül</legend>
-          <div>
-            <label>
-              <input type="checkbox" id="eszak" name="startirany" value="E" checked />
-              Észak
-            </label>
-
-          </div>
-          <div>
-            <label>
-              <input type="checkbox" id="eszakKelet" name="startirany" value="EK" checked />
-              Északkelet
-            </label>
-
-          </div>
-          <div>
-            <label>
-              <input type="checkbox" id="kelet" name="startirany" value="K" checked />
-              Kelet
-            </label>
-
-          </div>
-          <div>
-            <label>
-              <input type="checkbox" id="delKelet" name="startirany" value="DK" checked />
-              Délkelet
-            </label>
-          </div>
-          <div>
-            <label>
-              <input type="checkbox" id="del" name="startirany" value="D" checked />
-              Dél
-            </label>
-          </div>
-          <div>
-            <label>
-              <input type="checkbox" id="delNyugat" name="startirany" value="DNY" checked />
-              Délnyugat
-            </label>
-          </div>
-          <div>
-            <label>
-              <input type="checkbox" id="nyugat" name="startirany" value="NY" checked />
-              Nyugat
-            </label>
-          </div>
-          <div>
-            <label>
-              <input type="checkbox" id="eszakNyugat" name="startirany" value="ENY" checked />
-              Északnyugat
-            </label>
-          </div>
-          <button id="osszesTorleseGomb">összes törlése</button><button style="margin-left: 1rem;" id="osszesKijelolGomb">összes kijelöl</button>
-        </fieldset>
-      </form>
-      <form action="#" class="startHelyStatusForm">
-        <fieldset id="statusLegendId">
-          <legend>Starthely Státusza</legend>
-          <input type="radio" id="osszes" name="startirany" value="osszes" checked />
-          <label for="osszes">Összes</label><br>
-          <input type="radio" id="tiltott" name="startirany" value="tiltott" />
-          <label for="tiltott">Tiltott</label><br>
-          <input type="radio" id="engedelyezett" name="startirany" value="engedelyezett" />
-          <label for="engedelyezett">Engedélyezett</label><br>
-          <input type="radio" id="tisztazatlan" name="startirany" value="tisztazatlan" />
-          <label for="tisztazatlan">Tisztázatlan</label>
-        </fieldset>
-      </form>
-      <br>
-    </div>
-
-     <!--Serchbar begin -->
-
-     <section class="searchbar">
-      <div class="formdiv"><form action="./starthelyek.html" class="formClass">
-        <label for="formname"><span>Szöveges kereső</span> (Ékezet érzékeny)</label><br>
-        <input class="inputClass" type="text" id="formname" name="formname" onfocus="this.value=''"><br>
-      </form></div>
-    </section>
-
-    <!--Serchbar end -->
-
-    <!-- ide jönnek a starthelyek sorai -->
-    <div id="starthelyKereses">
-
-    </div>
-
-
-
-    <!--Starthelykereső vége-->
-
-
-    <!--Google starthelyek kezdete-->
-    <h2 class="bevezető tartalom" id="starthelyekGoogleMaps">Magyar Starthelyek Google Maps</h2>
-
-    <iframe class="ogniframe" src="https://www.google.com/maps/d/embed?mid=1AP2TbiVYt4Sxde1oQPODilAXGaA"></iframe>
-
-    <!--Google starthelyek vége-->
-  </main>
-  <footer>
-    <div>&copy; Copyright 2021 sikloernyosklub.hu <a href="https://vargajozsef.hu" target="_blank">Varga József</a></div>
-  </footer>
-  <script type="text/javascript" src="./scripts/script.js"></script>
-  <script type="text/javascript" src="./scripts/createStartplaceSearch.js"></script>
-</body>
-
+    </footer>
+    <script type="text/javascript" src="./scripts/script.js"></script>
+    <script
+      type="text/javascript"
+      src="./scripts/createStartplaceSearch.js"
+    ></script>
+  </body>
 </html>

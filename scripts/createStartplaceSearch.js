@@ -1830,42 +1830,70 @@ const starthelyTombFull = [
   },
 ];
 
-console.log(starthelyTombFull[0]);
+// ELEJE: Forecast szelirany lekerdezese apiból és beillesztése az adatbázisba
 
-const openWeatherKeys = "c4a4e45630e841072bf9ef16bb89e412";
-const weatherUrls = "https://api.openweathermap.org/data/2.5/weather";
-//aktualis szélirány lekérdezőrutin openweatherhez
-const getForecastOpenWs = async (latitudes, longitudes) => {
-  //hőmérséklet koordináták alapján
-  const urlToFetch = `${weatherUrls}?lat=${latitudes}&lon=${longitudes}&units=metric&lang=hu&APPID=${openWeatherKeys}`;
+const openWeatherKey = "c4a4e45630e841072bf9ef16bb89e412";
+const weatherUrl = "https://api.openweathermap.org/data/2.5/weather";
 
+//async function data request from openweathermap.org
+const getForecastOpenW = async (latitude, longitude) => {
+  //időjárás json koordináták alapján
+  const urlToFetch = `${weatherUrl}?lat=${latitude}&lon=${longitude}&units=metric&lang=hu&APPID=${openWeatherKey}`;
   try {
     const response = await fetch(urlToFetch);
     if (response.ok) {
       const jsonResponse = await response.json();
-      //log(jsonResponse);
       return jsonResponse;
-    } else throw new Error("something went wrong...");
+    } else throw new Error("something went wrong... at JSON response");
   } catch (error) {
     console.log(error.message);
   }
 };
 
-for (const i of starthelyTombFull) {
-  let egySzelLatitude = i.gpsKoordinatak.substring(0, 8);
-  let egySzelLongitude = i.gpsKoordinatak.substring(10, 18);
-  getForecastOpenWs(egySzelLatitude, egySzelLongitude).then((forecast) => {
-    i.actualDgr = forecast.wind.deg;
-    console.log = i.actualDgr;
-  });
-
-  console.log(i);
+//első öt starthely aktuál széladat lekérdezése
+for (let i = 0; i <= 5; i++) {
+  // starthelytombfull gps propertiesének szétválasztása latitudera és longitudera
+  let lat = starthelyTombFull[i].gpsKoordinatak.split(",")[0].trim();
+  let long = starthelyTombFull[i].gpsKoordinatak.split(",")[1].trim();
+  //élő adatok lekérdezése forecastból
+  getForecastOpenW(lat, long).then(
+    (forecast) => {
+      localStorage.setItem(
+        `${starthelyTombFull[i].id}`,
+        `${forecast.wind.deg}`
+      );
+      // starthelytombfull megkapja munkára a localstoragebol az aktualis szelirányadatot
+    },
+    () => {
+      alert("Lezuhant egy siklóernyős, mert elszúrta a programozó");
+    }
+  );
 }
+
+// VÉGE: Forecast szelirany lekerdezese apiból és beillesztése az adatbázisba
+// ________________________________________________________________
 
 // starthely táblázat létrehozása starthelyelemek kiíratása
 function addSearchResoult(starthelyParam, statusParam) {
   if (statusParam === starthelyParam.indicator || statusParam === "osszes") {
-    pozEredmeny.innerHTML += `<table class="${starthelyParam.indicator}"><tbody><tr><td>${starthelyParam.nev} - jelenlegi szélirány: "ismeretlen" </td></tr><tr><td>Szintkülönbség: ${starthelyParam.szintKulombseg} m</td></tr><tr><td>Startirány: ${starthelyParam.startIrany}</td></tr><tr><td>Koordináták: <a href="${starthelyParam.googleLink}" target="_blank">${starthelyParam.gpsKoordinatak}</a></td></tr><tr><td>Légterek: ${starthelyParam.legter}</td></tr><tr><td>Státusz: ${starthelyParam.statusA}</td></tr><tr><td>${starthelyParam.megJegyzes}</td></tr><tbody></table>`;
+    pozEredmeny.innerHTML += `<table class="${
+      starthelyParam.indicator
+    }"><tbody><tr><td>${starthelyParam.nev}
+     - jelenlegi szélirány: ${localStorage.getItem(
+       starthelyParam.id
+     )} </td></tr><tr><td>Szintkülönbség: ${
+      starthelyParam.szintKulombseg
+    } m</td></tr><tr><td>Startirány: ${
+      starthelyParam.startIrany
+    }</td></tr><tr><td>Koordináták: <a href="${
+      starthelyParam.googleLink
+    }" target="_blank">${
+      starthelyParam.gpsKoordinatak
+    }</a></td></tr><tr><td>Légterek: ${
+      starthelyParam.legter
+    }</td></tr><tr><td>Státusz: ${starthelyParam.statusA}</td></tr><tr><td>${
+      starthelyParam.megJegyzes
+    }</td></tr><tbody></table>`;
   }
 }
 
@@ -1890,7 +1918,7 @@ function loadTableContent(ev) {
 //Megnézi, hogy melyik start-szélirány lett-maradt aktív a kattintás hatására
 function getIranyValasztottak() {
   szelIranyValasztott = [];
-  for (i = 0; i < szelIranyInputok.length; i++) {
+  for (let i = 0; i < szelIranyInputok.length; i++) {
     if (szelIranyInputok[i].checked) {
       szelIranyValasztott.push(szelIranyInputok[i].defaultValue);
     }
@@ -1900,7 +1928,7 @@ function getIranyValasztottak() {
 
 function inputTorles(eventke) {
   eventke.preventDefault();
-  for (i = 0; i < szelIranyInputok.length; i++) {
+  for (let i = 0; i < szelIranyInputok.length; i++) {
     szelIranyInputok[i].checked = false;
   }
   getIranyValasztottak();
@@ -1908,7 +1936,7 @@ function inputTorles(eventke) {
 
 function inputKijeloles(eventke) {
   eventke.preventDefault();
-  for (i = 0; i < szelIranyInputok.length; i++) {
+  for (let i = 0; i < szelIranyInputok.length; i++) {
     szelIranyInputok[i].checked = true;
   }
   getIranyValasztottak();

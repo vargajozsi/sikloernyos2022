@@ -1162,6 +1162,7 @@ article {
   cursor: pointer;
   padding: 6px;
   border-radius: 3px;
+  z-index: 500;
 }
 
 .hirGaleriaContainer {
