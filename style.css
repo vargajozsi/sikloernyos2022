@@ -535,6 +535,15 @@ tr {
   );
 }
 
+#aktualSzeliranyNyil {
+  display: inline-block;
+  font-size: calc(1.5rem + 1vw);
+  color: var(--white-elements);
+  background: var(--black-elements);
+  border-radius: 50%;
+  margin-left: 1.5rem;
+}
+
 /*the end of starthelyek specifed style elements*/
 
 /* __________________________________________________________________________ */

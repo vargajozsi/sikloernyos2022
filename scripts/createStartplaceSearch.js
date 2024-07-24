@@ -1851,7 +1851,7 @@ const getForecastOpenW = async (latitude, longitude) => {
 };
 
 //első öt starthely aktuál széladat lekérdezése
-for (let i = 0; i <= 5; i++) {
+for (let i = 2; i <= 2; i++) {
   // starthelytombfull gps propertiesének szétválasztása latitudera és longitudera
   let lat = starthelyTombFull[i].gpsKoordinatak.split(",")[0].trim();
   let long = starthelyTombFull[i].gpsKoordinatak.split(",")[1].trim();
@@ -1881,7 +1881,9 @@ function addSearchResoult(starthelyParam, statusParam) {
     }"><tbody><tr><td>${starthelyParam.nev}
      - jelenlegi szélirány: ${localStorage.getItem(
        starthelyParam.id
-     )} </td></tr><tr><td>Szintkülönbség: ${
+     )} <span id="aktualSzeliranyNyil" style="transform: rotate(${localStorage.getItem(
+      starthelyParam.id
+    )}deg);">	&dArr;<span></td></tr><tr><td>Szintkülönbség: ${
       starthelyParam.szintKulombseg
     } m</td></tr><tr><td>Startirány: ${
       starthelyParam.startIrany
